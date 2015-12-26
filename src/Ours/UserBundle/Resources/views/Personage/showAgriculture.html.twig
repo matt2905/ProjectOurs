@@ -1,0 +1,842 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {% stylesheets '@OursUserBundle/Resources/public/css/*' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {%  endstylesheets %}
+    <style>
+        body, td.null
+        {
+            background-color: #CCCCCC;
+            border-color: #CCCCCC !important;
+        }
+        td, th
+        {
+            border-color: #FFFFFF !important;
+        }
+    </style>
+{% endblock %}
+
+{% block body -%}
+
+    {# Cuisine #}
+    <div>
+        <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">CUISINIERS</h3>
+        <br/>
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="soup">Soupe</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.cuSoup %}
+                    <tr>
+                        <td class="soup">{{ personage.name }}</td>
+                        {% if personage.cuSoup == 3 %}
+                            <td class="trois">{{ personage.cuSoup }}</td>
+                        {% elseif personage.cuSoup == 4 %}
+                            <td class="quatre">{{ personage.cuSoup }}</td>
+                        {% elseif personage.cuSoup == 5 %}
+                            <td class="cinq">{{ personage.cuSoup }}</td>
+                        {% elseif personage.cuSoup == 6 %}
+                            <td class="six">{{ personage.cuSoup }}</td>
+                        {% elseif personage.cuSoup == 7 %}
+                            <td class="sept">{{ personage.cuSoup }}</td>
+                        {% elseif personage.cuSoup == 8 %}
+                            <td class="huit">{{ personage.cuSoup }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.cuSoup }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="salad">Salade</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.cuSalad %}
+                    <tr>
+                        <td class="salad">{{ personage.name }}</td>
+                        {% if personage.cuSalad == 3 %}
+                            <td class="trois">{{ personage.cuSalad }}</td>
+                        {% elseif personage.cuSalad == 4 %}
+                            <td class="quatre">{{ personage.cuSalad }}</td>
+                        {% elseif personage.cuSalad == 5 %}
+                            <td class="cinq">{{ personage.cuSalad }}</td>
+                        {% elseif personage.cuSalad == 6 %}
+                            <td class="six">{{ personage.cuSalad }}</td>
+                        {% elseif personage.cuSalad == 7 %}
+                            <td class="sept">{{ personage.cuSalad }}</td>
+                        {% elseif personage.cuSalad == 8 %}
+                            <td class="huit">{{ personage.cuSalad }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.cuSalad }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="omelette">Omelette</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.cuOmelette %}
+                    <tr>
+                        <td class="omelette">{{ personage.name }}</td>
+                        {% if personage.cuOmelette == 3 %}
+                            <td class="trois">{{ personage.cuOmelette }}</td>
+                        {% elseif personage.cuOmelette == 4 %}
+                            <td class="quatre">{{ personage.cuOmelette }}</td>
+                        {% elseif personage.cuOmelette == 5 %}
+                            <td class="cinq">{{ personage.cuOmelette }}</td>
+                        {% elseif personage.cuOmelette == 6 %}
+                            <td class="six">{{ personage.cuOmelette }}</td>
+                        {% elseif personage.cuOmelette == 7 %}
+                            <td class="sept">{{ personage.cuOmelette }}</td>
+                        {% elseif personage.cuOmelette == 8 %}
+                            <td class="huit">{{ personage.cuOmelette }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.cuOmelette }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="pie">Tourte</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.cuPie %}
+                    <tr>
+                        <td class="pie">{{ personage.name }}</td>
+                        {% if personage.cuPie == 3 %}
+                            <td class="trois">{{ personage.cuPie }}</td>
+                        {% elseif personage.cuPie == 4 %}
+                            <td class="quatre">{{ personage.cuPie }}</td>
+                        {% elseif personage.cuPie == 5 %}
+                            <td class="cinq">{{ personage.cuPie }}</td>
+                        {% elseif personage.cuPie == 6 %}
+                            <td class="six">{{ personage.cuPie }}</td>
+                        {% elseif personage.cuPie == 7 %}
+                            <td class="sept">{{ personage.cuPie }}</td>
+                        {% elseif personage.cuPie == 8 %}
+                            <td class="huit">{{ personage.cuPie }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.cuPie }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="stew">Ragout</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.cuStew %}
+                    <tr>
+                        <td class="stew">{{ personage.name }}</td>
+                        {% if personage.cuStew == 3 %}
+                            <td class="trois">{{ personage.cuStew }}</td>
+                        {% elseif personage.cuStew == 4 %}
+                            <td class="quatre">{{ personage.cuStew }}</td>
+                        {% elseif personage.cuStew == 5 %}
+                            <td class="cinq">{{ personage.cuStew }}</td>
+                        {% elseif personage.cuStew == 6 %}
+                            <td class="six">{{ personage.cuStew }}</td>
+                        {% elseif personage.cuStew == 7 %}
+                            <td class="sept">{{ personage.cuStew }}</td>
+                        {% elseif personage.cuStew == 8 %}
+                            <td class="huit">{{ personage.cuStew }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.cuStew }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="sandwich">Sandwich</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.cuSandwich %}
+                    <tr>
+                        <td class="sandwich">{{ personage.name }}</td>
+                        {% if personage.cuSandwich == 3 %}
+                            <td class="trois">{{ personage.cuSandwich }}</td>
+                        {% elseif personage.cuSandwich == 4 %}
+                            <td class="quatre">{{ personage.cuSandwich }}</td>
+                        {% elseif personage.cuSandwich == 5 %}
+                            <td class="cinq">{{ personage.cuSandwich }}</td>
+                        {% elseif personage.cuSandwich == 6 %}
+                            <td class="six">{{ personage.cuSandwich }}</td>
+                        {% elseif personage.cuSandwich == 7 %}
+                            <td class="sept">{{ personage.cuSandwich }}</td>
+                        {% elseif personage.cuSandwich == 8 %}
+                            <td class="huit">{{ personage.cuSandwich }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.cuSandwich }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <br style="clear: both;">
+    {# End Cuisine #}
+
+    {# Alchimie #}
+    <div>
+        <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">ALCHIMISTES</h3>
+        <br/>
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="heal">SOIN</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.alHeal %}
+                    <tr>
+                        <td class="heal">{{ personage.name }}</td>
+                        {% if personage.alHeal == 3 %}
+                            <td class="trois">{{ personage.alHeal }}</td>
+                        {% elseif personage.alHeal == 4 %}
+                            <td class="quatre">{{ personage.alHeal }}</td>
+                        {% elseif personage.alHeal == 5 %}
+                            <td class="cinq">{{ personage.alHeal }}</td>
+                        {% elseif personage.alHeal == 6 %}
+                            <td class="six">{{ personage.alHeal }}</td>
+                        {% elseif personage.alHeal == 7 %}
+                            <td class="sept">{{ personage.alHeal }}</td>
+                        {% elseif personage.alHeal == 8 %}
+                            <td class="huit">{{ personage.alHeal }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.alHeal }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="energy">ENERGIE</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.alEnergy %}
+                    <tr>
+                        <td class="energy">{{ personage.name }}</td>
+                        {% if personage.alEnergy == 3 %}
+                            <td class="trois">{{ personage.alEnergy }}</td>
+                        {% elseif personage.alEnergy == 4 %}
+                            <td class="quatre">{{ personage.alEnergy }}</td>
+                        {% elseif personage.alEnergy == 5 %}
+                            <td class="cinq">{{ personage.alEnergy }}</td>
+                        {% elseif personage.alEnergy == 6 %}
+                            <td class="six">{{ personage.alEnergy }}</td>
+                        {% elseif personage.alEnergy == 7 %}
+                            <td class="sept">{{ personage.alEnergy }}</td>
+                        {% elseif personage.alEnergy == 8 %}
+                            <td class="huit">{{ personage.alEnergy }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.alEnergy }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="revive">REANIMATION</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.alRevive %}
+                    <tr>
+                        <td class="revive">{{ personage.name }}</td>
+                        {% if personage.alRevive == 3 %}
+                            <td class="trois">{{ personage.alRevive }}</td>
+                        {% elseif personage.alRevive == 4 %}
+                            <td class="quatre">{{ personage.alRevive }}</td>
+                        {% elseif personage.alRevive == 5 %}
+                            <td class="cinq">{{ personage.alRevive }}</td>
+                        {% elseif personage.alRevive == 6 %}
+                            <td class="six">{{ personage.alRevive }}</td>
+                        {% elseif personage.alRevive == 7 %}
+                            <td class="sept">{{ personage.alRevive }}</td>
+                        {% elseif personage.alRevive == 8 %}
+                            <td class="huit">{{ personage.alRevive }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.alRevive }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="stone">PEAUX DE PIERRE</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.alStone %}
+                    <tr>
+                        <td class="stone">{{ personage.name }}</td>
+                        {% if personage.alStone == 3 %}
+                            <td class="trois">{{ personage.alStone }}</td>
+                        {% elseif personage.alStone == 4 %}
+                            <td class="quatre">{{ personage.alStone }}</td>
+                        {% elseif personage.alStone == 5 %}
+                            <td class="cinq">{{ personage.alStone }}</td>
+                        {% elseif personage.alStone == 6 %}
+                            <td class="six">{{ personage.alStone }}</td>
+                        {% elseif personage.alStone == 7 %}
+                            <td class="sept">{{ personage.alStone }}</td>
+                        {% elseif personage.alStone == 8 %}
+                            <td class="huit">{{ personage.alStone }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.alStone }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="chill">FRIGORIFIQUE</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.alChill %}
+                    <tr>
+                        <td class="chill">{{ personage.name }}</td>
+                        {% if personage.alChill == 3 %}
+                            <td class="trois">{{ personage.alChill }}</td>
+                        {% elseif personage.alChill == 4 %}
+                            <td class="quatre">{{ personage.alChill }}</td>
+                        {% elseif personage.alChill == 5 %}
+                            <td class="cinq">{{ personage.alChill }}</td>
+                        {% elseif personage.alChill == 6 %}
+                            <td class="six">{{ personage.alChill }}</td>
+                        {% elseif personage.alChill == 7 %}
+                            <td class="sept">{{ personage.alChill }}</td>
+                        {% elseif personage.alChill == 8 %}
+                            <td class="huit">{{ personage.alChill }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.alChill }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="recovery">RECUPERATION</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.alRecovery %}
+                    <tr>
+                        <td class="recovery">{{ personage.name }}</td>
+                        {% if personage.alRecovery == 3 %}
+                            <td class="trois">{{ personage.alRecovery }}</td>
+                        {% elseif personage.alRecovery == 4 %}
+                            <td class="quatre">{{ personage.alRecovery }}</td>
+                        {% elseif personage.alRecovery == 5 %}
+                            <td class="cinq">{{ personage.alRecovery }}</td>
+                        {% elseif personage.alRecovery == 6 %}
+                            <td class="six">{{ personage.alRecovery }}</td>
+                        {% elseif personage.alRecovery == 7 %}
+                            <td class="sept">{{ personage.alRecovery }}</td>
+                        {% elseif personage.alRecovery == 8 %}
+                            <td class="huit">{{ personage.alRecovery }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.alRecovery }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="clean">PURIFICATION</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.alClean %}
+                    <tr>
+                        <td class="clean">{{ personage.name }}</td>
+                        {% if personage.alClean == 3 %}
+                            <td class="trois">{{ personage.alClean }}</td>
+                        {% elseif personage.alClean == 4 %}
+                            <td class="quatre">{{ personage.alClean }}</td>
+                        {% elseif personage.alClean == 5 %}
+                            <td class="cinq">{{ personage.alClean }}</td>
+                        {% elseif personage.alClean == 6 %}
+                            <td class="six">{{ personage.alClean }}</td>
+                        {% elseif personage.alClean == 7 %}
+                            <td class="sept">{{ personage.alClean }}</td>
+                        {% elseif personage.alClean == 8 %}
+                            <td class="huit">{{ personage.alClean }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.alClean }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <br style="clear: both;">
+    {# End Alchimie #}
+
+    {# Récolte #}
+    <div>
+        <h3>RECOLTEURS & INGREDIENTS</h3>
+        <br/>
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="taming">DRESSEURS</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.anMonture %}
+                    <tr>
+                        <td class="taming">{{ personage.name }}</td>
+                        {% if personage.anMonture == 3 %}
+                            <td class="trois">{{ personage.anMonture }}</td>
+                        {% elseif personage.anMonture == 4 %}
+                            <td class="quatre">{{ personage.anMonture }}</td>
+                        {% elseif personage.anMonture == 5 %}
+                            <td class="cinq">{{ personage.anMonture }}</td>
+                        {% elseif personage.anMonture == 6 %}
+                            <td class="six">{{ personage.anMonture }}</td>
+                        {% elseif personage.anMonture == 7 %}
+                            <td class="sept">{{ personage.anMonture }}</td>
+                        {% elseif personage.anMonture == 8 %}
+                            <td class="huit">{{ personage.anMonture }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.anMonture }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="berger">BERGERS</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.anFerme %}
+                    <tr>
+                        <td class="berger">{{ personage.name }}</td>
+                        {% if personage.anFerme == 3 %}
+                            <td class="trois">{{ personage.anFerme }}</td>
+                        {% elseif personage.anFerme == 4 %}
+                            <td class="quatre">{{ personage.anFerme }}</td>
+                        {% elseif personage.anFerme == 5 %}
+                            <td class="cinq">{{ personage.anFerme }}</td>
+                        {% elseif personage.anFerme == 6 %}
+                            <td class="six">{{ personage.anFerme }}</td>
+                        {% elseif personage.anFerme == 7 %}
+                            <td class="sept">{{ personage.anFerme }}</td>
+                        {% elseif personage.anFerme == 8 %}
+                            <td class="huit">{{ personage.anFerme }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.anFerme }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="herbo">HERBORISTES</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.herbo %}
+                    <tr>
+                        <td class="herbo">{{ personage.name }}</td>
+                        {% if personage.herbo == 3 %}
+                            <td class="trois">{{ personage.herbo }}</td>
+                        {% elseif personage.herbo == 4 %}
+                            <td class="quatre">{{ personage.herbo }}</td>
+                        {% elseif personage.herbo == 5 %}
+                            <td class="cinq">{{ personage.herbo }}</td>
+                        {% elseif personage.herbo == 6 %}
+                            <td class="six">{{ personage.herbo }}</td>
+                        {% elseif personage.herbo == 7 %}
+                            <td class="sept">{{ personage.herbo }}</td>
+                        {% elseif personage.herbo == 8 %}
+                            <td class="huit">{{ personage.herbo }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.herbo }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="veggies">LEGUMES</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.paysan %}
+                    <tr>
+                        <td class="veggies">{{ personage.name }}</td>
+                        {% if personage.paysan == 3 %}
+                            <td class="trois">{{ personage.paysan }}</td>
+                        {% elseif personage.paysan == 4 %}
+                            <td class="quatre">{{ personage.paysan }}</td>
+                        {% elseif personage.paysan == 5 %}
+                            <td class="cinq">{{ personage.paysan }}</td>
+                        {% elseif personage.paysan == 6 %}
+                            <td class="six">{{ personage.paysan }}</td>
+                        {% elseif personage.paysan == 7 %}
+                            <td class="sept">{{ personage.paysan }}</td>
+                        {% elseif personage.paysan == 8 %}
+                            <td class="huit">{{ personage.paysan }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.paysan }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="alcohol">CAVISTE</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.alAlcohol %}
+                    <tr>
+                        <td class="alcohol">{{ personage.name }}</td>
+                        {% if personage.alAlcohol == 3 %}
+                            <td class="trois">{{ personage.alAlcohol }}</td>
+                        {% elseif personage.alAlcohol == 4 %}
+                            <td class="quatre">{{ personage.alAlcohol }}</td>
+                        {% elseif personage.alAlcohol == 5 %}
+                            <td class="cinq">{{ personage.alAlcohol }}</td>
+                        {% elseif personage.alAlcohol == 6 %}
+                            <td class="six">{{ personage.alAlcohol }}</td>
+                        {% elseif personage.alAlcohol == 7 %}
+                            <td class="sept">{{ personage.alAlcohol }}</td>
+                        {% elseif personage.alAlcohol == 8 %}
+                            <td class="huit">{{ personage.alAlcohol }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.alAlcohol }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="miller">MEUNIER</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.cuProduct %}
+                    <tr>
+                        <td class="miller">{{ personage.name }}</td>
+                        {% if personage.cuProduct == 3 %}
+                            <td class="trois">{{ personage.cuProduct }}</td>
+                        {% elseif personage.cuProduct == 4 %}
+                            <td class="quatre">{{ personage.cuProduct }}</td>
+                        {% elseif personage.cuProduct == 5 %}
+                            <td class="cinq">{{ personage.cuProduct }}</td>
+                        {% elseif personage.cuProduct == 6 %}
+                            <td class="six">{{ personage.cuProduct }}</td>
+                        {% elseif personage.cuProduct == 7 %}
+                            <td class="sept">{{ personage.cuProduct }}</td>
+                        {% elseif personage.cuProduct == 8 %}
+                            <td class="huit">{{ personage.cuProduct }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.cuProduct }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-bordered agriculture">
+            <thead>
+            <tr>
+                <th colspan="2" class="butcher">BOUCHER</th>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <th>Tier</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td colspan="2" class="null"></td>
+            </tr>
+            {% for personage in personages %}
+                {% if personage.cuMeat %}
+                    <tr>
+                        <td class="butcher">{{ personage.name }}</td>
+                        {% if personage.cuMeat == 3 %}
+                            <td class="trois">{{ personage.cuMeat }}</td>
+                        {% elseif personage.cuMeat == 4 %}
+                            <td class="quatre">{{ personage.cuMeat }}</td>
+                        {% elseif personage.cuMeat == 5 %}
+                            <td class="cinq">{{ personage.cuMeat }}</td>
+                        {% elseif personage.cuMeat == 6 %}
+                            <td class="six">{{ personage.cuMeat }}</td>
+                        {% elseif personage.cuMeat == 7 %}
+                            <td class="sept">{{ personage.cuMeat }}</td>
+                        {% elseif personage.cuMeat == 8 %}
+                            <td class="huit">{{ personage.cuMeat }}</td>
+                        {% else %}
+                            <td class="deux">{{ personage.cuMeat }}</td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <br style="clear: both;">
+    {# End Récolte #}
+{% endblock %}

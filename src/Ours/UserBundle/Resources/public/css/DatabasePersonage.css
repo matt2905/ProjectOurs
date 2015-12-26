@@ -1,0 +1,190 @@
+h3
+{
+    width: 100%;
+    background-color: #434343;
+    color: #FFFFFF;
+    text-align: center;
+    border: 2px solid white;
+}
+table, th, tr, td
+{
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: #666666;
+}
+table.agriculture
+{
+    width: 13%;
+    float: left;
+    margin: 0 5px 0 5px;
+}
+
+th.soup, td.soup, th.fire, td.fire
+{
+    background-color: #F6B26B;
+}
+th.salad, td.salad, th.heal, td.heal
+{
+    background-color: #93C47D;
+}
+th.omelette, td.omelette, th.stone, td.stone, th.berger, td.berger
+{
+    background-color: #FFD966;
+}
+th.pie, td.pie
+{
+    background-color: #E06666;
+}
+th.stew, td.stew, th.butcher, td.butcher, th.armor3, td.armor3
+{
+    background-color: #C27BA0;
+}
+th.sandwich, td.sandwich
+{
+    background-color: #EA9999;
+}
+th.energy, td.energy, th.alcohol, td.alcohol, th.damn, td.damn
+{
+    background-color: #6D9EEB;
+}
+th.revive, td.revive, th.veggies, td.veggies, th.givre, td.givre, th.armor1, td.armor1
+{
+    background-color: #76A5AF;
+}
+th.chill, td.chill
+{
+    background-color: #6FA8DC;
+}
+th.recovery, td.recovery, th.miller, td.miller, th.tome, td.tome, th.armor2, td.armor2
+{
+    background-color: #8E7CC3;
+}
+th.clean, td.clean
+{
+    background-color: #9DE1E5;
+}
+th.beni, td.beni
+{
+    background-color: #FCD664;
+}
+
+
+
+td.deux
+{
+    background-color: #D9D9D9;
+}
+td.trois, th.herbo, td.herbo, th.eso, td.eso
+{
+    background-color: #93C47D;
+}
+td.quatre
+{
+    background-color: #6EA8DC;
+}
+td.quatrePdeux
+{
+    background-color: #8CDBA8;
+}
+td.quatrePtrois
+{
+    background-color: #7CE1E6;
+}
+td.cinq
+{
+    background-color: #E06666;
+}
+td.cinqPdeux
+{
+    background-color: #7FC798;
+}
+td.cinqPtrois
+{
+    background-color: #71CED3;
+}
+td.cinqPquatre
+{
+    background-color: #E494FF;
+}
+td.cinqPcinq
+{
+    background-color: #FF967E;
+}
+td.six, th.taming, td.taming
+{
+    background-color: #F6B26B;
+}
+td.sixPdeux
+{
+    background-color: #70B087;
+}
+td.sixPtrois
+{
+    background-color: #64B6BB;
+}
+td.sixPquatre
+{
+    background-color: #C982E1;
+}
+td.sixPcinq
+{
+    background-color: #DB806C;
+}
+td.sixPsix
+{
+    background-color: #EABE92;
+}
+td.sept
+{
+    background-color: #F1C232;
+}
+td.septPdeux
+{
+    background-color: #5D9270;
+}
+td.septPtrois
+{
+    background-color: #52969A;
+}
+td.septPquatre
+{
+    background-color: #A76CBB;
+}
+td.septPcinq
+{
+    background-color: #BD6F5D;
+}
+td.septPsix
+{
+    background-color: #BF9B77;
+}
+td.huit
+{
+    background-color: #434343;
+}
+td.huitPdeux
+{
+    background-color: #434343;
+    color: #8CDBA8;
+}
+td.huitPtrois
+{
+    background-color: #434343;
+    color: #7CE1E6;
+}
+td.huitPquatre
+{
+    background-color: #434343;
+    color: #E494FF;;
+}
+td.huitPcinq
+{
+    background-color: #434343;
+    color: #FF967E;
+}
+td.huitPsix
+{
+    background-color: #434343;
+    color: #F9CB9C;
+}

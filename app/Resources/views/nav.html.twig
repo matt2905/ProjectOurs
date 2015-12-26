@@ -1,0 +1,71 @@
+<nav class="navbar navbar-fixed-up navbar-default navbar-default" role="navigation">
+    <div class="container">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ path('user_accueil') }}">
+                    <i class="fa fa-home"></i>  Accueil
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED")%}
+                        <!-- <li>Connecté en tant que {{ app.user.username }}</li> -->
+                        <li>
+                            <a href=" {{ path('fos_user_profile_show') }}">
+                                <i class="fa fa-cog"></i>  Mon profil</a>
+                        </li>
+                        {% if is_granted('ROLE_OURS') or is_granted("ROLE_ADMIN") %}
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Database <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{ path('show_agriculture_personage') }}">Agriculture</a></li>
+                                    <li><a href="{{ path('show_artisanat_personage') }}">Artisanat</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=#>
+                                    <i class="fa fa-calendar"></i>  Planning
+                                </a>
+                            </li>
+                        {% endif %}
+                        <li>
+                            <a href="{{ path('fos_user_security_logout') }}">
+                                <i class="fa fa-times"></i>  Déconnexion
+                            </a>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a href="{{ path('fos_user_security_login') }}">
+                                <i class="fa fa-sign-in"></i>  Connexion
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('fos_user_registration_register') }}">
+                                <i class="fa fa-pencil"></i>  Inscription
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if is_granted("ROLE_ADMIN") %}
+                        <li><a href=#><i class="fa fa-cog"></i>     Admin</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+</nav>

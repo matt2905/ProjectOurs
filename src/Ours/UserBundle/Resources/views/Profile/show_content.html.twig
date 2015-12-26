@@ -1,0 +1,30 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<a href="{{ path('fos_user_profile_edit') }}">Modifier son profil</a>
+<br />
+<a href="{{ path('fos_user_change_password') }}">{{ 'change_password.submit'|trans }}</a>
+<br />
+<br />
+
+<div class="fos_user_user_show">
+    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+
+    {%  if user.personages %}
+        <table class="table table-condensed">
+            {% for personage in user.personages %}
+                <tr>
+                    <td><a href="{{ path('show_personage', {'personage': personage.id }) }}">{{ personage.name }}</a></td>
+                    <td><a class="btn btn-default" href="{{ path('edit_personage', {'personage': personage.id }) }}">Modifier</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+
+    <br/>
+
+    {% if is_granted("ROLE_OURS")%}
+        <a class="btn btn-default" href="{{ path('add_personage') }}">Ajouter un personnage</a>
+    {% endif %}
+
+</div>

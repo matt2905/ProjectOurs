@@ -1,0 +1,1322 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Créer un personage</h1>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#main">Description</a></li>
+        <li><a data-toggle="tab" href="#ressource">Récolte & Raffinage</a></li>
+        <li><a data-toggle="tab" href="#artisanat">Artisanat</a></li>
+        <li><a data-toggle="tab" href="#combat">Combat</a></li>
+        <li><a data-toggle="tab" href="#agricole">Agricole</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+        {# Main #}
+        <div id="main" class="tab-pane fade in active">
+
+            {{ form_start(form) }}
+
+            {{ form_row(form.name) }}
+            {{ form_row(form.spCombat) }}
+            {{ form_row(form.spCraft) }}
+
+            <br style="clear: both;"/>
+        </div>
+        {# End Main#}
+
+        {# Ressource #}
+        <div id="ressource" class="tab-pane fade">
+            {# Récolte #}
+            <h3>Récolte</h3>
+            <div>
+                <div>
+                    <div style="float:left">
+                                {{ form_label(form.fibre) }}
+                                {{ form_errors(form.fibre) }}
+                                {{ form_widget(form.fibre) }}
+                                    </div>
+                    <div style="float:left">
+                                {{ form_label(form.bois) }}
+                                {{ form_errors(form.bois) }}
+                                {{ form_widget(form.bois) }}
+                    </div>
+                    <div style="float:left">
+                                {{ form_label(form.peau) }}
+                                {{ form_errors(form.peau) }}
+                                {{ form_widget(form.peau) }}
+                    </div>
+                    <div style="float:left">
+                                {{ form_label(form.minerai) }}
+                                {{ form_errors(form.minerai) }}
+                                {{ form_widget(form.minerai) }}
+                    </div>
+                    <div style="float:left">
+                                {{ form_label(form.pierre) }}
+                                {{ form_errors(form.pierre) }}
+                                {{ form_widget(form.pierre) }}
+                    </div>
+                </div>
+            </div>
+            <br style="clear: both;"/>
+            {# End Récolte #}
+
+            {# Raffiange #}
+            <h3>Raffinage</h3>
+            <div>
+                <div>
+                    <div style="float:left">
+                        {{ form_label(form.tissu) }}
+                        {{ form_errors(form.tissu) }}
+                        {{ form_widget(form.tissu) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.planche) }}
+                        {{ form_errors(form.planche) }}
+                        {{ form_widget(form.planche) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.cuir) }}
+                        {{ form_errors(form.cuir) }}
+                        {{ form_widget(form.cuir) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.barre) }}
+                        {{ form_errors(form.bloc) }}
+                        {{ form_widget(form.barre) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.bloc) }}
+                        {{ form_errors(form.bloc) }}
+                        {{ form_widget(form.bloc) }}
+                    </div>
+                </div>
+            </div>
+            <br style="clear: both;"/>
+            {# End Raffinage #}
+        </div>
+        {# End Ressource #}
+
+        {# Artisanat #}
+        <div id="artisanat" class="tab-pane fade">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#Adivers">Outils & Accessoire</a></li>
+                <li><a data-toggle="tab" href="#Amage">Tour du mage</a></li>
+                <li><a data-toggle="tab" href="#Achasseur">Pavillon du chasseur</a></li>
+                <li><a data-toggle="tab" href="#Asoldat">Forge du guerrier</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+                {# Outils & Accessoire #}
+                <div id="Adivers" class="tab-pane fade in active">
+                    {# Outil #}
+                    <h4>Outil</h4>
+                    <div>
+                        <div>
+                            <div style="float:left">
+                                {{ form_label(form.ouMasseDemo) }}
+                                {{ form_errors(form.ouMasseDemo) }}
+                                {{ form_widget(form.ouMasseDemo) }}
+                            </div>
+                            <div style="float:left">
+                                {{ form_label(form.ouFaucille) }}
+                                {{ form_errors(form.ouFaucille) }}
+                                {{ form_widget(form.ouFaucille) }}
+                            </div>
+                            <div style="float:left">
+                                {{ form_label(form.ouCouteau) }}
+                                {{ form_errors(form.ouCouteau) }}
+                                {{ form_widget(form.ouCouteau) }}
+                            </div>
+                            <div style="float:left">
+                                {{ form_label(form.ouPioche) }}
+                                {{ form_errors(form.ouPioche) }}
+                                {{ form_widget(form.ouPioche) }}
+                            </div>
+                            <div style="float:left">
+                                {{ form_label(form.ouMassePi) }}
+                                {{ form_errors(form.ouMassePi) }}
+                                {{ form_widget(form.ouMassePi) }}
+                            </div>
+                            <div style="float:left">
+                                {{ form_label(form.ouHache) }}
+                                {{ form_errors(form.ouHache) }}
+                                {{ form_widget(form.ouHache) }}
+                            </div>
+                        </div>
+                    </div>
+                    <br style="clear: both;"/>
+                    {# End Outil #}
+
+                    {# Accessoire #}
+                    <h4>Accessoire</h4>
+                    <div>
+                        <div>
+                            <div style="float:left">
+                                {{ form_label(form.accSac) }}
+                                {{ form_errors(form.accSac) }}
+                                {{ form_widget(form.accSac) }}
+                            </div>
+                            <div style="float:left">
+                                {{ form_label(form.accCape) }}
+                                {{ form_errors(form.accCape) }}
+                                {{ form_widget(form.accCape) }}
+                            </div>
+                        </div>
+                    </div>
+                    <br style="clear: both;"/>
+                    {# End Accessoire #}
+                </div>
+                {# End Outils & Accessoire #}
+
+                {# Mage #}
+                <div id="Amage" class="tab-pane fade">
+                    <div>
+                        <div>
+                            <div style="display: inline-block">
+                                <h4>Armes</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.BatonFeu) }}
+                                        {{ form_errors(form.BatonFeu) }}
+                                        {{ form_widget(form.BatonFeu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.GrandBatonFeu) }}
+                                        {{ form_errors(form.GrandBatonFeu) }}
+                                        {{ form_widget(form.GrandBatonFeu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BatonInfernal) }}
+                                        {{ form_errors(form.BatonInfernal) }}
+                                        {{ form_widget(form.BatonInfernal) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.BatonBeni) }}
+                                        {{ form_errors(form.BatonBeni) }}
+                                        {{ form_widget(form.BatonBeni) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.GrandBatonBeni) }}
+                                        {{ form_errors(form.GrandBatonBeni) }}
+                                        {{ form_widget(form.GrandBatonBeni) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BatonDivin) }}
+                                        {{ form_errors(form.BatonDivin) }}
+                                        {{ form_widget(form.BatonDivin) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.BatonEsoterique) }}
+                                        {{ form_errors(form.BatonEsoterique) }}
+                                        {{ form_widget(form.BatonEsoterique) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.GrandBatonEsoterique) }}
+                                        {{ form_errors(form.GrandBatonEsoterique) }}
+                                        {{ form_widget(form.GrandBatonEsoterique) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BatonEnigmatique) }}
+                                        {{ form_errors(form.BatonEnigmatique) }}
+                                        {{ form_widget(form.BatonEnigmatique) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.BatonGivre) }}
+                                        {{ form_errors(form.BatonGivre) }}
+                                        {{ form_widget(form.BatonGivre) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.GrandBatonGivre) }}
+                                        {{ form_errors(form.GrandBatonGivre) }}
+                                        {{ form_widget(form.GrandBatonGivre) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BatonGlacial) }}
+                                        {{ form_errors(form.BatonGlacial) }}
+                                        {{ form_widget(form.BatonGlacial) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.BatonDamne) }}
+                                        {{ form_errors(form.BatonDamne) }}
+                                        {{ form_widget(form.BatonDamne) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.GrandBatonDamne) }}
+                                        {{ form_errors(form.GrandBatonDamne) }}
+                                        {{ form_widget(form.GrandBatonDamne) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BatonDemoniaque) }}
+                                        {{ form_errors(form.BatonDemoniaque) }}
+                                        {{ form_widget(form.BatonDemoniaque) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.Tome) }}
+                                        {{ form_errors(form.Tome) }}
+                                        {{ form_widget(form.Tome) }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {# Formulaire pour les Casque, Armures et Bottes de l'artisanat Mage #}
+
+                            <div style="display: inline-block">
+                                <h4>Armures</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.CasqueLegerEnTissu) }}
+                                        {{ form_errors(form.CasqueLegerEnTissu) }}
+                                        {{ form_widget(form.CasqueLegerEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.CasqueMoyenEnTissu) }}
+                                        {{ form_errors(form.CasqueMoyenEnTissu) }}
+                                        {{ form_widget(form.CasqueMoyenEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.CasqueLourdEnTissu) }}
+                                        {{ form_errors(form.CasqueLourdEnTissu) }}
+                                        {{ form_widget(form.CasqueLourdEnTissu) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.TorseLegerEnTissu) }}
+                                        {{ form_errors(form.TorseLegerEnTissu) }}
+                                        {{ form_widget(form.TorseLegerEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.TorseMoyenEnTissu) }}
+                                        {{ form_errors(form.TorseMoyenEnTissu) }}
+                                        {{ form_widget(form.TorseMoyenEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.TorseLourdEnTissu) }}
+                                        {{ form_errors(form.TorseLourdEnTissu) }}
+                                        {{ form_widget(form.TorseLourdEnTissu) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.BotteLegerEnTissu) }}
+                                        {{ form_errors(form.BotteLegerEnTissu) }}
+                                        {{ form_widget(form.BotteLegerEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BotteMoyenEnTissu) }}
+                                        {{ form_errors(form.BotteMoyenEnTissu) }}
+                                        {{ form_widget(form.BotteMoyenEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BotteLourdEnTissu) }}
+                                        {{ form_errors(form.BotteLourdEnTissu) }}
+                                        {{ form_widget(form.BotteLourdEnTissu) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br style="clear: both;"/>
+                </div>
+                {# End Mage #}
+
+                {# Chasseur #}
+                <div id="Achasseur" class="tab-pane fade">
+                    <div>
+                        <div>
+                            <div style="display: inline-block">
+                                <h4>Armes</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.Arc) }}
+                                        {{ form_errors(form.Arc) }}
+                                        {{ form_widget(form.Arc) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.ArcDeGeurre) }}
+                                        {{ form_errors(form.ArcDeGeurre) }}
+                                        {{ form_widget(form.ArcDeGeurre) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.ArcLong) }}
+                                        {{ form_errors(form.ArcLong) }}
+                                        {{ form_widget(form.ArcLong) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.Lance) }}
+                                        {{ form_errors(form.Lance) }}
+                                        {{ form_widget(form.Lance) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.Pique) }}
+                                        {{ form_errors(form.Pique) }}
+                                        {{ form_widget(form.Pique) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.Hallebarde) }}
+                                        {{ form_errors(form.Hallebarde) }}
+                                        {{ form_widget(form.Hallebarde) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.BatonNaturel) }}
+                                        {{ form_errors(form.BatonNaturel) }}
+                                        {{ form_widget(form.BatonNaturel) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.GrandBatonNaturel) }}
+                                        {{ form_errors(form.GrandBatonNaturel) }}
+                                        {{ form_widget(form.GrandBatonNaturel) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BatonSauvage) }}
+                                        {{ form_errors(form.BatonSauvage) }}
+                                        {{ form_widget(form.BatonSauvage) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.Dague) }}
+                                        {{ form_errors(form.Dague) }}
+                                        {{ form_widget(form.Dague) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.PaireDeDagues) }}
+                                        {{ form_errors(form.PaireDeDagues) }}
+                                        {{ form_widget(form.PaireDeDagues) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.Griffes) }}
+                                        {{ form_errors(form.Griffes) }}
+                                        {{ form_widget(form.Griffes) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.LongBaton) }}
+                                        {{ form_errors(form.LongBaton) }}
+                                        {{ form_widget(form.LongBaton) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BatonSansFaille) }}
+                                        {{ form_errors(form.BatonSansFaille) }}
+                                        {{ form_widget(form.BatonSansFaille) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BatonADoubleTranchant) }}
+                                        {{ form_errors(form.BatonADoubleTranchant) }}
+                                        {{ form_widget(form.BatonADoubleTranchant) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.Torche) }}
+                                        {{ form_errors(form.Torche) }}
+                                        {{ form_widget(form.Torche) }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {# Formulaire pour les Casque, Armures et Bottes de l'artisanat Chasseur #}
+
+                            <div style="display: inline-block">
+                                <h4>Armures</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.CasqueMoyenEnCuir) }}
+                                        {{ form_errors(form.CasqueMoyenEnCuir) }}
+                                        {{ form_widget(form.CasqueMoyenEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.CasqueLourdEnCuir) }}
+                                        {{ form_errors(form.CasqueLourdEnCuir) }}
+                                        {{ form_widget(form.CasqueLourdEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.CasqueLegerEnCuir) }}
+                                        {{ form_errors(form.CasqueLegerEnCuir) }}
+                                        {{ form_widget(form.CasqueLegerEnCuir) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.TorseMoyenEnCuir) }}
+                                        {{ form_errors(form.TorseMoyenEnCuir) }}
+                                        {{ form_widget(form.TorseMoyenEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.TorseLourdEnCuir) }}
+                                        {{ form_errors(form.TorseLourdEnCuir) }}
+                                        {{ form_widget(form.TorseLourdEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.TorseLegerEnCuir) }}
+                                        {{ form_errors(form.TorseLegerEnCuir) }}
+                                        {{ form_widget(form.TorseLegerEnCuir) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.BotteMoyenEnCuir) }}
+                                        {{ form_errors(form.BotteMoyenEnCuir) }}
+                                        {{ form_widget(form.BotteMoyenEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BotteLourdEnCuir) }}
+                                        {{ form_errors(form.BotteLourdEnCuir) }}
+                                        {{ form_widget(form.BotteLourdEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BotteLegerEnCuir) }}
+                                        {{ form_errors(form.BotteLegerEnCuir) }}
+                                        {{ form_widget(form.BotteLegerEnCuir) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br style="clear: both;"/>
+                </div>
+                {# End Chasseur #}
+
+                {# Soldat #}
+                <div id="Asoldat" class="tab-pane fade">
+                    <div>
+                        <div>
+                            <div style="display: inline-block">
+                                <h4>Armes</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.EpeeLarge) }}
+                                        {{ form_errors(form.EpeeLarge) }}
+                                        {{ form_widget(form.EpeeLarge) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.Claymore) }}
+                                        {{ form_errors(form.Claymore) }}
+                                        {{ form_widget(form.Claymore) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.Glaive) }}
+                                        {{ form_errors(form.Glaive) }}
+                                        {{ form_widget(form.Glaive) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.HacheDeGuerre) }}
+                                        {{ form_errors(form.HacheDeGuerre) }}
+                                        {{ form_widget(form.HacheDeGuerre) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.GrandeHche) }}
+                                        {{ form_errors(form.GrandeHche) }}
+                                        {{ form_widget(form.GrandeHche) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.Faux) }}
+                                        {{ form_errors(form.Faux) }}
+                                        {{ form_widget(form.Faux) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.Massue) }}
+                                        {{ form_errors(form.Massue) }}
+                                        {{ form_widget(form.Massue) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.MassueLourde) }}
+                                        {{ form_errors(form.MassueLourde) }}
+                                        {{ form_widget(form.MassueLourde) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.Fleau) }}
+                                        {{ form_errors(form.Fleau) }}
+                                        {{ form_widget(form.Fleau) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.Masse) }}
+                                        {{ form_errors(form.Masse) }}
+                                        {{ form_widget(form.Masse) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BecDeCorbin) }}
+                                        {{ form_errors(form.BecDeCorbin) }}
+                                        {{ form_widget(form.BecDeCorbin) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.GrandeMasse) }}
+                                        {{ form_errors(form.GrandeMasse) }}
+                                        {{ form_widget(form.GrandeMasse) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.Arbalete) }}
+                                        {{ form_errors(form.Arbalete) }}
+                                        {{ form_widget(form.Arbalete) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.ArbaleteLourde) }}
+                                        {{ form_errors(form.ArbaleteLourde) }}
+                                        {{ form_widget(form.ArbaleteLourde) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.AbarleteARepetition) }}
+                                        {{ form_errors(form.AbarleteARepetition) }}
+                                        {{ form_widget(form.AbarleteARepetition) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.Bouclier) }}
+                                        {{ form_errors(form.Bouclier) }}
+                                        {{ form_widget(form.Bouclier) }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {# Formulaire pour les Casque, Armures et Bottes de l'artisanat Chasseur #}
+
+                            <div style="display: inline-block">
+                                <h4>Armures</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.CasqueDePlaqueLourd) }}
+                                        {{ form_errors(form.CasqueDePlaqueLourd) }}
+                                        {{ form_widget(form.CasqueDePlaqueLourd) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.CasqueDePlaqueLeger) }}
+                                        {{ form_errors(form.CasqueDePlaqueLeger) }}
+                                        {{ form_widget(form.CasqueDePlaqueLeger) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.CasqueDePlaqueMoyen) }}
+                                        {{ form_errors(form.CasqueDePlaqueMoyen) }}
+                                        {{ form_widget(form.CasqueDePlaqueMoyen) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.TorseDePlaqueLourd) }}
+                                        {{ form_errors(form.TorseDePlaqueLourd) }}
+                                        {{ form_widget(form.TorseDePlaqueLourd) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.TorseDePlaqueLeger) }}
+                                        {{ form_errors(form.TorseDePlaqueLeger) }}
+                                        {{ form_widget(form.TorseDePlaqueLeger) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.TorseDePlaqueMoyen) }}
+                                        {{ form_errors(form.TorseDePlaqueMoyen) }}
+                                        {{ form_widget(form.TorseDePlaqueMoyen) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.BotteDePlaqueLourd) }}
+                                        {{ form_errors(form.BotteDePlaqueLourd) }}
+                                        {{ form_widget(form.BotteDePlaqueLourd) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BotteDePlaqueLeger) }}
+                                        {{ form_errors(form.BotteDePlaqueLeger) }}
+                                        {{ form_widget(form.BotteDePlaqueLeger) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.BotteDePlaqueMoyen) }}
+                                        {{ form_errors(form.BotteDePlaqueMoyen) }}
+                                        {{ form_widget(form.BotteDePlaqueMoyen) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br style="clear: both;"/>
+                </div>
+                {# End Soldat #}
+
+            </div>
+        </div>
+        {# End Artisanat #}
+
+        {# Combat #}
+        <div id="combat" class="tab-pane fade">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#Cmage">Mage</a></li>
+                <li><a data-toggle="tab" href="#Cchasseur">Chasseur</a></li>
+                <li><a data-toggle="tab" href="#Csoldat">Guerrier</a></li>
+            </ul>
+
+            <div class="tab-content">
+                {# Mage #}
+                <div id="Cmage" class="tab-pane fade in active">
+                    <div>
+                        <div>
+                            <div style="display: inline-block">
+                                <h4>Armes</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbBatonFeu) }}
+                                        {{ form_errors(form.cbBatonFeu) }}
+                                        {{ form_widget(form.cbBatonFeu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGrandBatonFeu) }}
+                                        {{ form_errors(form.cbGrandBatonFeu) }}
+                                        {{ form_widget(form.cbGrandBatonFeu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbBatonInfernal) }}
+                                        {{ form_errors(form.cbBatonInfernal) }}
+                                        {{ form_widget(form.cbBatonInfernal) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbBatonBeni) }}
+                                        {{ form_errors(form.cbBatonBeni) }}
+                                        {{ form_widget(form.cbBatonBeni) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGrandBatonBeni) }}
+                                        {{ form_errors(form.cbGrandBatonBeni) }}
+                                        {{ form_widget(form.cbGrandBatonBeni) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbBatonDivin) }}
+                                        {{ form_errors(form.cbBatonDivin) }}
+                                        {{ form_widget(form.cbBatonDivin) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbBatonEsoterique) }}
+                                        {{ form_errors(form.cbBatonEsoterique) }}
+                                        {{ form_widget(form.cbBatonEsoterique) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGrandBatonEsoterique) }}
+                                        {{ form_errors(form.cbGrandBatonEsoterique) }}
+                                        {{ form_widget(form.cbGrandBatonEsoterique) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbBatonEnigmatique) }}
+                                        {{ form_errors(form.cbBatonEnigmatique) }}
+                                        {{ form_widget(form.cbBatonEnigmatique) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbBatonGivre) }}
+                                        {{ form_errors(form.cbBatonGivre) }}
+                                        {{ form_widget(form.cbBatonGivre) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGrandBatonGivre) }}
+                                        {{ form_errors(form.cbGrandBatonGivre) }}
+                                        {{ form_widget(form.cbGrandBatonGivre) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbBatonGlacial) }}
+                                        {{ form_errors(form.cbBatonGlacial) }}
+                                        {{ form_widget(form.cbBatonGlacial) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbBatonDamne) }}
+                                        {{ form_errors(form.cbBatonDamne) }}
+                                        {{ form_widget(form.cbBatonDamne) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGrandBatonDamne) }}
+                                        {{ form_errors(form.cbGrandBatonDamne) }}
+                                        {{ form_widget(form.cbGrandBatonDamne) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbBatonDemoniaque) }}
+                                        {{ form_errors(form.cbBatonDemoniaque) }}
+                                        {{ form_widget(form.cbBatonDemoniaque) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbTome) }}
+                                        {{ form_errors(form.cbTome) }}
+                                        {{ form_widget(form.cbTome) }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {# Formulaire pour les Casque, Armures et Bottes de l'artisanat Mage #}
+
+                            <div style="display: inline-block">
+                                <h4>Armures</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbMaCasqueLegerEnTissu) }}
+                                        {{ form_errors(form.cbMaCasqueLegerEnTissu) }}
+                                        {{ form_widget(form.cbMaCasqueLegerEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbMaCasqueDePlaqueLeger) }}
+                                        {{ form_errors(form.cbMaCasqueDePlaqueLeger) }}
+                                        {{ form_widget(form.cbMaCasqueDePlaqueLeger) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbMaCasqueMoyenEnCuir) }}
+                                        {{ form_errors(form.cbMaCasqueMoyenEnCuir) }}
+                                        {{ form_widget(form.cbMaCasqueMoyenEnCuir) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbMaTorseLegerEnTissu) }}
+                                        {{ form_errors(form.cbMaTorseLegerEnTissu) }}
+                                        {{ form_widget(form.cbMaTorseLegerEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbMaTorseDePlaqueLeger) }}
+                                        {{ form_errors(form.cbMaTorseDePlaqueLeger) }}
+                                        {{ form_widget(form.cbMaTorseDePlaqueLeger) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbMaTorseMoyenEnCuir) }}
+                                        {{ form_errors(form.cbMaTorseMoyenEnCuir) }}
+                                        {{ form_widget(form.cbMaTorseMoyenEnCuir) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbMaBotteLegerEnTissu) }}
+                                        {{ form_errors(form.cbMaBotteLegerEnTissu) }}
+                                        {{ form_widget(form.cbMaBotteLegerEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbMaBotteDePlaqueLeger) }}
+                                        {{ form_errors(form.cbMaBotteDePlaqueLeger) }}
+                                        {{ form_widget(form.cbMaBotteDePlaqueLeger) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbMaBotteMoyenEnCuir) }}
+                                        {{ form_errors(form.cbMaBotteMoyenEnCuir) }}
+                                        {{ form_widget(form.cbMaBotteMoyenEnCuir) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br style="clear: both;"/>
+                </div>
+                {# End Mage #}
+
+                {# Chasseur #}
+                <div id="Cchasseur" class="tab-pane fade">
+                    <div>
+                        <div>
+                            <div style="display: inline-block">
+                                <h4>Armes</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbArc) }}
+                                        {{ form_errors(form.cbArc) }}
+                                        {{ form_widget(form.cbArc) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbArcDeGeurre) }}
+                                        {{ form_errors(form.cbArcDeGeurre) }}
+                                        {{ form_widget(form.cbArcDeGeurre) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbArcLong) }}
+                                        {{ form_errors(form.cbArcLong) }}
+                                        {{ form_widget(form.cbArcLong) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbLance) }}
+                                        {{ form_errors(form.cbLance) }}
+                                        {{ form_widget(form.cbLance) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbPique) }}
+                                        {{ form_errors(form.cbPique) }}
+                                        {{ form_widget(form.cbPique) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbHallebarde) }}
+                                        {{ form_errors(form.cbHallebarde) }}
+                                        {{ form_widget(form.cbHallebarde) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbBatonNaturel) }}
+                                        {{ form_errors(form.cbBatonNaturel) }}
+                                        {{ form_widget(form.cbBatonNaturel) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGrandBatonNaturel) }}
+                                        {{ form_errors(form.cbGrandBatonNaturel) }}
+                                        {{ form_widget(form.cbGrandBatonNaturel) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbBatonSauvage) }}
+                                        {{ form_errors(form.cbBatonSauvage) }}
+                                        {{ form_widget(form.cbBatonSauvage) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbDague) }}
+                                        {{ form_errors(form.cbDague) }}
+                                        {{ form_widget(form.cbDague) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbPaireDeDagues) }}
+                                        {{ form_errors(form.cbPaireDeDagues) }}
+                                        {{ form_widget(form.cbPaireDeDagues) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGriffes) }}
+                                        {{ form_errors(form.cbGriffes) }}
+                                        {{ form_widget(form.cbGriffes) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbLongBaton) }}
+                                        {{ form_errors(form.cbLongBaton) }}
+                                        {{ form_widget(form.cbLongBaton) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbBatonSansFaille) }}
+                                        {{ form_errors(form.cbBatonSansFaille) }}
+                                        {{ form_widget(form.cbBatonSansFaille) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbBatonADoubleTranchant) }}
+                                        {{ form_errors(form.cbBatonADoubleTranchant) }}
+                                        {{ form_widget(form.cbBatonADoubleTranchant) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbTorche) }}
+                                        {{ form_errors(form.cbTorche) }}
+                                        {{ form_widget(form.cbTorche) }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {# Formulaire pour les Casque, Armures et Bottes de l'artisanat Chasseur #}
+
+                            <div style="display: inline-block">
+                                <h4>Armures</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbChCasqueMoyenEnCuir) }}
+                                        {{ form_errors(form.cbChCasqueMoyenEnCuir) }}
+                                        {{ form_widget(form.cbChCasqueMoyenEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbChCasqueMoyenEnTissu) }}
+                                        {{ form_errors(form.cbChCasqueMoyenEnTissu) }}
+                                        {{ form_widget(form.cbChCasqueMoyenEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbChCasqueDePlaqueMoyen) }}
+                                        {{ form_errors(form.cbChCasqueDePlaqueMoyen) }}
+                                        {{ form_widget(form.cbChCasqueDePlaqueMoyen) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbChTorseMoyenEnCuir) }}
+                                        {{ form_errors(form.cbChTorseMoyenEnCuir) }}
+                                        {{ form_widget(form.cbChTorseMoyenEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbChTorseMoyenEnTissu) }}
+                                        {{ form_errors(form.cbChTorseMoyenEnTissu) }}
+                                        {{ form_widget(form.cbChTorseMoyenEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbChTorseDePlaqueMoyen) }}
+                                        {{ form_errors(form.cbChTorseDePlaqueMoyen) }}
+                                        {{ form_widget(form.cbChTorseDePlaqueMoyen) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbChBotteMoyenEnCuir) }}
+                                        {{ form_errors(form.cbChBotteMoyenEnCuir) }}
+                                        {{ form_widget(form.cbChBotteMoyenEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbChBotteMoyenEnTissu) }}
+                                        {{ form_errors(form.cbChBotteMoyenEnTissu) }}
+                                        {{ form_widget(form.cbChBotteMoyenEnTissu) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbChBotteDePlaqueMoyen) }}
+                                        {{ form_errors(form.cbChBotteDePlaqueMoyen) }}
+                                        {{ form_widget(form.cbChBotteDePlaqueMoyen) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br style="clear: both;"/>
+                </div>
+                {# End Chasseur #}
+
+                {# Soldat #}
+                <div id="Csoldat" class="tab-pane fade">
+                    <div>
+                        <div>
+                            <div style="display: inline-block">
+                                <h4>Armes</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbEpeeLarge) }}
+                                        {{ form_errors(form.cbEpeeLarge) }}
+                                        {{ form_widget(form.cbEpeeLarge) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbClaymore) }}
+                                        {{ form_errors(form.cbClaymore) }}
+                                        {{ form_widget(form.cbClaymore) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGlaive) }}
+                                        {{ form_errors(form.cbGlaive) }}
+                                        {{ form_widget(form.cbGlaive) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbHacheDeGuerre) }}
+                                        {{ form_errors(form.cbHacheDeGuerre) }}
+                                        {{ form_widget(form.cbHacheDeGuerre) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGrandeHche) }}
+                                        {{ form_errors(form.cbGrandeHche) }}
+                                        {{ form_widget(form.cbGrandeHche) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbFaux) }}
+                                        {{ form_errors(form.cbFaux) }}
+                                        {{ form_widget(form.cbFaux) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbMassue) }}
+                                        {{ form_errors(form.cbMassue) }}
+                                        {{ form_widget(form.cbMassue) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbMassueLourde) }}
+                                        {{ form_errors(form.cbMassueLourde) }}
+                                        {{ form_widget(form.cbMassueLourde) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbFleau) }}
+                                        {{ form_errors(form.cbFleau) }}
+                                        {{ form_widget(form.cbFleau) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbMasse) }}
+                                        {{ form_errors(form.cbMasse) }}
+                                        {{ form_widget(form.cbMasse) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbBecDeCorbin) }}
+                                        {{ form_errors(form.cbBecDeCorbin) }}
+                                        {{ form_widget(form.cbBecDeCorbin) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbGrandeMasse) }}
+                                        {{ form_errors(form.cbGrandeMasse) }}
+                                        {{ form_widget(form.cbGrandeMasse) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbArbalete) }}
+                                        {{ form_errors(form.cbArbalete) }}
+                                        {{ form_widget(form.cbArbalete) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbArbaleteLourde) }}
+                                        {{ form_errors(form.cbArbaleteLourde) }}
+                                        {{ form_widget(form.cbArbaleteLourde) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbAbarleteARepetition) }}
+                                        {{ form_errors(form.cbAbarleteARepetition) }}
+                                        {{ form_widget(form.cbAbarleteARepetition) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbBouclier) }}
+                                        {{ form_errors(form.cbBouclier) }}
+                                        {{ form_widget(form.cbBouclier) }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {# Formulaire pour les Casque, Armures et Bottes de l'artisanat Chasseur #}
+
+                            <div style="display: inline-block">
+                                <h4>Armures</h4>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbSoCasqueDePlaqueLourd) }}
+                                        {{ form_errors(form.cbSoCasqueDePlaqueLourd) }}
+                                        {{ form_widget(form.cbSoCasqueDePlaqueLourd) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbSoCasqueLourdEnCuir) }}
+                                        {{ form_errors(form.cbSoCasqueLourdEnCuir) }}
+                                        {{ form_widget(form.cbSoCasqueLourdEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbSoCasqueLourdEnTissu) }}
+                                        {{ form_errors(form.cbSoCasqueLourdEnTissu) }}
+                                        {{ form_widget(form.cbSoCasqueLourdEnTissu) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbSoTorseDePlaqueLourd) }}
+                                        {{ form_errors(form.cbSoTorseDePlaqueLourd) }}
+                                        {{ form_widget(form.cbSoTorseDePlaqueLourd) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbSoTorseLourdEnCuir) }}
+                                        {{ form_errors(form.cbSoTorseLourdEnCuir) }}
+                                        {{ form_widget(form.cbSoTorseLourdEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbSoTorseLourdEnTissu) }}
+                                        {{ form_errors(form.cbSoTorseLourdEnTissu) }}
+                                        {{ form_widget(form.cbSoTorseLourdEnTissu) }}
+                                    </div>
+                                </div>
+                                <div style="float:left">
+                                    <div style="clear: both">
+                                        {{ form_label(form.cbSoBotteDePlaqueLourd) }}
+                                        {{ form_errors(form.cbSoBotteDePlaqueLourd) }}
+                                        {{ form_widget(form.cbSoBotteDePlaqueLourd) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbSoBotteLourdEnCuir) }}
+                                        {{ form_errors(form.cbSoBotteLourdEnCuir) }}
+                                        {{ form_widget(form.cbSoBotteLourdEnCuir) }}
+                                    </div>
+                                    <div>
+                                        {{ form_label(form.cbSobotteLourdEnTissu) }}
+                                        {{ form_errors(form.cbSobotteLourdEnTissu) }}
+                                        {{ form_widget(form.cbSobotteLourdEnTissu) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br style="clear: both;"/>
+                </div>
+                {# End Soldat #}
+            </div>
+        </div>
+        {# End Combat #}
+
+        {# Agricole #}
+        <div id="agricole" class="tab-pane fade">
+            {# Agricole #}
+
+            {# Alchimiste #}
+            <h4>Alchimie</h4>
+            <div>
+                <div>
+                    <div style="float:left">
+                        {{ form_label(form.alHeal) }}
+                        {{ form_errors(form.alHeal) }}
+                        {{ form_widget(form.alHeal) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.alEnergy) }}
+                        {{ form_errors(form.alEnergy) }}
+                        {{ form_widget(form.alEnergy) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.alRevive) }}
+                        {{ form_errors(form.alRevive) }}
+                        {{ form_widget(form.alRevive) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.alStone) }}
+                        {{ form_errors(form.alStone) }}
+                        {{ form_widget(form.alStone) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.alChill) }}
+                        {{ form_errors(form.alChill) }}
+                        {{ form_widget(form.alChill) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.alRecovery) }}
+                        {{ form_errors(form.alRecovery) }}
+                        {{ form_widget(form.alRecovery) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.alClean) }}
+                        {{ form_errors(form.alClean) }}
+                        {{ form_widget(form.alClean) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.alAlcohol) }}
+                        {{ form_errors(form.alAlcohol) }}
+                        {{ form_widget(form.alAlcohol) }}
+                    </div>
+                </div>
+            </div>
+            <br style="clear: both;"/>
+            {# End Alchimiste #}
+
+            {# Récolte #}
+            <h4>Récolte</h4>
+            <div>
+                <div>
+                    <div style="float:left">
+                        {{ form_label(form.herbo) }}
+                        {{ form_errors(form.herbo) }}
+                        {{ form_widget(form.herbo) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.paysan) }}
+                        {{ form_errors(form.paysan) }}
+                        {{ form_widget(form.paysan) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.anMonture) }}
+                        {{ form_errors(form.anMonture) }}
+                        {{ form_widget(form.anMonture) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.anFerme) }}
+                        {{ form_errors(form.anFerme) }}
+                        {{ form_widget(form.anFerme) }}
+                    </div>
+                </div>
+            </div>
+            <br style="clear: both;"/>
+            {# End Récolte #}
+
+            {# Cuisine #}
+            <h4>Cuisine</h4>
+            <div>
+                <div>
+                    <div style="float:left">
+                        {{ form_label(form.cuSoup) }}
+                        {{ form_errors(form.cuSoup) }}
+                        {{ form_widget(form.cuSoup) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.cuSalad) }}
+                        {{ form_errors(form.cuSalad) }}
+                        {{ form_widget(form.cuSalad) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.cuPie) }}
+                        {{ form_errors(form.cuPie) }}
+                        {{ form_widget(form.cuPie) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.cuOmelette) }}
+                        {{ form_errors(form.cuOmelette) }}
+                        {{ form_widget(form.cuOmelette) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.cuSandwich) }}
+                        {{ form_errors(form.cuSandwich) }}
+                        {{ form_widget(form.cuSandwich) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.cuStew) }}
+                        {{ form_errors(form.cuStew) }}
+                        {{ form_widget(form.cuStew) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.cuProduct) }}
+                        {{ form_errors(form.cuProduct) }}
+                        {{ form_widget(form.cuProduct) }}
+                    </div>
+                    <div style="float:left">
+                        {{ form_label(form.cuMeat) }}
+                        {{ form_errors(form.cuMeat) }}
+                        {{ form_widget(form.cuMeat) }}
+                    </div>
+                </div>
+            </div>
+            <br style="clear: both;"/>
+            {# End Cuisine #}
+
+            {# End Agricole #}
+        </div>
+        {# End Agricole #}
+
+    </div>
+
+    {{ form_end(form) }}
+
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('fos_user_profile_show') }}">
+                Retour sur le profile
+            </a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block javascripts %}
+    {% javascripts '@OursUserBundle/Resources/public/js/*' %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //collapsible management
+            $('.collapsible').collapsible({
+                defaultOpen: 'section1,section3'
+            });
+        });
+    </script>
+{% endblock %}

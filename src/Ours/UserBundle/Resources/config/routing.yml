@@ -1,0 +1,27 @@
+user_accueil:
+    path:     /
+    defaults: { _controller: OursUserBundle:User:index }
+
+add_personage:
+    path:     /newPersonage
+    defaults: { _controller: OursUserBundle:Personage:New }
+
+show_personage:
+    path:     /{personage}/showPersonage
+    defaults: { _controller: OursUserBundle:Personage:Show }
+    requirements:
+        personage: \d+
+
+edit_personage:
+    path:     /{personage}/editPersonage
+    defaults: { _controller: OursUserBundle:Personage:Edit }
+    requirements:
+        personage: \d+
+
+show_agriculture_personage:
+    path:     /showAgriculture
+    defaults: { _controller: OursUserBundle:Personage:ShowAgriculture }
+
+show_artisanat_personage:
+    path:     /showArtisanat
+    defaults: { _controller: OursUserBundle:Personage:ShowArtisanat }

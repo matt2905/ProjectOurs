@@ -6,6 +6,7 @@ use Ours\UserBundle\Entity\Personage;
 use Ours\UserBundle\Form\PersonageType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class PersonageController extends Controller
 {
@@ -93,6 +94,9 @@ class PersonageController extends Controller
         ));
     }
 
+    /**
+     * @return Response
+     */
     public function showAgricultureAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -103,6 +107,9 @@ class PersonageController extends Controller
         ));
     }
 
+    /**
+     * @return Response
+     */
     public function showArtisanatAction()
     {
         $em = $this->getDoctrine()->getManager();

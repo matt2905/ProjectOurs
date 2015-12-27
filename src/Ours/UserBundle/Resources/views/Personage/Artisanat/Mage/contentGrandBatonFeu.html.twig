@@ -1,0 +1,45 @@
+<table id="maGrandBatonFeu" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="fire">GRAND BATON DE FEU</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.maGrandBatonFeu %}
+            <tr>
+                <td class="fire">{{ personage.name }}</td>
+                {% if personage.maGrandBatonFeu == 4.2 %}
+                    <td class="quatrePdeux tier">{{ personage.maGrandBatonFeu }}</td>
+                {% elseif personage.maGrandBatonFeu == 5.2 %}
+                    <td class="cinqPdeux tier">{{ personage.maGrandBatonFeu }}</td>
+                {% elseif personage.maGrandBatonFeu == 6.2 %}
+                    <td class="sixPdeux tier">{{ personage.maGrandBatonFeu }}</td>
+                {% elseif personage.maGrandBatonFeu == 7.2 %}
+                    <td class="septPdeux tier">{{ personage.maGrandBatonFeu }}</td>
+                {% elseif personage.maGrandBatonFeu == 8.2 %}
+                    <td class="huitPdeux tier">{{ personage.maGrandBatonFeu }}</td>
+                {% elseif personage.maGrandBatonFeu == 5.5 %}
+                    <td class="cinqPcinq tier">{{ personage.maGrandBatonFeu }}</td>
+                {% elseif personage.maGrandBatonFeu == 6.5 %}
+                    <td class="sixPcinq tier">{{ personage.maGrandBatonFeu }}</td>
+                {% elseif personage.maGrandBatonFeu == 7.5 %}
+                    <td class="septPcinq tier">{{ personage.maGrandBatonFeu }}</td>
+                {% elseif personage.maGrandBatonFeu == 8.5 %}
+                    <td class="huitPcinq tier">{{ personage.maGrandBatonFeu }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.maGrandBatonFeu }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

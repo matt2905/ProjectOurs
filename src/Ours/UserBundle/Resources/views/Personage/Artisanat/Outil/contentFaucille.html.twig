@@ -1,0 +1,39 @@
+<table id="ouFaucille" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="damn">FAUCILLES</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.ouFaucille %}
+            <tr>
+                <td class="damn tier">{{ personage.name }}</td>
+                {% if personage.ouFaucille == 3 %}
+                    <td class="trois tier">{{ personage.ouFaucille }}</td>
+                {% elseif personage.ouFaucille == 4 %}
+                    <td class="quatre tier">{{ personage.ouFaucille }}</td>
+                {% elseif personage.ouFaucille == 5 %}
+                    <td class="cinq tier">{{ personage.ouFaucille }}</td>
+                {% elseif personage.ouFaucille == 6 %}
+                    <td class="six tier">{{ personage.ouFaucille }}</td>
+                {% elseif personage.ouFaucille == 7 %}
+                    <td class="sep tier">{{ personage.ouFaucille }}</td>
+                {% elseif personage.ouFaucille == 8 %}
+                    <td class="huit tier">{{ personage.ouFaucille }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.ouFaucille }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

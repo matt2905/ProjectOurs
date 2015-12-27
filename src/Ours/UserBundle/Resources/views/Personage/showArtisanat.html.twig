@@ -1,5 +1,7 @@
 {% extends '::base.html.twig' %}
 
+{% block title %}Artisanat{% endblock %}
+
 {% block stylesheets %}
     {% stylesheets '@OursUserBundle/Resources/public/css/*' filter='cssrewrite' %}
         <link rel="stylesheet" href="{{ asset_url }}" />
@@ -33,257 +35,12 @@
         {# Outils #}
         <div>
             <h3>Outils</h3>
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="2" class="fire">HACHE</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="2" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.ouHache %}
-                        <tr>
-                            <td class="fire">{{ personage.name }}</td>
-                            {% if personage.ouHache == 3 %}
-                                <td class="trois">{{ personage.ouHache }}</td>
-                            {% elseif personage.ouHache == 4 %}
-                                <td class="quatre">{{ personage.ouHache }}</td>
-                            {% elseif personage.ouHache == 5 %}
-                                <td class="cinq">{{ personage.ouHache }}</td>
-                            {% elseif personage.ouHache == 6 %}
-                                <td class="six">{{ personage.ouHache }}</td>
-                            {% elseif personage.ouHache == 7 %}
-                                <td class="sept">{{ personage.ouHache }}</td>
-                            {% elseif personage.ouHache == 8 %}
-                                <td class="huit">{{ personage.ouHache }}</td>
-                            {% elseif personage.ouHache == 8.6 %}
-                                <td class="huitPsix">{{ personage.ouHache }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.ouHache }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="beni">MASSES PiERRE</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.ouMassePi %}
-                        <tr>
-                            <td class="beni">{{ personage.name }}</td>
-                            {% if personage.ouMassePi == 3 %}
-                                <td class="trois">{{ personage.ouMassePi }}</td>
-                            {% elseif personage.ouMassePi == 4 %}
-                                <td class="quatre">{{ personage.ouMassePi }}</td>
-                            {% elseif personage.ouMassePi == 5 %}
-                                <td class="cinq">{{ personage.ouMassePi }}</td>
-                            {% elseif personage.ouMassePi == 6 %}
-                                <td class="six">{{ personage.ouMassePi }}</td>
-                            {% elseif personage.ouMassePi == 7 %}
-                                <td class="sept">{{ personage.ouMassePi }}</td>
-                            {% elseif personage.ouMassePi == 8 %}
-                                <td class="huit">{{ personage.ouMassePi }}</td>
-                            {% elseif personage.ouMassePi == 8.6 %}
-                                <td class="huitPsix">{{ personage.ouMassePi }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.ouMassePi }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="eso">PIOCHES</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.ouPioche %}
-                        <tr>
-                            <td class="eso">{{ personage.name }}</td>
-                            {% if personage.ouPioche == 3 %}
-                                <td class="trois">{{ personage.ouPioche }}</td>
-                            {% elseif personage.ouPioche == 4 %}
-                                <td class="quatre">{{ personage.ouPioche }}</td>
-                            {% elseif personage.ouPioche == 5 %}
-                                <td class="cinq">{{ personage.ouPioche }}</td>
-                            {% elseif personage.ouPioche == 6 %}
-                                <td class="six">{{ personage.ouPioche }}</td>
-                            {% elseif personage.ouPioche == 7 %}
-                                <td class="sept">{{ personage.ouPioche }}</td>
-                            {% elseif personage.ouPioche == 8 %}
-                                <td class="huit">{{ personage.ouPioche }}</td>
-                            {% elseif personage.ouPioche == 8.6 %}
-                                <td class="huitPsix">{{ personage.ouPioche }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.ouPioche }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="givre">COUTEAUX</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.ouCouteau %}
-                        <tr>
-                            <td class="givre">{{ personage.name }}</td>
-                            {% if personage.ouCouteau == 3 %}
-                                <td class="trois">{{ personage.ouCouteau }}</td>
-                            {% elseif personage.ouCouteau == 4 %}
-                                <td class="quatre">{{ personage.ouCouteau }}</td>
-                            {% elseif personage.ouCouteau == 5 %}
-                                <td class="cinq">{{ personage.ouCouteau }}</td>
-                            {% elseif personage.ouCouteau == 6 %}
-                                <td class="six">{{ personage.ouCouteau }}</td>
-                            {% elseif personage.ouCouteau == 7 %}
-                                <td class="sept">{{ personage.ouCouteau }}</td>
-                            {% elseif personage.ouCouteau == 8 %}
-                                <td class="huit">{{ personage.ouCouteau }}</td>
-                            {% elseif personage.ouCouteau == 8.6 %}
-                                <td class="huitPsix">{{ personage.ouCouteau }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.ouCouteau }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="damn">FACUILLES</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.ouFaucille %}
-                        <tr>
-                            <td class="damn">{{ personage.name }}</td>
-                            {% if personage.ouFaucille == 3 %}
-                                <td class="trois">{{ personage.ouFaucille }}</td>
-                            {% elseif personage.ouFaucille == 4 %}
-                                <td class="quatre">{{ personage.ouFaucille }}</td>
-                            {% elseif personage.ouFaucille == 5 %}
-                                <td class="cinq">{{ personage.ouFaucille }}</td>
-                            {% elseif personage.ouFaucille == 6 %}
-                                <td class="six">{{ personage.ouFaucille }}</td>
-                            {% elseif personage.ouFaucille == 7 %}
-                                <td class="sept">{{ personage.ouFaucille }}</td>
-                            {% elseif personage.ouFaucille == 8 %}
-                                <td class="huit">{{ personage.ouFaucille }}</td>
-                            {% elseif personage.ouFaucille == 8.6 %}
-                                <td class="huitPsix">{{ personage.ouFaucille }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.ouFaucille }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="tome">MASSE DEMO</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.ouMasseDemo %}
-                        <tr>
-                            <td class="tome">{{ personage.name }}</td>
-                            {% if personage.ouMasseDemo == 3 %}
-                                <td class="trois">{{ personage.ouMasseDemo }}</td>
-                            {% elseif personage.ouMasseDemo == 4 %}
-                                <td class="quatre">{{ personage.ouMasseDemo }}</td>
-                            {% elseif personage.ouMasseDemo == 5 %}
-                                <td class="cinq">{{ personage.ouMasseDemo }}</td>
-                            {% elseif personage.ouMasseDemo == 6 %}
-                                <td class="six">{{ personage.ouMasseDemo }}</td>
-                            {% elseif personage.ouMasseDemo == 7 %}
-                                <td class="sept">{{ personage.ouMasseDemo }}</td>
-                            {% elseif personage.ouMasseDemo == 8 %}
-                                <td class="huit">{{ personage.ouMasseDemo }}</td>
-                            {% elseif personage.ouMasseDemo == 8.6 %}
-                                <td class="huitPsix">{{ personage.ouMasseDemo }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.ouMasseDemo }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
+            {{ render(controller('OursUserBundle:Artisanat\\Outils:Hache', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Outils:Massepi', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Outils:Pioche', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Outils:Couteau', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Outils:Faucille', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Outils:Massede', { 'page': 0, "json": false})) }}
         </div>
         <br style="clear: both;">
         {# End Outils #}
@@ -291,89 +48,8 @@
         {# Accessoire #}
         <div>
             <h3>Accessoires</h3>
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="pie">SACS</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.accSac %}
-                        <tr>
-                            <td class="pie">{{ personage.name }}</td>
-                            {% if personage.accSac == 3 %}
-                                <td class="trois">{{ personage.accSac }}</td>
-                            {% elseif personage.accSac == 4 %}
-                                <td class="quatre">{{ personage.accSac }}</td>
-                            {% elseif personage.accSac == 5 %}
-                                <td class="cinq">{{ personage.accSac }}</td>
-                            {% elseif personage.accSac == 6 %}
-                                <td class="six">{{ personage.accSac }}</td>
-                            {% elseif personage.accSac == 7 %}
-                                <td class="sept">{{ personage.accSac }}</td>
-                            {% elseif personage.accSac == 8 %}
-                                <td class="huit">{{ personage.accSac }}</td>
-                            {% elseif personage.accSac == 8.6 %}
-                                <td class="huitPsix">{{ personage.accSac }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.accSac }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="clean">CAPES</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.accCape %}
-                        <tr>
-                            <td class="clean">{{ personage.name }}</td>
-                            {% if personage.accCape == 3 %}
-                                <td class="trois">{{ personage.accCape }}</td>
-                            {% elseif personage.accCape == 4 %}
-                                <td class="quatre">{{ personage.accCape }}</td>
-                            {% elseif personage.accCape == 5 %}
-                                <td class="cinq">{{ personage.accCape }}</td>
-                            {% elseif personage.accCape == 6 %}
-                                <td class="six">{{ personage.accCape }}</td>
-                            {% elseif personage.accCape == 7 %}
-                                <td class="sept">{{ personage.accCape }}</td>
-                            {% elseif personage.accCape == 8 %}
-                                <td class="huit">{{ personage.accCape }}</td>
-                            {% elseif personage.accCape == 8.6 %}
-                                <td class="huitPsix">{{ personage.accCape }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.accCape }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
+            {{ render(controller('OursUserBundle:Artisanat\\Accessoires:Sac', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Accessoires:Cape', { 'page': 0, "json": false})) }}
         </div>
         <br style="clear: both;">
         {# End Accessoire #}
@@ -386,1053 +62,87 @@
         {# Armes #}
         <div>
             <h3>BATONS</h3>
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="fire">FEU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tiers</th>
-                </tr>
-                </thead>
+            {# Baton de Feu #}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batonfeu', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:GrandBatonfeu', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batoninfernal', { 'page': 0, "json": false})) }}
+            {# End Baton de Feu#}
 
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.maBatonFeu[0] %}
-                        <tr>
-                            <td class="fire">{{ personage.name }}</td>
-                            {% if personage.maBatonFeu[0] == 3 %}
-                                <td class="trois">{{ personage.maBatonFeu[0] }}</td>
-                            {% elseif personage.maBatonFeu[0] == 4 %}
-                                <td class="quatre">{{ personage.maBatonFeu[0] }}</td>
-                            {% elseif personage.maBatonFeu[0] == 5 %}
-                                <td class="cinq">{{ personage.maBatonFeu[0] }}</td>
-                            {% elseif personage.maBatonFeu[0] == 6 %}
-                                <td class="six">{{ personage.maBatonFeu[0] }}</td>
-                            {% elseif personage.maBatonFeu[0] == 7 %}
-                                <td class="sept">{{ personage.maBatonFeu[0] }}</td>
-                            {% elseif personage.maBatonFeu[0] == 8 %}
-                                <td class="huit">{{ personage.maBatonFeu[0] }}</td>
-                            {% elseif personage.maBatonFeu[0] == 5.4 %}
-                                <td class="cinqPquatre">{{ personage.maBatonFeu[0] }}</td>
-                            {% elseif personage.maBatonFeu[0] == 6.4 %}
-                                <td class="sixPquatre">{{ personage.maBatonFeu[0] }}</td>
-                            {% elseif personage.maBatonFeu[0] == 7.4 %}
-                                <td class="septPquatre">{{ personage.maBatonFeu[0] }}</td>
-                            {% elseif personage.maBatonFeu[0] == 8.4 %}
-                                <td class="huitPquatre">{{ personage.maBatonFeu[0] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonFeu[0] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonFeu[1] == 4.2 %}
-                                <td class="quatrePdeux">{{ personage.maBatonFeu[1] }}</td>
-                            {% elseif personage.maBatonFeu[1] == 5.2 %}
-                                <td class="cinqPdeux">{{ personage.maBatonFeu[1] }}</td>
-                            {% elseif personage.maBatonFeu[1] == 6.2 %}
-                                <td class="sixPdeux">{{ personage.maBatonFeu[1] }}</td>
-                            {% elseif personage.maBatonFeu[1] == 7.2 %}
-                                <td class="septPdeux">{{ personage.maBatonFeu[1] }}</td>
-                            {% elseif personage.maBatonFeu[1] == 8.2 %}
-                                <td class="huitPdeux">{{ personage.maBatonFeu[1] }}</td>
-                            {% elseif personage.maBatonFeu[1] == 5.5 %}
-                                <td class="cinqPcinq">{{ personage.maBatonFeu[1] }}</td>
-                            {% elseif personage.maBatonFeu[1] == 6.5 %}
-                                <td class="sixPcinq">{{ personage.maBatonFeu[1] }}</td>
-                            {% elseif personage.maBatonFeu[1] == 7.5 %}
-                                <td class="septPcinq">{{ personage.maBatonFeu[1] }}</td>
-                            {% elseif personage.maBatonFeu[1] == 8.5 %}
-                                <td class="huitPcinq">{{ personage.maBatonFeu[1] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonFeu[1] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonFeu[2] == 4.3 %}
-                                <td class="quatrePtrois">{{ personage.maBatonFeu[2] }}</td>
-                            {% elseif personage.maBatonFeu[2] == 5.3 %}
-                                <td class="cinqPtrois">{{ personage.maBatonFeu[2] }}</td>
-                            {% elseif personage.maBatonFeu[2] == 6.3 %}
-                                <td class="sixPtrois">{{ personage.maBatonFeu[2] }}</td>
-                            {% elseif personage.maBatonFeu[2] == 7.3 %}
-                                <td class="septPtrois">{{ personage.maBatonFeu[2] }}</td>
-                            {% elseif personage.maBatonFeu[2] == 8.3 %}
-                                <td class="huitPtrois">{{ personage.maBatonFeu[2] }}</td>
-                            {% elseif personage.maBatonFeu[2] == 6.6 %}
-                                <td class="sixPsix">{{ personage.maBatonFeu[2] }}</td>
-                            {% elseif personage.maBatonFeu[2] == 7.6 %}
-                                <td class="septPsix">{{ personage.maBatonFeu[2] }}</td>
-                            {% elseif personage.maBatonFeu[2] == 8.6 %}
-                                <td class="huitPsix">{{ personage.maBatonFeu[2] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonFeu[2] }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="beni">BENI</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.maBatonBeni[0] %}
-                        <tr>
-                            <td class="beni">{{ personage.name }}</td>
-                            {% if personage.maBatonBeni[0] == 3 %}
-                                <td class="trois">{{ personage.maBatonBeni[0] }}</td>
-                            {% elseif personage.maBatonBeni[0] == 4 %}
-                                <td class="quatre">{{ personage.maBatonBeni[0] }}</td>
-                            {% elseif personage.maBatonBeni[0] == 5 %}
-                                <td class="cinq">{{ personage.maBatonBeni[0] }}</td>
-                            {% elseif personage.maBatonBeni[0] == 6 %}
-                                <td class="six">{{ personage.maBatonBeni[0] }}</td>
-                            {% elseif personage.maBatonBeni[0] == 7 %}
-                                <td class="sept">{{ personage.maBatonBeni[0] }}</td>
-                            {% elseif personage.maBatonBeni[0] == 8 %}
-                                <td class="huit">{{ personage.maBatonBeni[0] }}</td>
-                            {% elseif personage.maBatonBeni[0] == 5.4 %}
-                                <td class="cinqPquatre">{{ personage.maBatonBeni[0] }}</td>
-                            {% elseif personage.maBatonBeni[0] == 6.4 %}
-                                <td class="sixPquatre">{{ personage.maBatonBeni[0] }}</td>
-                            {% elseif personage.maBatonBeni[0] == 7.4 %}
-                                <td class="septPquatre">{{ personage.maBatonBeni[0] }}</td>
-                            {% elseif personage.maBatonBeni[0] == 8.4 %}
-                                <td class="huitPquatre">{{ personage.maBatonBeni[0] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonBeni[0] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonBeni[1] == 4.2 %}
-                                <td class="quatrePdeux">{{ personage.maBatonBeni[1] }}</td>
-                            {% elseif personage.maBatonBeni[1] == 5.2 %}
-                                <td class="cinqPdeux">{{ personage.maBatonBeni[1] }}</td>
-                            {% elseif personage.maBatonBeni[1] == 6.2 %}
-                                <td class="sixPdeux">{{ personage.maBatonBeni[1] }}</td>
-                            {% elseif personage.maBatonBeni[1] == 7.2 %}
-                                <td class="septPdeux">{{ personage.maBatonBeni[1] }}</td>
-                            {% elseif personage.maBatonBeni[1] == 8.2 %}
-                                <td class="huitPdeux">{{ personage.maBatonBeni[1] }}</td>
-                            {% elseif personage.maBatonBeni[1] == 5.5 %}
-                                <td class="cinqPcinq">{{ personage.maBatonBeni[1] }}</td>
-                            {% elseif personage.maBatonBeni[1] == 6.5 %}
-                                <td class="sixPcinq">{{ personage.maBatonBeni[1] }}</td>
-                            {% elseif personage.maBatonBeni[1] == 7.5 %}
-                                <td class="septPcinq">{{ personage.maBatonBeni[1] }}</td>
-                            {% elseif personage.maBatonBeni[1] == 8.5 %}
-                                <td class="huitPcinq">{{ personage.maBatonBeni[1] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonBeni[1] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonBeni[2] == 4.3 %}
-                                <td class="quatrePtrois">{{ personage.maBatonBeni[2] }}</td>
-                            {% elseif personage.maBatonBeni[2] == 5.3 %}
-                                <td class="cinqPtrois">{{ personage.maBatonBeni[2] }}</td>
-                            {% elseif personage.maBatonBeni[2] == 6.3 %}
-                                <td class="sixPtrois">{{ personage.maBatonBeni[2] }}</td>
-                            {% elseif personage.maBatonBeni[2] == 7.3 %}
-                                <td class="septPtrois">{{ personage.maBatonBeni[2] }}</td>
-                            {% elseif personage.maBatonBeni[2] == 8.3 %}
-                                <td class="huitPtrois">{{ personage.maBatonBeni[2] }}</td>
-                            {% elseif personage.maBatonBeni[2] == 6.6 %}
-                                <td class="sixPsix">{{ personage.maBatonBeni[2] }}</td>
-                            {% elseif personage.maBatonBeni[2] == 7.6 %}
-                                <td class="septPsix">{{ personage.maBatonBeni[2] }}</td>
-                            {% elseif personage.maBatonBeni[2] == 8.6 %}
-                                <td class="huitPsix">{{ personage.maBatonBeni[2] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonBeni[2] }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="eso">ESOTERIQUE</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.maBatonEso[0] %}
-                        <tr>
-                            <td class="eso">{{ personage.name }}</td>
-                            {% if personage.maBatonEso[0] == 3 %}
-                                <td class="trois">{{ personage.maBatonEso[0] }}</td>
-                            {% elseif personage.maBatonEso[0] == 4 %}
-                                <td class="quatre">{{ personage.maBatonEso[0] }}</td>
-                            {% elseif personage.maBatonEso[0] == 5 %}
-                                <td class="cinq">{{ personage.maBatonEso[0] }}</td>
-                            {% elseif personage.maBatonEso[0] == 6 %}
-                                <td class="six">{{ personage.maBatonEso[0] }}</td>
-                            {% elseif personage.maBatonEso[0] == 7 %}
-                                <td class="sept">{{ personage.maBatonEso[0] }}</td>
-                            {% elseif personage.maBatonEso[0] == 8 %}
-                                <td class="huit">{{ personage.maBatonEso[0] }}</td>
-                            {% elseif personage.maBatonEso[0] == 5.4 %}
-                                <td class="cinqPquatre">{{ personage.maBatonEso[0] }}</td>
-                            {% elseif personage.maBatonEso[0] == 6.4 %}
-                                <td class="sixPquatre">{{ personage.maBatonEso[0] }}</td>
-                            {% elseif personage.maBatonEso[0] == 7.4 %}
-                                <td class="septPquatre">{{ personage.maBatonEso[0] }}</td>
-                            {% elseif personage.maBatonEso[0] == 8.4 %}
-                                <td class="huitPquatre">{{ personage.maBatonEso[0] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonEso[0] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonEso[1] == 4.2 %}
-                                <td class="quatrePdeux">{{ personage.maBatonEso[1] }}</td>
-                            {% elseif personage.maBatonEso[1] == 5.2 %}
-                                <td class="cinqPdeux">{{ personage.maBatonEso[1] }}</td>
-                            {% elseif personage.maBatonEso[1] == 6.2 %}
-                                <td class="sixPdeux">{{ personage.maBatonEso[1] }}</td>
-                            {% elseif personage.maBatonEso[1] == 7.2 %}
-                                <td class="septPdeux">{{ personage.maBatonEso[1] }}</td>
-                            {% elseif personage.maBatonEso[1] == 8.2 %}
-                                <td class="huitPdeux">{{ personage.maBatonEso[1] }}</td>
-                            {% elseif personage.maBatonEso[1] == 5.5 %}
-                                <td class="cinqPcinq">{{ personage.maBatonEso[1] }}</td>
-                            {% elseif personage.maBatonEso[1] == 6.5 %}
-                                <td class="sixPcinq">{{ personage.maBatonEso[1] }}</td>
-                            {% elseif personage.maBatonEso[1] == 7.5 %}
-                                <td class="septPcinq">{{ personage.maBatonEso[1] }}</td>
-                            {% elseif personage.maBatonEso[1] == 8.5 %}
-                                <td class="huitPcinq">{{ personage.maBatonEso[1] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonEso[1] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonEso[2] == 4.3 %}
-                                <td class="quatrePtrois">{{ personage.maBatonEso[2] }}</td>
-                            {% elseif personage.maBatonEso[2] == 5.3 %}
-                                <td class="cinqPtrois">{{ personage.maBatonEso[2] }}</td>
-                            {% elseif personage.maBatonEso[2] == 6.3 %}
-                                <td class="sixPtrois">{{ personage.maBatonEso[2] }}</td>
-                            {% elseif personage.maBatonEso[2] == 7.3 %}
-                                <td class="septPtrois">{{ personage.maBatonEso[2] }}</td>
-                            {% elseif personage.maBatonEso[2] == 8.3 %}
-                                <td class="huitPtrois">{{ personage.maBatonEso[2] }}</td>
-                            {% elseif personage.maBatonEso[2] == 6.6 %}
-                                <td class="sixPsix">{{ personage.maBatonEso[2] }}</td>
-                            {% elseif personage.maBatonEso[2] == 7.6 %}
-                                <td class="septPsix">{{ personage.maBatonEso[2] }}</td>
-                            {% elseif personage.maBatonEso[2] == 8.6 %}
-                                <td class="huitPsix">{{ personage.maBatonEso[2] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonEso[2] }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="givre">GIVRE</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.maBatonGi[0] %}
-                        <tr>
-                            <td class="givre">{{ personage.name }}</td>
-                            {% if personage.maBatonGi[0] == 3 %}
-                                <td class="trois">{{ personage.maBatonGi[0] }}</td>
-                            {% elseif personage.maBatonGi[0] == 4 %}
-                                <td class="quatre">{{ personage.maBatonGi[0] }}</td>
-                            {% elseif personage.maBatonGi[0] == 5 %}
-                                <td class="cinq">{{ personage.maBatonGi[0] }}</td>
-                            {% elseif personage.maBatonGi[0] == 6 %}
-                                <td class="six">{{ personage.maBatonGi[0] }}</td>
-                            {% elseif personage.maBatonGi[0] == 7 %}
-                                <td class="sept">{{ personage.maBatonGi[0] }}</td>
-                            {% elseif personage.maBatonGi[0] == 8 %}
-                                <td class="huit">{{ personage.maBatonGi[0] }}</td>
-                            {% elseif personage.maBatonGi[0] == 5.4 %}
-                                <td class="cinqPquatre">{{ personage.maBatonGi[0] }}</td>
-                            {% elseif personage.maBatonGi[0] == 6.4 %}
-                                <td class="sixPquatre">{{ personage.maBatonGi[0] }}</td>
-                            {% elseif personage.maBatonGi[0] == 7.4 %}
-                                <td class="septPquatre">{{ personage.maBatonGi[0] }}</td>
-                            {% elseif personage.maBatonGi[0] == 8.4 %}
-                                <td class="huitPquatre">{{ personage.maBatonGi[0] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonGi[0] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonGi[1] == 4.2 %}
-                                <td class="quatrePdeux">{{ personage.maBatonGi[1] }}</td>
-                            {% elseif personage.maBatonGi[1] == 5.2 %}
-                                <td class="cinqPdeux">{{ personage.maBatonGi[1] }}</td>
-                            {% elseif personage.maBatonGi[1] == 6.2 %}
-                                <td class="sixPdeux">{{ personage.maBatonGi[1] }}</td>
-                            {% elseif personage.maBatonGi[1] == 7.2 %}
-                                <td class="septPdeux">{{ personage.maBatonGi[1] }}</td>
-                            {% elseif personage.maBatonGi[1] == 8.2 %}
-                                <td class="huitPdeux">{{ personage.maBatonGi[1] }}</td>
-                            {% elseif personage.maBatonGi[1] == 5.5 %}
-                                <td class="cinqPcinq">{{ personage.maBatonGi[1] }}</td>
-                            {% elseif personage.maBatonGi[1] == 6.5 %}
-                                <td class="sixPcinq">{{ personage.maBatonGi[1] }}</td>
-                            {% elseif personage.maBatonGi[1] == 7.5 %}
-                                <td class="septPcinq">{{ personage.maBatonGi[1] }}</td>
-                            {% elseif personage.maBatonGi[1] == 8.5 %}
-                                <td class="huitPcinq">{{ personage.maBatonGi[1] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonGi[1] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonGi[2] == 4.3 %}
-                                <td class="quatrePtrois">{{ personage.maBatonGi[2] }}</td>
-                            {% elseif personage.maBatonGi[2] == 5.3 %}
-                                <td class="cinqPtrois">{{ personage.maBatonGi[2] }}</td>
-                            {% elseif personage.maBatonGi[2] == 6.3 %}
-                                <td class="sixPtrois">{{ personage.maBatonGi[2] }}</td>
-                            {% elseif personage.maBatonGi[2] == 7.3 %}
-                                <td class="septPtrois">{{ personage.maBatonGi[2] }}</td>
-                            {% elseif personage.maBatonGi[2] == 8.3 %}
-                                <td class="huitPtrois">{{ personage.maBatonGi[2] }}</td>
-                            {% elseif personage.maBatonGi[2] == 6.6 %}
-                                <td class="sixPsix">{{ personage.maBatonGi[2] }}</td>
-                            {% elseif personage.maBatonGi[2] == 7.6 %}
-                                <td class="septPsix">{{ personage.maBatonGi[2] }}</td>
-                            {% elseif personage.maBatonGi[2] == 8.6 %}
-                                <td class="huitPsix">{{ personage.maBatonGi[2] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonGi[2] }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="damn">DAMNES</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.maBatonDamn[0] %}
-                        <tr>
-                            <td class="damn">{{ personage.name }}</td>
-                            {% if personage.maBatonDamn[0] == 3 %}
-                                <td class="trois">{{ personage.maBatonDamn[0] }}</td>
-                            {% elseif personage.maBatonDamn[0] == 4 %}
-                                <td class="quatre">{{ personage.maBatonDamn[0] }}</td>
-                            {% elseif personage.maBatonDamn[0] == 5 %}
-                                <td class="cinq">{{ personage.maBatonDamn[0] }}</td>
-                            {% elseif personage.maBatonDamn[0] == 6 %}
-                                <td class="six">{{ personage.maBatonDamn[0] }}</td>
-                            {% elseif personage.maBatonDamn[0] == 7 %}
-                                <td class="sept">{{ personage.maBatonDamn[0] }}</td>
-                            {% elseif personage.maBatonDamn[0] == 8 %}
-                                <td class="huit">{{ personage.maBatonDamn[0] }}</td>
-                            {% elseif personage.maBatonDamn[0] == 5.4 %}
-                                <td class="cinqPquatre">{{ personage.maBatonDamn[0] }}</td>
-                            {% elseif personage.maBatonDamn[0] == 6.4 %}
-                                <td class="sixPquatre">{{ personage.maBatonDamn[0] }}</td>
-                            {% elseif personage.maBatonDamn[0] == 7.4 %}
-                                <td class="septPquatre">{{ personage.maBatonDamn[0] }}</td>
-                            {% elseif personage.maBatonDamn[0] == 8.4 %}
-                                <td class="huitPquatre">{{ personage.maBatonDamn[0] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonDamn[0] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonDamn[1] == 4.2 %}
-                                <td class="quatrePdeux">{{ personage.maBatonDamn[1] }}</td>
-                            {% elseif personage.maBatonDamn[1] == 5.2 %}
-                                <td class="cinqPdeux">{{ personage.maBatonDamn[1] }}</td>
-                            {% elseif personage.maBatonDamn[1] == 6.2 %}
-                                <td class="sixPdeux">{{ personage.maBatonDamn[1] }}</td>
-                            {% elseif personage.maBatonDamn[1] == 7.2 %}
-                                <td class="septPdeux">{{ personage.maBatonDamn[1] }}</td>
-                            {% elseif personage.maBatonDamn[1] == 8.2 %}
-                                <td class="huitPdeux">{{ personage.maBatonDamn[1] }}</td>
-                            {% elseif personage.maBatonDamn[1] == 5.5 %}
-                                <td class="cinqPcinq">{{ personage.maBatonDamn[1] }}</td>
-                            {% elseif personage.maBatonDamn[1] == 6.5 %}
-                                <td class="sixPcinq">{{ personage.maBatonDamn[1] }}</td>
-                            {% elseif personage.maBatonDamn[1] == 7.5 %}
-                                <td class="septPcinq">{{ personage.maBatonDamn[1] }}</td>
-                            {% elseif personage.maBatonDamn[1] == 8.5 %}
-                                <td class="huitPcinq">{{ personage.maBatonDamn[1] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonDamn[1] }}</td>
-                            {% endif %}
-                            {% if personage.maBatonDamn[2] == 4.3 %}
-                                <td class="quatrePtrois">{{ personage.maBatonDamn[2] }}</td>
-                            {% elseif personage.maBatonDamn[2] == 5.3 %}
-                                <td class="cinqPtrois">{{ personage.maBatonDamn[2] }}</td>
-                            {% elseif personage.maBatonDamn[2] == 6.3 %}
-                                <td class="sixPtrois">{{ personage.maBatonDamn[2] }}</td>
-                            {% elseif personage.maBatonDamn[2] == 7.3 %}
-                                <td class="septPtrois">{{ personage.maBatonDamn[2] }}</td>
-                            {% elseif personage.maBatonDamn[2] == 8.3 %}
-                                <td class="huitPtrois">{{ personage.maBatonDamn[2] }}</td>
-                            {% elseif personage.maBatonDamn[2] == 6.6 %}
-                                <td class="sixPsix">{{ personage.maBatonDamn[2] }}</td>
-                            {% elseif personage.maBatonDamn[2] == 7.6 %}
-                                <td class="septPsix">{{ personage.maBatonDamn[2] }}</td>
-                            {% elseif personage.maBatonDamn[2] == 8.6 %}
-                                <td class="huitPsix">{{ personage.maBatonDamn[2] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maBatonDamn[2] }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="4" class="tome">TOMES</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th colspan="3">Tier</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="4" class="null"></td>
-                </tr>
-                {% for personage in personages %}
-                    {% if personage.maTome[0] %}
-                        <tr>
-                            <td class="tome">{{ personage.name }}</td>
-                            {% if personage.maTome[0] == 3 %}
-                                <td class="trois">{{ personage.maTome[0] }}</td>
-                            {% elseif personage.maTome[0] == 4 %}
-                                <td class="quatre">{{ personage.maTome[0] }}</td>
-                            {% elseif personage.maTome[0] == 5 %}
-                                <td class="cinq">{{ personage.maTome[0] }}</td>
-                            {% elseif personage.maTome[0] == 6 %}
-                                <td class="six">{{ personage.maTome[0] }}</td>
-                            {% elseif personage.maTome[0] == 7 %}
-                                <td class="sept">{{ personage.maTome[0] }}</td>
-                            {% elseif personage.maTome[0] == 8 %}
-                                <td class="huit">{{ personage.maTome[0] }}</td>
-                            {% elseif personage.maTome[0] == 5.4 %}
-                                <td class="cinqPquatre">{{ personage.maTome[0] }}</td>
-                            {% elseif personage.maTome[0] == 6.4 %}
-                                <td class="sixPquatre">{{ personage.maTome[0] }}</td>
-                            {% elseif personage.maTome[0] == 7.4 %}
-                                <td class="septPquatre">{{ personage.maTome[0] }}</td>
-                            {% elseif personage.maTome[0] == 8.4 %}
-                                <td class="huitPquatre">{{ personage.maTome[0] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maTome[0] }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
+            {# Baton Beni #}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batonbeni', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:GrandBatonbeni', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batondivin', { 'page': 0, "json": false})) }}
+            {# End Baton Beni #}
         </div>
         <br style="clear: both;">
+        <br/>
+        <br/>
+
+        <div>
+            {# Baton Esoterique #}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batonesoterique', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:GrandBatonesoterique', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batonenigmatique', { 'page': 0, "json": false})) }}
+            {# End Baton Esoterique #}
+
+            {# Baton de Givre #}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batongivre', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:GrandBatongivre', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batonglacial', { 'page': 0, "json": false})) }}
+            {# End Baton de Givre#}
+        </div>
+        <br style="clear: both;">
+        <br/>
+        <br/>
+
+        <div>
+            {# Baton Demo #}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batondamne', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:GrandBatondamne', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Batondemo', { 'page': 0, "json": false})) }}
+            {# End Baton Demo #}
+
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Tome', { 'page': 0, "json": false})) }}
+        </div>
+        <br style="clear: both;">
+        <br/>
+        <br/>
         {# End Armes #}
 
         {# Casque #}
         <div>
             <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">CASQUE</h3>
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="5" class="armor1">LEGERS EN TISSU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                    <th class="null"></th>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="5" class="null"></td>
-                </tr>
-                {% set count = 0 %}
-                {% for personage in personages %}
-                    {% if personage.maCasque[0] %}
-                        {% set count = count + 1 %}
-                        {% if count % 2 %}
-                        <tr>
-                        {% else %}
-                            <td class="null"></td>
-                        {% endif %}
-                            <td class="armor1">{{ personage.name }}</td>
-                            {% if personage.maCasque[0] == 3 %}
-                                <td class="trois">{{ personage.maCasque[0] }}</td>
-                            {% elseif personage.maCasque[0] == 4 %}
-                                <td class="quatre">{{ personage.maCasque[0] }}</td>
-                            {% elseif personage.maCasque[0] == 5 %}
-                                <td class="cinq">{{ personage.maCasque[0] }}</td>
-                            {% elseif personage.maCasque[0] == 6 %}
-                                <td class="six">{{ personage.maCasque[0] }}</td>
-                            {% elseif personage.maCasque[0] == 7 %}
-                                <td class="sept">{{ personage.maCasque[0] }}</td>
-                            {% elseif personage.maCasque[0] == 8 %}
-                                <td class="huit">{{ personage.maCasque[0] }}</td>
-                            {% elseif personage.maCasque[0] == 5.4 %}
-                                <td class="cinqPquatre">{{ personage.maCasque[0] }}</td>
-                            {% elseif personage.maCasque[0] == 6.4 %}
-                                <td class="sixPquatre">{{ personage.maCasque[0] }}</td>
-                            {% elseif personage.maCasque[0] == 7.4 %}
-                                <td class="septPquatre">{{ personage.maCasque[0] }}</td>
-                            {% elseif personage.maCasque[0] == 8.4 %}
-                                <td class="huitPquatre">{{ personage.maCasque[0] }}</td>
-                            {% else %}
-                                <td class="deux">{{ personage.maCasque[0] }}</td>
-                            {% endif %}
-                        {% if count % 2 == 0 %}
-                        </tr>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% if count % 2 %}
-                    </tr>
-                {% endif %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="5" class="armor2">MOYENS EN TISSU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                    <th class="null"></th>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="5" class="null"></td>
-                </tr>
-                {% set count = 0 %}
-                {% for personage in personages %}
-                    {% if personage.maCasque[1] %}
-                        {% set count = count + 1 %}
-                        {% if count % 2 %}
-                            <tr>
-                        {% else %}
-                            <td class="null"></td>
-                        {% endif %}
-                        <td class="armor2">{{ personage.name }}</td>
-                        {% if personage.maCasque[1] == 4.2 %}
-                            <td class="quatrePdeux">{{ personage.maCasque[1] }}</td>
-                        {% elseif personage.maCasque[1] == 5.2 %}
-                            <td class="cinqPdeux">{{ personage.maCasque[1] }}</td>
-                        {% elseif personage.maCasque[1] == 6.2 %}
-                            <td class="sixPdeux">{{ personage.maCasque[1] }}</td>
-                        {% elseif personage.maCasque[1] == 7.2 %}
-                            <td class="septPdeux">{{ personage.maCasque[1] }}</td>
-                        {% elseif personage.maCasque[1] == 8.2 %}
-                            <td class="huitPdeux">{{ personage.maCasque[1] }}</td>
-                        {% elseif personage.maCasque[1] == 5.5 %}
-                            <td class="cinqPcinq">{{ personage.maCasque[1] }}</td>
-                        {% elseif personage.maCasque[1] == 6.5 %}
-                            <td class="sixPcinq">{{ personage.maCasque[1] }}</td>
-                        {% elseif personage.maCasque[1] == 7.5 %}
-                            <td class="septPcinq">{{ personage.maCasque[1] }}</td>
-                        {% elseif personage.maCasque[1] == 8.5 %}
-                            <td class="huitPcinq">{{ personage.maCasque[1] }}</td>
-                        {% else %}
-                            <td class="deux">{{ personage.maCasque[1] }}</td>
-                        {% endif %}
-                        {% if count % 2 == 0 %}
-                            </tr>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% if count % 2 %}
-                    </tr>
-                {% endif %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="5" class="armor3">LOURDS EN TISSU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                    <th class="null"></th>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="5" class="null"></td>
-                </tr>
-                {% set count = 0 %}
-                {% for personage in personages %}
-                    {% if personage.maCasque[2] %}
-                        {% set count = count + 1 %}
-                        {% if count % 2 %}
-                            <tr>
-                        {% else %}
-                            <td class="null"></td>
-                        {% endif %}
-                        <td class="armor3">{{ personage.name }}</td>
-                        {% if personage.maCasque[2] == 4.3 %}
-                            <td class="quatrePtrois">{{ personage.maCasque[2] }}</td>
-                        {% elseif personage.maCasque[2] == 5.3 %}
-                            <td class="cinqPtrois">{{ personage.maCasque[2] }}</td>
-                        {% elseif personage.maCasque[2] == 6.3 %}
-                            <td class="sixPtrois">{{ personage.maCasque[2] }}</td>
-                        {% elseif personage.maCasque[2] == 7.3 %}
-                            <td class="septPtrois">{{ personage.maCasque[2] }}</td>
-                        {% elseif personage.maCasque[2] == 8.3 %}
-                            <td class="huitPtrois">{{ personage.maCasque[2] }}</td>
-                        {% elseif personage.maCasque[2] == 6.6 %}
-                            <td class="sixPsix">{{ personage.maCasque[2] }}</td>
-                        {% elseif personage.maCasque[2] == 7.6 %}
-                            <td class="septPsix">{{ personage.maCasque[2] }}</td>
-                        {% elseif personage.maCasque[2] == 8.6 %}
-                            <td class="huitPsix">{{ personage.maCasque[2] }}</td>
-                        {% else %}
-                            <td class="deux">{{ personage.maCasque[2] }}</td>
-                        {% endif %}
-                        {% if count % 2 == 0 %}
-                            </tr>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% if count % 2 %}
-                    </tr>
-                {% endif %}
-                </tbody>
-            </table>
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Casque1', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Casque2', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Casque3', { 'page': 0, "json": false})) }}
         </div>
         <br style="clear: both;">
+        <br/>
+        <br/>
         {# End Casque#}
 
         {# Armure #}
         <div>
             <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">ARMURES</h3>
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="5" class="armor1">LEGERES EN TISSU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                    <th class="null"></th>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="5" class="null"></td>
-                </tr>
-                {% set count = 0 %}
-                {% for personage in personages %}
-                    {% if personage.maArmure[0] %}
-                        {% set count = count + 1 %}
-                        {% if count % 2 %}
-                            <tr>
-                        {% else %}
-                            <td class="null"></td>
-                        {% endif %}
-                        <td class="armor1">{{ personage.name }}</td>
-                        {% if personage.maArmure[0] == 3 %}
-                            <td class="trois">{{ personage.maArmure[0] }}</td>
-                        {% elseif personage.maArmure[0] == 4 %}
-                            <td class="quatre">{{ personage.maArmure[0] }}</td>
-                        {% elseif personage.maArmure[0] == 5 %}
-                            <td class="cinq">{{ personage.maArmure[0] }}</td>
-                        {% elseif personage.maArmure[0] == 6 %}
-                            <td class="six">{{ personage.maArmure[0] }}</td>
-                        {% elseif personage.maArmure[0] == 7 %}
-                            <td class="sept">{{ personage.maArmure[0] }}</td>
-                        {% elseif personage.maArmure[0] == 8 %}
-                            <td class="huit">{{ personage.maArmure[0] }}</td>
-                        {% elseif personage.maArmure[0] == 5.4 %}
-                            <td class="cinqPquatre">{{ personage.maArmure[0] }}</td>
-                        {% elseif personage.maArmure[0] == 6.4 %}
-                            <td class="sixPquatre">{{ personage.maArmure[0] }}</td>
-                        {% elseif personage.maArmure[0] == 7.4 %}
-                            <td class="septPquatre">{{ personage.maArmure[0] }}</td>
-                        {% elseif personage.maArmure[0] == 8.4 %}
-                            <td class="huitPquatre">{{ personage.maArmure[0] }}</td>
-                        {% else %}
-                            <td class="deux">{{ personage.maArmure[0] }}</td>
-                        {% endif %}
-                        {% if count % 2 == 0 %}
-                            </tr>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% if count % 2 %}
-                    </tr>
-                {% endif %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="5" class="armor2">MOYENNES EN TISSU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                    <th class="null"></th>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="5" class="null"></td>
-                </tr>
-                {% set count = 0 %}
-                {% for personage in personages %}
-                    {% if personage.maArmure[1] %}
-                        {% set count = count + 1 %}
-                        {% if count % 2 %}
-                            <tr>
-                        {% else %}
-                            <td class="null"></td>
-                        {% endif %}
-                        <td class="armor2">{{ personage.name }}</td>
-                        {% if personage.maArmure[1] == 4.2 %}
-                            <td class="quatrePdeux">{{ personage.maArmure[1] }}</td>
-                        {% elseif personage.maArmure[1] == 5.2 %}
-                            <td class="cinqPdeux">{{ personage.maArmure[1] }}</td>
-                        {% elseif personage.maArmure[1] == 6.2 %}
-                            <td class="sixPdeux">{{ personage.maArmure[1] }}</td>
-                        {% elseif personage.maArmure[1] == 7.2 %}
-                            <td class="septPdeux">{{ personage.maArmure[1] }}</td>
-                        {% elseif personage.maArmure[1] == 8.2 %}
-                            <td class="huitPdeux">{{ personage.maArmure[1] }}</td>
-                        {% elseif personage.maArmure[1] == 5.5 %}
-                            <td class="cinqPcinq">{{ personage.maArmure[1] }}</td>
-                        {% elseif personage.maArmure[1] == 6.5 %}
-                            <td class="sixPcinq">{{ personage.maArmure[1] }}</td>
-                        {% elseif personage.maArmure[1] == 7.5 %}
-                            <td class="septPcinq">{{ personage.maArmure[1] }}</td>
-                        {% elseif personage.maArmure[1] == 8.5 %}
-                            <td class="huitPcinq">{{ personage.maArmure[1] }}</td>
-                        {% else %}
-                            <td class="deux">{{ personage.maArmure[1] }}</td>
-                        {% endif %}
-                        {% if count % 2 == 0 %}
-                            </tr>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% if count % 2 %}
-                    </tr>
-                {% endif %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="5" class="armor3">LOURDES EN TISSU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                    <th class="null"></th>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="5" class="null"></td>
-                </tr>
-                {% set count = 0 %}
-                {% for personage in personages %}
-                    {% if personage.maArmure[2] %}
-                        {% set count = count + 1 %}
-                        {% if count % 2 %}
-                            <tr>
-                        {% else %}
-                            <td class="null"></td>
-                        {% endif %}
-                        <td class="armor3">{{ personage.name }}</td>
-                        {% if personage.maArmure[2] == 4.3 %}
-                            <td class="quatrePtrois">{{ personage.maArmure[2] }}</td>
-                        {% elseif personage.maArmure[2] == 5.3 %}
-                            <td class="cinqPtrois">{{ personage.maArmure[2] }}</td>
-                        {% elseif personage.maArmure[2] == 6.3 %}
-                            <td class="sixPtrois">{{ personage.maArmure[2] }}</td>
-                        {% elseif personage.maArmure[2] == 7.3 %}
-                            <td class="septPtrois">{{ personage.maArmure[2] }}</td>
-                        {% elseif personage.maArmure[2] == 8.3 %}
-                            <td class="huitPtrois">{{ personage.maArmure[2] }}</td>
-                        {% elseif personage.maArmure[2] == 6.6 %}
-                            <td class="sixPsix">{{ personage.maArmure[2] }}</td>
-                        {% elseif personage.maArmure[2] == 7.6 %}
-                            <td class="septPsix">{{ personage.maArmure[2] }}</td>
-                        {% elseif personage.maArmure[2] == 8.6 %}
-                            <td class="huitPsix">{{ personage.maArmure[2] }}</td>
-                        {% else %}
-                            <td class="deux">{{ personage.maArmure[2] }}</td>
-                        {% endif %}
-                        {% if count % 2 == 0 %}
-                            </tr>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% if count % 2 %}
-                    </tr>
-                {% endif %}
-                </tbody>
-            </table>
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Armure1', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Armure2', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Armure3', { 'page': 0, "json": false})) }}
         </div>
         <br style="clear: both;">
+        <br/>
+        <br/>
         {# End Armure #}
 
         {# Botte #}
         <div>
             <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">BOTTES</h3>
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="5" class="armor1">LEGERES EN TISSU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                    <th class="null"></th>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="5" class="null"></td>
-                </tr>
-                {% set count = 0 %}
-                {% for personage in personages %}
-                    {% if personage.maBotte[0] %}
-                        {% set count = count + 1 %}
-                        {% if count % 2 %}
-                            <tr>
-                        {% else %}
-                            <td class="null"></td>
-                        {% endif %}
-                        <td class="armor1">{{ personage.name }}</td>
-                        {% if personage.maBotte[0] == 3 %}
-                            <td class="trois">{{ personage.maBotte[0] }}</td>
-                        {% elseif personage.maBotte[0] == 4 %}
-                            <td class="quatre">{{ personage.maBotte[0] }}</td>
-                        {% elseif personage.maBotte[0] == 5 %}
-                            <td class="cinq">{{ personage.maBotte[0] }}</td>
-                        {% elseif personage.maBotte[0] == 6 %}
-                            <td class="six">{{ personage.maBotte[0] }}</td>
-                        {% elseif personage.maBotte[0] == 7 %}
-                            <td class="sept">{{ personage.maBotte[0] }}</td>
-                        {% elseif personage.maBotte[0] == 8 %}
-                            <td class="huit">{{ personage.maBotte[0] }}</td>
-                        {% elseif personage.maBotte[0] == 5.4 %}
-                            <td class="cinqPquatre">{{ personage.maBotte[0] }}</td>
-                        {% elseif personage.maBotte[0] == 6.4 %}
-                            <td class="sixPquatre">{{ personage.maBotte[0] }}</td>
-                        {% elseif personage.maBotte[0] == 7.4 %}
-                            <td class="septPquatre">{{ personage.maBotte[0] }}</td>
-                        {% elseif personage.maBotte[0] == 8.4 %}
-                            <td class="huitPquatre">{{ personage.maBotte[0] }}</td>
-                        {% else %}
-                            <td class="deux">{{ personage.maBotte[0] }}</td>
-                        {% endif %}
-                        {% if count % 2 == 0 %}
-                            </tr>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% if count % 2 %}
-                    </tr>
-                {% endif %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="5" class="armor2">MOYENNES EN TISSU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                    <th class="null"></th>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="5" class="null"></td>
-                </tr>
-                {% set count = 0 %}
-                {% for personage in personages %}
-                    {% if personage.maBotte[1] %}
-                        {% set count = count + 1 %}
-                        {% if count % 2 %}
-                            <tr>
-                        {% else %}
-                            <td class="null"></td>
-                        {% endif %}
-                        <td class="armor2">{{ personage.name }}</td>
-                        {% if personage.maBotte[1] == 4.2 %}
-                            <td class="quatrePdeux">{{ personage.maBotte[1] }}</td>
-                        {% elseif personage.maBotte[1] == 5.2 %}
-                            <td class="cinqPdeux">{{ personage.maBotte[1] }}</td>
-                        {% elseif personage.maBotte[1] == 6.2 %}
-                            <td class="sixPdeux">{{ personage.maBotte[1] }}</td>
-                        {% elseif personage.maBotte[1] == 7.2 %}
-                            <td class="septPdeux">{{ personage.maBotte[1] }}</td>
-                        {% elseif personage.maBotte[1] == 8.2 %}
-                            <td class="huitPdeux">{{ personage.maBotte[1] }}</td>
-                        {% elseif personage.maBotte[1] == 5.5 %}
-                            <td class="cinqPcinq">{{ personage.maBotte[1] }}</td>
-                        {% elseif personage.maBotte[1] == 6.5 %}
-                            <td class="sixPcinq">{{ personage.maBotte[1] }}</td>
-                        {% elseif personage.maBotte[1] == 7.5 %}
-                            <td class="septPcinq">{{ personage.maBotte[1] }}</td>
-                        {% elseif personage.maBotte[1] == 8.5 %}
-                            <td class="huitPcinq">{{ personage.maBotte[1] }}</td>
-                        {% else %}
-                            <td class="deux">{{ personage.maBotte[1] }}</td>
-                        {% endif %}
-                        {% if count % 2 == 0 %}
-                            </tr>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% if count % 2 %}
-                    </tr>
-                {% endif %}
-                </tbody>
-            </table>
-
-            <table class="table table-bordered agriculture">
-                <thead>
-                <tr>
-                    <th colspan="5" class="armor3">LOURDES EN TISSU</th>
-                </tr>
-                <tr>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                    <th class="null"></th>
-                    <th>Pseudo</th>
-                    <th>Tiers</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td colspan="5" class="null"></td>
-                </tr>
-                {% set count = 0 %}
-                {% for personage in personages %}
-                    {% if personage.maBotte[2] %}
-                        {% set count = count + 1 %}
-                        {% if count % 2 %}
-                            <tr>
-                        {% else %}
-                            <td class="null"></td>
-                        {% endif %}
-                        <td class="armor3">{{ personage.name }}</td>
-                        {% if personage.maBotte[2] == 4.3 %}
-                            <td class="quatrePtrois">{{ personage.maBotte[2] }}</td>
-                        {% elseif personage.maBotte[2] == 5.3 %}
-                            <td class="cinqPtrois">{{ personage.maBotte[2] }}</td>
-                        {% elseif personage.maBotte[2] == 6.3 %}
-                            <td class="sixPtrois">{{ personage.maBotte[2] }}</td>
-                        {% elseif personage.maBotte[2] == 7.3 %}
-                            <td class="septPtrois">{{ personage.maBotte[2] }}</td>
-                        {% elseif personage.maBotte[2] == 8.3 %}
-                            <td class="huitPtrois">{{ personage.maBotte[2] }}</td>
-                        {% elseif personage.maBotte[2] == 6.6 %}
-                            <td class="sixPsix">{{ personage.maBotte[2] }}</td>
-                        {% elseif personage.maBotte[2] == 7.6 %}
-                            <td class="septPsix">{{ personage.maBotte[2] }}</td>
-                        {% elseif personage.maBotte[2] == 8.6 %}
-                            <td class="huitPsix">{{ personage.maBotte[2] }}</td>
-                        {% else %}
-                            <td class="deux">{{ personage.maBotte[2] }}</td>
-                        {% endif %}
-                        {% if count % 2 == 0 %}
-                            </tr>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                {% if count % 2 %}
-                    </tr>
-                {% endif %}
-                </tbody>
-            </table>
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Botte1', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Botte2', { 'page': 0, "json": false})) }}
+            {{ render(controller('OursUserBundle:Artisanat\\Mage:Botte3', { 'page': 0, "json": false})) }}
         </div>
         <br style="clear: both;">
+        <br/>
+        <br/>
         {# End Botte #}
     </div>
     {# End Tour du Mage #}
@@ -1441,9 +151,9 @@
     <div id="chasseur" class="tab-pane fade">
 
         {# Armes #}
-        <div>
+        {#<div>
             <h3>ARMES</h3>
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="fire">ARCS</th>
@@ -1531,7 +241,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="beni">LANCE</th>
@@ -1619,7 +329,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="eso">BATON NATUREL</th>
@@ -1707,7 +417,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="givre">DAGUE</th>
@@ -1795,7 +505,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="damn">LONGS BATONS</th>
@@ -1883,7 +593,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="tome">TORCHES</th>
@@ -1935,9 +645,9 @@
         {# End Armes #}
 
         {# Casque #}
-        <div>
+        {#<div>
             <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">CASQUE</h3>
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor1">MOYENS EN CUIR</th>
@@ -1999,7 +709,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor2">LOURDS EN CUIR</th>
@@ -2059,7 +769,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor3">LEGERS EN CUIR</th>
@@ -2121,9 +831,9 @@
         {# End Casque#}
 
         {# Armure #}
-        <div>
+        {#<div>
             <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">ARMURES</h3>
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor1">MOYENNES EN CUIR</th>
@@ -2185,7 +895,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor2">LOURDES EN CUIR</th>
@@ -2245,7 +955,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor3">LEGERES EN CUIR</th>
@@ -2307,9 +1017,9 @@
         {# End Armure #}
 
         {# Botte #}
-        <div>
+        {#<div>
             <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">BOTTES</h3>
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor1">MOYENNES EN CUIR</th>
@@ -2371,7 +1081,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor2">LOURDES EN CUIR</th>
@@ -2431,7 +1141,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor3">LEGERES EN CUIR</th>
@@ -2498,9 +1208,9 @@
     <div id="soldat" class="tab-pane fade">
 
         {# Armes #}
-        <div>
+        {#<div>
             <h3>ARMES</h3>
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="fire">EPEE LARGE</th>
@@ -2588,7 +1298,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="beni">HACHE</th>
@@ -2676,7 +1386,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="eso">MASSUES</th>
@@ -2764,7 +1474,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="givre">MASSES</th>
@@ -2852,7 +1562,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="damn">ARBALETES</th>
@@ -2940,7 +1650,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="4" class="tome">BOUCLIERS</th>
@@ -2992,9 +1702,9 @@
         {# End Armes #}
 
         {# Casque #}
-        <div>
+        {#<div>
             <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">CASQUE</h3>
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor1">PLAQUES LOURD</th>
@@ -3056,7 +1766,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor2">PLAQUES LEGER</th>
@@ -3116,7 +1826,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor3">PLAQUES MOYEN</th>
@@ -3178,9 +1888,9 @@
         {# End Casque#}
 
         {# Armure #}
-        <div>
+        {#<div>
             <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">ARMURES</h3>
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor1">PLAQUES LOURDE</th>
@@ -3242,7 +1952,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor2">PLAQUES LEGERE</th>
@@ -3302,7 +2012,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor3">PLAQUES MOYENNE</th>
@@ -3364,9 +2074,9 @@
         {# End Armure #}
 
         {# Botte #}
-        <div>
+        {#<div>
             <h3 style="width: 100%; background-color: #434343; color: white; text-align: center">BOTTES</h3>
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor1">PLAQUES LOURDE</th>
@@ -3428,7 +2138,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor2">PLAQUES LEGERE</th>
@@ -3488,7 +2198,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-bordered agriculture">
+            <table class="table table-bordered artisanat">
                 <thead>
                 <tr>
                     <th colspan="5" class="armor3">PLAQUES MOYENNE</th>
@@ -3552,4 +2262,25 @@
     {# End Forge du Guerrier #}
 
 </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        function paginationAjax(destination, route, page)
+        {
+            $.ajax({
+                type: 'GET',
+                url: route,
+                data: 'page='+page,
+                dataType: "json",
+                success: function(data) {
+                    destination.html(data.html)
+                },
+                fail: function(jqXHR, textStatus, errorThrown) {
+                    alert('Error : ' + errorThrown)
+                }
+            })
+        }
+
+    </script>
 {% endblock %}

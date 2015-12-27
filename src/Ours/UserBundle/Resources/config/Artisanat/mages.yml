@@ -1,0 +1,99 @@
+content_mages_fire_personage:
+    path:     /BatonFeu
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batonfeu }
+
+content_mages_gr_fire_personage:
+    path:     /GrandBatonFeu
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Grandbatonfeu }
+
+content_mages_infernal_personage:
+    path:     /BatonInfernal
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batoninfernal }
+
+content_mages_beni_personage:
+    path:     /BatonBeni
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batonbeni }
+
+content_mages_gr_beni_personage:
+    path:     /GrandBatonBeni
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Grandbatonbeni }
+
+content_mages_divin_personage:
+    path:     /BatonDivin
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batondivin }
+
+content_mages_eso_personage:
+    path:     /BatonEso
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batonesoterique }
+
+content_mages_gr_eso_personage:
+    path:     /GrandBatonEso
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Grandbatonesoterique }
+
+content_mages_eni_personage:
+    path:     /BatonEnigmatique
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batonenigmatique }
+
+content_mages_givre_personage:
+    path:     /BatonGivre
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batongivre }
+
+content_mages_gr_givre_personage:
+    path:     /GrandBatonGivre
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Grandbatongivre }
+
+content_mages_glacial_personage:
+    path:     /BatonGlacial
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batonglacial }
+
+content_mages_damn_personage:
+    path:     /BatonDamne
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batondamne }
+
+content_mages_gr_damn_personage:
+    path:     /GrandBatonDamne
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Grandbatondamne }
+
+content_mages_demo_personage:
+    path:     /BatonDemoniste
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batondemo }
+
+content_mages_tome_personage:
+    path:     /Tome
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Tome }
+
+content_mages_casque1_personage:
+    path:     /Casque1
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Casque1 }
+
+content_mages_casque2_personage:
+    path:     /Casque2
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Casque2 }
+
+content_mages_casque3_personage:
+    path:     /Casque3
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Casque3 }
+
+content_mages_armure1_personage:
+    path:     /armure1
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Armure1 }
+
+content_mages_armure2_personage:
+    path:     /armure2
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Armure2 }
+
+content_mages_armure3_personage:
+    path:     /armure3
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Armure3 }
+
+content_mages_botte1_personage:
+    path:     /botte1
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Botte1 }
+
+content_mages_botte2_personage:
+    path:     /botte2
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Botte2 }
+
+content_mages_botte3_personage:
+    path:     /botte3
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Botte3 }

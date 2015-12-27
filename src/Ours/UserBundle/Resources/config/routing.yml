@@ -25,3 +25,19 @@ show_agriculture_personage:
 show_artisanat_personage:
     path:     /showArtisanat
     defaults: { _controller: OursUserBundle:Personage:ShowArtisanat }
+
+content_artisanat_outils:
+    resource: "@OursUserBundle/Resources/config/Artisanat/accessoires.yml"
+    prefix:     /contentArtisanat/Outils
+
+content_artisanat_accessoires:
+    resource: "@OursUserBundle/Resources/config/Artisanat/outils.yml"
+    prefix:     /contentArtisanat/Accessoires
+
+content_artisanat_mages:
+    resource: "@OursUserBundle/Resources/config/Artisanat/mages.yml"
+    prefix:     /contentArtisanat/Mages
+
+content_artisanat_chasseurs:
+    resource: "@OursUserBundle/Resources/config/Artisanat/chasseurs.yml"
+    prefix:     /contentArtisanat/Chasseurs

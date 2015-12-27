@@ -1,0 +1,7 @@
+content_accessoires_sac_personage:
+    path:     /Sac
+    defaults: { _controller: OursUserBundle:Artisanat\Accessoires:Sac }
+
+content_accessoires_cape_personage:
+    path:     /Cape
+    defaults: { _controller: OursUserBundle:Artisanat\Accessoires:Cape }

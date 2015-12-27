@@ -1,0 +1,39 @@
+<table id="ouMassePi" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="beni">MASSES PiERRE</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.ouMassePi %}
+            <tr>
+                <td class="beni">{{ personage.name }}</td>
+                {% if personage.ouMassePi == 3 %}
+                    <td class="trois tier">{{ personage.ouMassePi }}</td>
+                {% elseif personage.ouMassePi == 4 %}
+                    <td class="quatre tier">{{ personage.ouMassePi }}</td>
+                {% elseif personage.ouMassePi == 5 %}
+                    <td class="cinq tier">{{ personage.ouMassePi }}</td>
+                {% elseif personage.ouMassePi == 6 %}
+                    <td class="six tier">{{ personage.ouMassePi }}</td>
+                {% elseif personage.ouMassePi == 7 %}
+                    <td class="sept tier">{{ personage.ouMassePi }}</td>
+                {% elseif personage.ouMassePi == 8 %}
+                    <td class="huit tier">{{ personage.ouMassePi }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.ouMassePi }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

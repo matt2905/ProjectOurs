@@ -1,10 +1,19 @@
 h3
 {
+    padding: 6px;
     width: 100%;
     background-color: #434343;
     color: #FFFFFF;
     text-align: center;
     border: 2px solid white;
+}
+div.container
+{
+    width: 80%;
+}
+th.tier
+{
+    width: 1%;
 }
 table, th, tr, td
 {
@@ -16,6 +25,18 @@ table, th, tr, td
 table.agriculture
 {
     width: 13%;
+    float: left;
+    margin: 0 5px 0 5px;
+}
+table.artisanat
+{
+    width: 15%;
+    float: left;
+    margin: 0 5px 0 5px;
+}
+table.armor
+{
+    width: 30%;
     float: left;
     margin: 0 5px 0 5px;
 }

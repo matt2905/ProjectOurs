@@ -55,767 +55,1316 @@ class Personage
      *
      * @ORM\Column(name="fibre", type="integer")
      */
-    private $fibre;
+    private $fibre = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="bois", type="integer")
      */
-    private $bois;
+    private $bois = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="peau", type="integer")
      */
-    private $peau;
+    private $peau = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="minerai", type="integer")
      */
-    private $minerai;
+    private $minerai = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="pierre", type="integer")
      */
-    private $pierre;
+    private $pierre = 0;
 
     /**
-     * @var array
+     * @var int
      *
      * @ORM\Column(name="tissu", type="integer")
      */
-    private $tissu;
+    private $tissu = 0;
 
     /**
-     * @var array
+     * @var int
      *
      * @ORM\Column(name="planche", type="integer")
      */
-    private $planche;
+    private $planche = 0;
 
     /**
-     * @var array
+     * @var int
      *
      * @ORM\Column(name="cuir", type="integer")
      */
-    private $cuir;
+    private $cuir = 0;
 
     /**
-     * @var array
+     * @var int
      *
      * @ORM\Column(name="barre", type="integer")
      */
-    private $barre;
+    private $barre = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="bloc", type="integer")
      */
-    private $bloc;
+    private $bloc = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="ouMasseDemo", type="integer")
      */
-    private $ouMasseDemo;
+    private $ouMasseDemo = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="ouFaucille", type="integer")
      */
-    private $ouFaucille;
+    private $ouFaucille = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="ouCouteau", type="integer")
      */
-    private $ouCouteau;
+    private $ouCouteau = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="ouPioche", type="integer")
      */
-    private $ouPioche;
+    private $ouPioche = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="ouMassePi", type="integer")
      */
-    private $ouMassePi;
+    private $ouMassePi = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="ouHache", type="integer")
      */
-    private $ouHache;
+    private $ouHache = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="accSac", type="integer")
      */
-    private $accSac;
+    private $accSac = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="accCape", type="integer")
      */
-    private $accCape;
+    private $accCape = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="maBatonFeu", type="array")
+     * @ORM\Column(name="maBatonFeu", type="float")
      */
-    private $maBatonFeu;
+    private $maBatonFeu = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="maBatonBeni", type="array")
+     * @ORM\Column(name="maGrandBatonFeu", type="float")
      */
-    private $maBatonBeni;
+    private $maGrandBatonFeu = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="maBatonEso", type="array")
+     * @ORM\Column(name="maBatonInfernal", type="float")
      */
-    private $maBatonEso;
+    private $maBatonInfernal = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="maBatonGi", type="array")
+     * @ORM\Column(name="maBatonBeni", type="float")
      */
-    private $maBatonGi;
+    private $maBatonBeni = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="maBatonDamn", type="array")
+     * @ORM\Column(name="maGrandBatonBeni", type="float")
      */
-    private $maBatonDamn;
+    private $maGrandBatonBeni = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="maTome", type="array")
+     * @ORM\Column(name="maBatonDivin", type="float")
      */
-    private $maTome;
+    private $maBatonDivin = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="maCasque", type="array")
+     * @ORM\Column(name="maBatonEso", type="float")
      */
-    private $maCasque;
+    private $maBatonEso = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="maArmure", type="array")
+     * @ORM\Column(name="maGrandBatonEso", type="float")
      */
-    private $maArmure;
+    private $maGrandBatonEso = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="maBotte", type="array")
+     * @ORM\Column(name="maBatonEni", type="float")
      */
-    private $maBotte;
+    private $maBatonEni = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="chArc", type="array")
+     * @ORM\Column(name="maBatonGi", type="float")
      */
-    private $chArc;
+    private $maBatonGi = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="chLance", type="array")
+     * @ORM\Column(name="maGrandBatonGi", type="float")
      */
-    private $chLance;
+    private $maGrandBatonGi = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="chBatonNat", type="array")
+     * @ORM\Column(name="maBatonGla", type="float")
      */
-    private $chBatonNat;
+    private $maBatonGla = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="chDague", type="array")
+     * @ORM\Column(name="maBatonDamn", type="float")
      */
-    private $chDague;
+    private $maBatonDamn = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="chBatonLong", type="array")
+     * @ORM\Column(name="maGrandBatonDamn", type="float")
      */
-    private $chBatonLong;
+    private $maGrandBatonDamn = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="chTorche", type="array")
+     * @ORM\Column(name="maBatonDemo", type="float")
      */
-    private $chTorche;
+    private $maBatonDemo = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="chCasque", type="array")
+     * @ORM\Column(name="maTome", type="float")
      */
-    private $chCasque;
+    private $maTome = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="chArmure", type="array")
+     * @ORM\Column(name="maCasque1", type="float")
      */
-    private $chArmure;
+    private $maCasque1 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="chBotte", type="array")
+     * @ORM\Column(name="maCasque2", type="float")
      */
-    private $chBotte;
+    private $maCasque2 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="soEpeeLarge", type="array")
+     * @ORM\Column(name="maCasque3", type="float")
      */
-    private $soEpeeLarge;
+    private $maCasque3 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="soHache", type="array")
+     * @ORM\Column(name="maArmure1", type="float")
      */
-    private $soHache;
+    private $maArmure1 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="soMassue", type="array")
+     * @ORM\Column(name="maArmure2", type="float")
      */
-    private $soMassue;
+    private $maArmure2 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="soMasse", type="array")
+     * @ORM\Column(name="maArmure3", type="float")
      */
-    private $soMasse;
+    private $maArmure3 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="soArbalete", type="array")
+     * @ORM\Column(name="maBotte1", type="float")
      */
-    private $soArbalete;
+    private $maBotte1 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="soBouclier", type="array")
+     * @ORM\Column(name="maBotte2", type="float")
      */
-    private $soBouclier;
+    private $maBotte2 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="soCasque", type="array")
+     * @ORM\Column(name="maBotte3", type="float")
      */
-    private $soCasque;
+    private $maBotte3 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="soArmure", type="array")
+     * @ORM\Column(name="chArc", type="float")
      */
-    private $soArmure;
+    private $chArc = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="soBotte", type="array")
+     * @ORM\Column(name="chArcGu", type="float")
      */
-    private $soBotte;
+    private $chArcGu = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chArcLo", type="float")
+     */
+    private $chArcLo = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chLance", type="float")
+     */
+    private $chLance = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chPique", type="float")
+     */
+    private $chPique = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chHallebarde", type="float")
+     */
+    private $chHallebarde = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chBatonNat", type="float")
+     */
+    private $chBatonNat = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chGrandBatonNat", type="float")
+     */
+    private $chGrandBatonNat = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chBatonSau", type="float")
+     */
+    private $chBatonSau = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chDague", type="float")
+     */
+    private $chDague = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chDagueDouble", type="float")
+     */
+    private $chDagueDouble = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chGriffe", type="float")
+     */
+    private $chGriffe = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chBatonLong", type="float")
+     */
+    private $chBatonLong = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chBatonSF", type="float")
+     */
+    private $chBatonSF = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chBatonDT", type="float")
+     */
+    private $chBatonDT = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chTorche", type="float")
+     */
+    private $chTorche = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chCasque1", type="float")
+     */
+    private $chCasque1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chCasque2", type="float")
+     */
+    private $chCasque2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chCasque3", type="float")
+     */
+    private $chCasque3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chArmure1", type="float")
+     */
+    private $chArmure1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chArmure2", type="float")
+     */
+    private $chArmure2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chArmure3", type="float", length=255)
+     */
+    private $chArmure3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chBotte1", type="float")
+     */
+    private $chBotte1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chBotte2", type="float")
+     */
+    private $chBotte2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="chBotte3", type="float")
+     */
+    private $chBotte3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soEpeeLarge", type="float")
+     */
+    private $soEpeeLarge = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soClaymore", type="float")
+     */
+    private $soClaymore = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soGlaive", type="float")
+     */
+    private $soGlaive = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soHache", type="float")
+     */
+    private $soHache = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soGrandeHache", type="float")
+     */
+    private $soGrandeHache = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soFaux", type="float")
+     */
+    private $soFaux = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soMassue", type="float")
+     */
+    private $soMassue = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soMassueLo", type="float")
+     */
+    private $soMassueLo = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soFleau", type="float")
+     */
+    private $soFleau = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soMasse", type="float")
+     */
+    private $soMasse = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soBecDeCorbin", type="float")
+     */
+    private $soBecDeCorbin = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soGrandeMasse", type="float")
+     */
+    private $soGrandeMasse = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soArbalete", type="float")
+     */
+    private $soArbalete = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soArbaleteLo", type="float")
+     */
+    private $soArbaleteLo = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soArbaleteRep", type="float")
+     */
+    private $soArbaleteRep = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soBouclier", type="float")
+     */
+    private $soBouclier = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soCasque1", type="float")
+     */
+    private $soCasque1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soCasque2", type="float")
+     */
+    private $soCasque2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soCasque3", type="float")
+     */
+    private $soCasque3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soArmure1", type="float")
+     */
+    private $soArmure1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soArmure2", type="float")
+     */
+    private $soArmure2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soArmure3", type="float")
+     */
+    private $soArmure3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soBotte1", type="float")
+     */
+    private $soBotte1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soBotte2", type="float")
+     */
+    private $soBotte2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="soBotte3", type="float")
+     */
+    private $soBotte3 = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="alHeal", type="integer")
      */
-    private $alHeal;
+    private $alHeal = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="alEnergy", type="integer")
      */
-    private $alEnergy;
+    private $alEnergy = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="alRevive", type="integer")
      */
-    private $alRevive;
+    private $alRevive = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="alStone", type="integer")
      */
-    private $alStone;
+    private $alStone = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="alChill", type="integer")
      */
-    private $alChill;
+    private $alChill = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="alRecovery", type="integer")
      */
-    private $alRecovery;
+    private $alRecovery = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="alClean", type="integer")
      */
-    private $alClean;
+    private $alClean = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="alAlcohol", type="integer")
      */
-    private $alAlcohol;
+    private $alAlcohol = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="herbo", type="integer")
      */
-    private $herbo;
+    private $herbo = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="anMonture", type="integer")
      */
-    private $anMonture;
+    private $anMonture = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="anFerme", type="integer")
      */
-    private $anFerme;
+    private $anFerme = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="cuSoup", type="integer")
      */
-    private $cuSoup;
+    private $cuSoup = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="cuSalad", type="integer")
      */
-    private $cuSalad;
+    private $cuSalad = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="cuPie", type="integer")
      */
-    private $cuPie;
+    private $cuPie = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="cuOmelette", type="integer")
      */
-    private $cuOmelette;
+    private $cuOmelette = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="cuSandwich", type="integer")
      */
-    private $cuSandwich;
+    private $cuSandwich = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="cuStew", type="integer")
      */
-    private $cuStew;
+    private $cuStew = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="cuProduct", type="integer")
      */
-    private $cuProduct;
+    private $cuProduct = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="cuMeat", type="integer")
      */
-    private $cuMeat;
+    private $cuMeat = 0;
 
     /**
      * @var int
      *
      * @ORM\Column(name="paysan", type="integer")
      */
-    private $paysan;
+    private $paysan = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbMaPyro", type="array")
+     * @ORM\Column(name="cbMaBatonFeu", type="float")
      */
-    private $cbMaPyro;
+    private $cbMaBatonFeu = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbMaPretre", type="array")
+     * @ORM\Column(name="cbMaGrandBatonFeu", type="float")
      */
-    private $cbMaPretre;
+    private $cbMaGrandBatonFeu = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbMaArca", type="array")
+     * @ORM\Column(name="cbMaBatonInfernal", type="float")
      */
-    private $cbMaArca;
+    private $cbMaBatonInfernal = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbMaGivre", type="array")
+     * @ORM\Column(name="cbMaBatonBeni", type="float")
      */
-    private $cbMaGivre;
+    private $cbMaBatonBeni = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbMaSorcier", type="array")
+     * @ORM\Column(name="cbMaGrandBatonBeni", type="float")
      */
-    private $cbMaSorcier;
+    private $cbMaGrandBatonBeni = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbMaTome", type="array")
+     * @ORM\Column(name="cbMaBatonDivin", type="float")
      */
-    private $cbMaTome;
+    private $cbMaBatonDivin = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbMaCasque", type="array")
+     * @ORM\Column(name="cbMaBatonEso", type="float")
      */
-    private $cbMaCasque;
+    private $cbMaBatonEso = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbMaArmure", type="array")
+     * @ORM\Column(name="cbMaGrandBatonEso", type="float")
      */
-    private $cbMaArmure;
+    private $cbMaGrandBatonEso = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbMaBotte", type="array")
+     * @ORM\Column(name="cbMaBatonEni", type="float")
      */
-    private $cbMaBotte;
+    private $cbMaBatonEni = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbChArc", type="array")
+     * @ORM\Column(name="cbMaBatonGi", type="float")
      */
-    private $cbChArc;
+    private $cbMaBatonGi = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbChLance", type="array")
+     * @ORM\Column(name="cbMaGrandBatonGi", type="float")
      */
-    private $cbChLance;
+    private $cbMaGrandBatonGi = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbChBatonNat", type="array")
+     * @ORM\Column(name="cbMaBatonGla", type="float")
      */
-    private $cbChBatonNat;
+    private $cbMaBatonGla = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbChDague", type="array")
+     * @ORM\Column(name="cbMaBatonDamn", type="float")
      */
-    private $cbChDague;
+    private $cbMaBatonDamn = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbChBatonLong", type="array")
+     * @ORM\Column(name="cbMaGrandBatonDamn", type="float")
      */
-    private $cbChBatonLong;
+    private $cbMaGrandBatonDamn = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbChTorche", type="array")
+     * @ORM\Column(name="cbMaBatonDemo", type="float")
      */
-    private $cbChTorche;
+    private $cbMaBatonDemo = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbChCasque", type="array")
+     * @ORM\Column(name="cbMaTome", type="float")
      */
-    private $cbChCasque;
+    private $cbMaTome = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbChArmure", type="array")
+     * @ORM\Column(name="cbMaCasque1", type="float")
      */
-    private $cbChArmure;
+    private $cbMaCasque1 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbChBotte", type="array")
+     * @ORM\Column(name="cbMaCasque2", type="float")
      */
-    private $cbChBotte;
+    private $cbMaCasque2 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbSoEpeeLarge", type="array")
+     * @ORM\Column(name="cbMaCasque3", type="float")
      */
-    private $cbSoEpeeLarge;
+    private $cbMaCasque3 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbSoHache", type="array")
+     * @ORM\Column(name="cbMaArmure1", type="float")
      */
-    private $cbSoHache;
+    private $cbMaArmure1 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbSoMassue", type="array")
+     * @ORM\Column(name="cbMaArmure2", type="float")
      */
-    private $cbSoMassue;
+    private $cbMaArmure2 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbSoMasse", type="array")
+     * @ORM\Column(name="cbMaArmure3", type="float")
      */
-    private $cbSoMasse;
+    private $cbMaArmure3 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbSoArbalete", type="array")
+     * @ORM\Column(name="cbMaBotte1", type="float")
      */
-    private $cbSoArbalete;
+    private $cbMaBotte1 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbSoBouclier", type="array")
+     * @ORM\Column(name="cbMaBotte2", type="float")
      */
-    private $cbSoBouclier;
+    private $cbMaBotte2 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbSoCasque", type="array")
+     * @ORM\Column(name="cbMaBotte3", type="float")
      */
-    private $cbSoCasque;
+    private $cbMaBotte3 = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbSoArmure", type="array")
+     * @ORM\Column(name="cbChArc", type="float")
      */
-    private $cbSoArmure;
+    private $cbChArc = 0;
 
     /**
-     * @var array
+     * @var int
      *
-     * @ORM\Column(name="cbSoBotte", type="array")
+     * @ORM\Column(name="cbChArcGu", type="float")
      */
-    private $cbSoBotte;
-
+    private $cbChArcGu = 0;
 
     /**
-     * Personage constructor.
+     * @var int
+     *
+     * @ORM\Column(name="cbChArcLo", type="float")
      */
-    public function __construct()
-    {
-        //  Récolte
-        $this->fibre = 0;
-        $this->bois = 0;
-        $this->peau = 0;
-        $this->minerai = 0;
-        $this->pierre = 0;
-        //  Raffinerie
-        $this->tissu = 0;
-        $this->planche = 0;
-        $this->cuir = 0;
-        $this->barre = 0;
-        $this->bloc = 0;
-        //  Artisanat
-        //      Outil
-        $this->ouCouteau = 0;
-        $this->ouFaucille = 0;
-        $this->ouHache = 0;
-        $this->ouMasseDemo = 0;
-        $this->ouMassePi = 0;
-        $this->ouPioche = 0;
-        //      Accessoire
-        $this->accCape = 0;
-        $this->accSac = 0;
-        //      Mage Arme
-        $this->maBatonBeni = array(0, 0, 0);
-        $this->maBatonDamn = array(0, 0, 0);
-        $this->maBatonEso = array(0, 0, 0);
-        $this->maBatonFeu = array(0, 0, 0);
-        $this->maBatonGi = array(0, 0, 0);
-        $this->maTome = array(0, 0, 0);
-        //      Mage Armure
-        $this->maArmure = array(0, 0, 0);
-        $this->maBotte = array(0, 0, 0);
-        $this->maCasque = array(0, 0, 0);
-        //      Chasseur Arme
-        $this->chArc = array(0, 0, 0);
-        $this->chBatonLong = array(0, 0, 0);
-        $this->chBatonNat = array(0, 0, 0);
-        $this->chDague = array(0, 0, 0);
-        $this->chLance = array(0, 0, 0);
-        $this->chTorche = array(0, 0, 0);
-        //      Chasseur Armure
-        $this->chArmure = array(0, 0, 0);
-        $this->chBotte = array(0, 0, 0);
-        $this->chCasque = array(0, 0, 0);
-        //      Soldat Arme
-        $this->soArbalete = array(0, 0, 0);
-        $this->soEpeeLarge = array(0, 0, 0);
-        $this->soHache = array(0, 0, 0);
-        $this->soMasse = array(0, 0, 0);
-        $this->soMassue = array(0, 0, 0);
-        $this->soBouclier = array(0, 0, 0);
-        //      Soldat Armure
-        $this->soArmure = array(0, 0, 0);
-        $this->soBotte = array(0, 0, 0);
-        $this->soCasque = array(0, 0, 0);
+    private $cbChArcLo = 0;
 
-        //  Combat
-        //      Mage Arme
-        $this->cbMaArca = array(0, 0, 0);
-        $this->cbMaGivre = array(0, 0, 0);
-        $this->cbMaPretre = array(0, 0, 0);
-        $this->cbMaPyro = array(0, 0, 0);
-        $this->cbMaSorcier = array(0, 0, 0);
-        $this->cbMaTome = array(0, 0, 0);
-        //      Mage Armure
-        $this->cbMaArmure = array(0, 0, 0);
-        $this->cbMaBotte = array(0, 0, 0);
-        $this->cbMaCasque = array(0, 0, 0);
-        //      Chasseur Arme
-        $this->cbChArc = array(0, 0, 0);
-        $this->cbChBatonLong = array(0, 0, 0);
-        $this->cbChBatonNat = array(0, 0, 0);
-        $this->cbChDague = array(0, 0, 0);
-        $this->cbChLance = array(0, 0, 0);
-        $this->cbChTorche = array(0, 0, 0);
-        //      Chasseur Armure
-        $this->cbChArmure = array(0, 0, 0);
-        $this->cbChBotte = array(0, 0, 0);
-        $this->cbChCasque = array(0, 0, 0);
-        //      Soldat Arme
-        $this->cbSoArbalete = array(0, 0, 0);
-        $this->cbSoEpeeLarge = array(0, 0, 0);
-        $this->cbSoHache = array(0, 0, 0);
-        $this->cbSoMasse = array(0, 0, 0);
-        $this->cbSoMassue = array(0, 0, 0);
-        $this->cbSoBouclier = array(0, 0, 0);
-        //      Soldat Armure
-        $this->cbSoArmure = array(0, 0, 0);
-        $this->cbSoBotte = array(0, 0, 0);
-        $this->cbSoCasque = array(0, 0, 0);
-        //  Agriculture
-        //      Alchimie
-        $this->alAlcohol = 0;
-        $this->alChill = 0;
-        $this->alClean = 0;
-        $this->alEnergy = 0;
-        $this->alHeal = 0;
-        $this->alRecovery = 0;
-        $this->alRevive = 0;
-        $this->alStone = 0;
-        //      Récolte
-        $this->herbo = 0;
-        $this->paysan = 0;
-        $this->anFerme = 0;
-        $this->anMonture = 0;
-        //      Cuisine
-        $this->cuMeat = 0;
-        $this->cuOmelette = 0;
-        $this->cuPie = 0;
-        $this->cuProduct = 0;
-        $this->cuSalad = 0;
-        $this->cuSandwich = 0;
-        $this->cuSoup = 0;
-        $this->cuStew = 0;
-    }
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChLance", type="float")
+     */
+    private $cbChLance = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChPique", type="float")
+     */
+    private $cbChPique = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChHallebarde", type="float")
+     */
+    private $cbChHallebarde = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChBatonNat", type="float")
+     */
+    private $cbChBatonNat = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChGrandBatonNat", type="float", length=255)
+     */
+    private $cbChGrandBatonNat = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChBatonSau", type="float")
+     */
+    private $cbChBatonSau = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChDague", type="float")
+     */
+    private $cbChDague = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChDagueDouble", type="float")
+     */
+    private $cbChDagueDouble = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChGriffe", type="float")
+     */
+    private $cbChGriffe = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChBatonLong", type="float")
+     */
+    private $cbChBatonLong = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChBatonSF", type="float")
+     */
+    private $cbChBatonSF = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChBatonDT", type="float")
+     */
+    private $cbChBatonDT = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChTorche", type="float")
+     */
+    private $cbChTorche = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChCasque1", type="float")
+     */
+    private $cbChCasque1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChCasque2", type="float")
+     */
+    private $cbChCasque2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChCasque3", type="float")
+     */
+    private $cbChCasque3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChArmure1", type="float")
+     */
+    private $cbChArmure1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChArmure2", type="float")
+     */
+    private $cbChArmure2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChArmure3", type="float")
+     */
+    private $cbChArmure3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChBotte1", type="float")
+     */
+    private $cbChBotte1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChBotte2", type="float")
+     */
+    private $cbChBotte2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbChBotte3", type="float")
+     */
+    private $cbChBotte3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoEpeeLarge", type="float")
+     */
+    private $cbSoEpeeLarge = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoClaymore", type="float")
+     */
+    private $cbSoClaymore = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoGlaive", type="float")
+     */
+    private $cbSoGlaive = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoHache", type="float")
+     */
+    private $cbSoHache = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoGrandeHache", type="float")
+     */
+    private $cbSoGrandeHache = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoFaux", type="float")
+     */
+    private $cbSoFaux = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoMassue", type="float")
+     */
+    private $cbSoMassue = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoMassueLo", type="float")
+     */
+    private $cbSoMassueLo = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoFleau", type="float")
+     */
+    private $cbSoFleau = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoMasse", type="float")
+     */
+    private $cbSoMasse = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoBecDeCorbin", type="float")
+     */
+    private $cbSoBecDeCorbin = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoGrandeMasse", type="float")
+     */
+    private $cbSoGrandeMasse = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoArbalete", type="float")
+     */
+    private $cbSoArbalete = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoArbaleteLo", type="float")
+     */
+    private $cbSoArbaleteLo = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoArbaleteRep", type="float")
+     */
+    private $cbSoArbaleteRep = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoBouclier", type="float")
+     */
+    private $cbSoBouclier = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoCasque1", type="float")
+     */
+    private $cbSoCasque1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoCasque2", type="float")
+     */
+    private $cbSoCasque2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoCasque3", type="float")
+     */
+    private $cbSoCasque3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoArmure1", type="float")
+     */
+    private $cbSoArmure1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoArmure2", type="float")
+     */
+    private $cbSoArmure2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoArmure3", type="float")
+     */
+    private $cbSoArmure3 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoBotte1", type="float")
+     */
+    private $cbSoBotte1 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoBotte2", type="float")
+     */
+    private $cbSoBotte2 = 0;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cbSoBotte3", type="float")
+     */
+    private $cbSoBotte3 = 0;
 
     /**
      * Get id
@@ -1064,7 +1613,7 @@ class Personage
     /**
      * Set planche
      *
-     * @param array $planche
+     * @param integer $planche
      *
      * @return Personage
      */
@@ -1078,7 +1627,7 @@ class Personage
     /**
      * Get planche
      *
-     * @return array
+     * @return int
      */
     public function getPlanche()
     {
@@ -1088,7 +1637,7 @@ class Personage
     /**
      * Set cuir
      *
-     * @param array $cuir
+     * @param integer $cuir
      *
      * @return Personage
      */
@@ -1102,7 +1651,7 @@ class Personage
     /**
      * Get cuir
      *
-     * @return array
+     * @return int
      */
     public function getCuir()
     {
@@ -1112,7 +1661,7 @@ class Personage
     /**
      * Set barre
      *
-     * @param array $barre
+     * @param integer $barre
      *
      * @return Personage
      */
@@ -1126,7 +1675,7 @@ class Personage
     /**
      * Get barre
      *
-     * @return array
+     * @return int
      */
     public function getBarre()
     {
@@ -1352,7 +1901,7 @@ class Personage
     /**
      * Set maBatonFeu
      *
-     * @param array $maBatonFeu
+     * @param float $maBatonFeu
      *
      * @return Personage
      */
@@ -1366,7 +1915,7 @@ class Personage
     /**
      * Get maBatonFeu
      *
-     * @return array
+     * @return int
      */
     public function getMaBatonFeu()
     {
@@ -1374,9 +1923,57 @@ class Personage
     }
 
     /**
+     * Set maGrandBatonFeu
+     *
+     * @param float $maGrandBatonFeu
+     *
+     * @return Personage
+     */
+    public function setMaGrandBatonFeu($maGrandBatonFeu)
+    {
+        $this->maGrandBatonFeu = $maGrandBatonFeu;
+
+        return $this;
+    }
+
+    /**
+     * Get maGrandBatonFeu
+     *
+     * @return int
+     */
+    public function getMaGrandBatonFeu()
+    {
+        return $this->maGrandBatonFeu;
+    }
+
+    /**
+     * Set maBatonInfernal
+     *
+     * @param float $maBatonInfernal
+     *
+     * @return Personage
+     */
+    public function setMaBatonInfernal($maBatonInfernal)
+    {
+        $this->maBatonInfernal = $maBatonInfernal;
+
+        return $this;
+    }
+
+    /**
+     * Get maBatonInfernal
+     *
+     * @return int
+     */
+    public function getMaBatonInfernal()
+    {
+        return $this->maBatonInfernal;
+    }
+
+    /**
      * Set maBatonBeni
      *
-     * @param array $maBatonBeni
+     * @param float $maBatonBeni
      *
      * @return Personage
      */
@@ -1390,7 +1987,7 @@ class Personage
     /**
      * Get maBatonBeni
      *
-     * @return array
+     * @return int
      */
     public function getMaBatonBeni()
     {
@@ -1398,9 +1995,57 @@ class Personage
     }
 
     /**
+     * Set maGrandBatonBeni
+     *
+     * @param float $maGrandBatonBeni
+     *
+     * @return Personage
+     */
+    public function setMaGrandBatonBeni($maGrandBatonBeni)
+    {
+        $this->maGrandBatonBeni = $maGrandBatonBeni;
+
+        return $this;
+    }
+
+    /**
+     * Get maGrandBatonBeni
+     *
+     * @return int
+     */
+    public function getMaGrandBatonBeni()
+    {
+        return $this->maGrandBatonBeni;
+    }
+
+    /**
+     * Set maBatonDivin
+     *
+     * @param float $maBatonDivin
+     *
+     * @return Personage
+     */
+    public function setMaBatonDivin($maBatonDivin)
+    {
+        $this->maBatonDivin = $maBatonDivin;
+
+        return $this;
+    }
+
+    /**
+     * Get maBatonDivin
+     *
+     * @return int
+     */
+    public function getMaBatonDivin()
+    {
+        return $this->maBatonDivin;
+    }
+
+    /**
      * Set maBatonEso
      *
-     * @param array $maBatonEso
+     * @param float $maBatonEso
      *
      * @return Personage
      */
@@ -1414,7 +2059,7 @@ class Personage
     /**
      * Get maBatonEso
      *
-     * @return array
+     * @return int
      */
     public function getMaBatonEso()
     {
@@ -1422,9 +2067,57 @@ class Personage
     }
 
     /**
+     * Set maGrandBatonEso
+     *
+     * @param float $maGrandBatonEso
+     *
+     * @return Personage
+     */
+    public function setMaGrandBatonEso($maGrandBatonEso)
+    {
+        $this->maGrandBatonEso = $maGrandBatonEso;
+
+        return $this;
+    }
+
+    /**
+     * Get maGrandBatonEso
+     *
+     * @return int
+     */
+    public function getMaGrandBatonEso()
+    {
+        return $this->maGrandBatonEso;
+    }
+
+    /**
+     * Set maBatonEni
+     *
+     * @param float $maBatonEni
+     *
+     * @return Personage
+     */
+    public function setMaBatonEni($maBatonEni)
+    {
+        $this->maBatonEni = $maBatonEni;
+
+        return $this;
+    }
+
+    /**
+     * Get maBatonEni
+     *
+     * @return int
+     */
+    public function getMaBatonEni()
+    {
+        return $this->maBatonEni;
+    }
+
+    /**
      * Set maBatonGi
      *
-     * @param array $maBatonGi
+     * @param float $maBatonGi
      *
      * @return Personage
      */
@@ -1438,7 +2131,7 @@ class Personage
     /**
      * Get maBatonGi
      *
-     * @return array
+     * @return int
      */
     public function getMaBatonGi()
     {
@@ -1446,9 +2139,57 @@ class Personage
     }
 
     /**
+     * Set maGrandBatonGi
+     *
+     * @param float $maGrandBatonGi
+     *
+     * @return Personage
+     */
+    public function setMaGrandBatonGi($maGrandBatonGi)
+    {
+        $this->maGrandBatonGi = $maGrandBatonGi;
+
+        return $this;
+    }
+
+    /**
+     * Get maGrandBatonGi
+     *
+     * @return int
+     */
+    public function getMaGrandBatonGi()
+    {
+        return $this->maGrandBatonGi;
+    }
+
+    /**
+     * Set maBatonGla
+     *
+     * @param float $maBatonGla
+     *
+     * @return Personage
+     */
+    public function setMaBatonGla($maBatonGla)
+    {
+        $this->maBatonGla = $maBatonGla;
+
+        return $this;
+    }
+
+    /**
+     * Get maBatonGla
+     *
+     * @return int
+     */
+    public function getMaBatonGla()
+    {
+        return $this->maBatonGla;
+    }
+
+    /**
      * Set maBatonDamn
      *
-     * @param array $maBatonDamn
+     * @param float $maBatonDamn
      *
      * @return Personage
      */
@@ -1462,7 +2203,7 @@ class Personage
     /**
      * Get maBatonDamn
      *
-     * @return array
+     * @return int
      */
     public function getMaBatonDamn()
     {
@@ -1470,9 +2211,57 @@ class Personage
     }
 
     /**
+     * Set maGrandBatonDamn
+     *
+     * @param float $maGrandBatonDamn
+     *
+     * @return Personage
+     */
+    public function setMaGrandBatonDamn($maGrandBatonDamn)
+    {
+        $this->maGrandBatonDamn = $maGrandBatonDamn;
+
+        return $this;
+    }
+
+    /**
+     * Get maGrandBatonDamn
+     *
+     * @return int
+     */
+    public function getMaGrandBatonDamn()
+    {
+        return $this->maGrandBatonDamn;
+    }
+
+    /**
+     * Set maBatonDemo
+     *
+     * @param float $maBatonDemo
+     *
+     * @return Personage
+     */
+    public function setMaBatonDemo($maBatonDemo)
+    {
+        $this->maBatonDemo = $maBatonDemo;
+
+        return $this;
+    }
+
+    /**
+     * Get maBatonDemo
+     *
+     * @return int
+     */
+    public function getMaBatonDemo()
+    {
+        return $this->maBatonDemo;
+    }
+
+    /**
      * Set maTome
      *
-     * @param array $maTome
+     * @param float $maTome
      *
      * @return Personage
      */
@@ -1486,7 +2275,7 @@ class Personage
     /**
      * Get maTome
      *
-     * @return array
+     * @return int
      */
     public function getMaTome()
     {
@@ -1494,81 +2283,225 @@ class Personage
     }
 
     /**
-     * Set maCasque
+     * Set maCasque1
      *
-     * @param array $maCasque
+     * @param float $maCasque1
      *
      * @return Personage
      */
-    public function setMaCasque($maCasque)
+    public function setMaCasque1($maCasque1)
     {
-        $this->maCasque = $maCasque;
+        $this->maCasque1 = $maCasque1;
 
         return $this;
     }
 
     /**
-     * Get maCasque
+     * Get maCasque1
      *
-     * @return array
+     * @return int
      */
-    public function getMaCasque()
+    public function getMaCasque1()
     {
-        return $this->maCasque;
+        return $this->maCasque1;
     }
 
     /**
-     * Set maArmure
+     * Set maCasque2
      *
-     * @param array $maArmure
+     * @param float $maCasque2
      *
      * @return Personage
      */
-    public function setMaArmure($maArmure)
+    public function setMaCasque2($maCasque2)
     {
-        $this->maArmure = $maArmure;
+        $this->maCasque2 = $maCasque2;
 
         return $this;
     }
 
     /**
-     * Get maArmure
+     * Get maCasque2
      *
-     * @return array
+     * @return int
      */
-    public function getMaArmure()
+    public function getMaCasque2()
     {
-        return $this->maArmure;
+        return $this->maCasque2;
     }
 
     /**
-     * Set maBotte
+     * Set maCasque3
      *
-     * @param array $maBotte
+     * @param float $maCasque3
      *
      * @return Personage
      */
-    public function setMaBotte($maBotte)
+    public function setMaCasque3($maCasque3)
     {
-        $this->maBotte = $maBotte;
+        $this->maCasque3 = $maCasque3;
 
         return $this;
     }
 
     /**
-     * Get maBotte
+     * Get maCasque3
      *
-     * @return array
+     * @return int
      */
-    public function getMaBotte()
+    public function getMaCasque3()
     {
-        return $this->maBotte;
+        return $this->maCasque3;
+    }
+
+    /**
+     * Set maArmure1
+     *
+     * @param float $maArmure1
+     *
+     * @return Personage
+     */
+    public function setMaArmure1($maArmure1)
+    {
+        $this->maArmure1 = $maArmure1;
+
+        return $this;
+    }
+
+    /**
+     * Get maArmure1
+     *
+     * @return int
+     */
+    public function getMaArmure1()
+    {
+        return $this->maArmure1;
+    }
+
+    /**
+     * Set maArmure2
+     *
+     * @param float $maArmure2
+     *
+     * @return Personage
+     */
+    public function setMaArmure2($maArmure2)
+    {
+        $this->maArmure2 = $maArmure2;
+
+        return $this;
+    }
+
+    /**
+     * Get maArmure2
+     *
+     * @return int
+     */
+    public function getMaArmure2()
+    {
+        return $this->maArmure2;
+    }
+
+    /**
+     * Set maArmure3
+     *
+     * @param float $maArmure3
+     *
+     * @return Personage
+     */
+    public function setMaArmure3($maArmure3)
+    {
+        $this->maArmure3 = $maArmure3;
+
+        return $this;
+    }
+
+    /**
+     * Get maArmure3
+     *
+     * @return int
+     */
+    public function getMaArmure3()
+    {
+        return $this->maArmure3;
+    }
+
+    /**
+     * Set maBotte1
+     *
+     * @param float $maBotte1
+     *
+     * @return Personage
+     */
+    public function setMaBotte1($maBotte1)
+    {
+        $this->maBotte1 = $maBotte1;
+
+        return $this;
+    }
+
+    /**
+     * Get maBotte1
+     *
+     * @return int
+     */
+    public function getMaBotte1()
+    {
+        return $this->maBotte1;
+    }
+
+    /**
+     * Set maBotte2
+     *
+     * @param float $maBotte2
+     *
+     * @return Personage
+     */
+    public function setMaBotte2($maBotte2)
+    {
+        $this->maBotte2 = $maBotte2;
+
+        return $this;
+    }
+
+    /**
+     * Get maBotte2
+     *
+     * @return int
+     */
+    public function getMaBotte2()
+    {
+        return $this->maBotte2;
+    }
+
+    /**
+     * Set maBotte3
+     *
+     * @param float $maBotte3
+     *
+     * @return Personage
+     */
+    public function setMaBotte3($maBotte3)
+    {
+        $this->maBotte3 = $maBotte3;
+
+        return $this;
+    }
+
+    /**
+     * Get maBotte3
+     *
+     * @return int
+     */
+    public function getMaBotte3()
+    {
+        return $this->maBotte3;
     }
 
     /**
      * Set chArc
      *
-     * @param array $chArc
+     * @param float $chArc
      *
      * @return Personage
      */
@@ -1582,7 +2515,7 @@ class Personage
     /**
      * Get chArc
      *
-     * @return array
+     * @return int
      */
     public function getChArc()
     {
@@ -1590,9 +2523,57 @@ class Personage
     }
 
     /**
+     * Set chArcGu
+     *
+     * @param float $chArcGu
+     *
+     * @return Personage
+     */
+    public function setChArcGu($chArcGu)
+    {
+        $this->chArcGu = $chArcGu;
+
+        return $this;
+    }
+
+    /**
+     * Get chArcGu
+     *
+     * @return int
+     */
+    public function getChArcGu()
+    {
+        return $this->chArcGu;
+    }
+
+    /**
+     * Set chArcLo
+     *
+     * @param float $chArcLo
+     *
+     * @return Personage
+     */
+    public function setChArcLo($chArcLo)
+    {
+        $this->chArcLo = $chArcLo;
+
+        return $this;
+    }
+
+    /**
+     * Get chArcLo
+     *
+     * @return int
+     */
+    public function getChArcLo()
+    {
+        return $this->chArcLo;
+    }
+
+    /**
      * Set chLance
      *
-     * @param array $chLance
+     * @param float $chLance
      *
      * @return Personage
      */
@@ -1606,7 +2587,7 @@ class Personage
     /**
      * Get chLance
      *
-     * @return array
+     * @return int
      */
     public function getChLance()
     {
@@ -1614,9 +2595,57 @@ class Personage
     }
 
     /**
+     * Set chPique
+     *
+     * @param float $chPique
+     *
+     * @return Personage
+     */
+    public function setChPique($chPique)
+    {
+        $this->chPique = $chPique;
+
+        return $this;
+    }
+
+    /**
+     * Get chPique
+     *
+     * @return int
+     */
+    public function getChPique()
+    {
+        return $this->chPique;
+    }
+
+    /**
+     * Set chHallebarde
+     *
+     * @param float $chHallebarde
+     *
+     * @return Personage
+     */
+    public function setChHallebarde($chHallebarde)
+    {
+        $this->chHallebarde = $chHallebarde;
+
+        return $this;
+    }
+
+    /**
+     * Get chHallebarde
+     *
+     * @return int
+     */
+    public function getChHallebarde()
+    {
+        return $this->chHallebarde;
+    }
+
+    /**
      * Set chBatonNat
      *
-     * @param array $chBatonNat
+     * @param float $chBatonNat
      *
      * @return Personage
      */
@@ -1630,7 +2659,7 @@ class Personage
     /**
      * Get chBatonNat
      *
-     * @return array
+     * @return int
      */
     public function getChBatonNat()
     {
@@ -1638,9 +2667,57 @@ class Personage
     }
 
     /**
+     * Set chGrandBatonNat
+     *
+     * @param float $chGrandBatonNat
+     *
+     * @return Personage
+     */
+    public function setChGrandBatonNat($chGrandBatonNat)
+    {
+        $this->chGrandBatonNat = $chGrandBatonNat;
+
+        return $this;
+    }
+
+    /**
+     * Get chGrandBatonNat
+     *
+     * @return int
+     */
+    public function getChGrandBatonNat()
+    {
+        return $this->chGrandBatonNat;
+    }
+
+    /**
+     * Set chBatonSau
+     *
+     * @param float $chBatonSau
+     *
+     * @return Personage
+     */
+    public function setChBatonSau($chBatonSau)
+    {
+        $this->chBatonSau = $chBatonSau;
+
+        return $this;
+    }
+
+    /**
+     * Get chBatonSau
+     *
+     * @return int
+     */
+    public function getChBatonSau()
+    {
+        return $this->chBatonSau;
+    }
+
+    /**
      * Set chDague
      *
-     * @param array $chDague
+     * @param float $chDague
      *
      * @return Personage
      */
@@ -1654,7 +2731,7 @@ class Personage
     /**
      * Get chDague
      *
-     * @return array
+     * @return int
      */
     public function getChDague()
     {
@@ -1662,9 +2739,57 @@ class Personage
     }
 
     /**
+     * Set chDagueDouble
+     *
+     * @param float $chDagueDouble
+     *
+     * @return Personage
+     */
+    public function setChDagueDouble($chDagueDouble)
+    {
+        $this->chDagueDouble = $chDagueDouble;
+
+        return $this;
+    }
+
+    /**
+     * Get chDagueDouble
+     *
+     * @return int
+     */
+    public function getChDagueDouble()
+    {
+        return $this->chDagueDouble;
+    }
+
+    /**
+     * Set chGriffe
+     *
+     * @param float $chGriffe
+     *
+     * @return Personage
+     */
+    public function setChGriffe($chGriffe)
+    {
+        $this->chGriffe = $chGriffe;
+
+        return $this;
+    }
+
+    /**
+     * Get chGriffe
+     *
+     * @return int
+     */
+    public function getChGriffe()
+    {
+        return $this->chGriffe;
+    }
+
+    /**
      * Set chBatonLong
      *
-     * @param array $chBatonLong
+     * @param float $chBatonLong
      *
      * @return Personage
      */
@@ -1678,7 +2803,7 @@ class Personage
     /**
      * Get chBatonLong
      *
-     * @return array
+     * @return int
      */
     public function getChBatonLong()
     {
@@ -1686,9 +2811,57 @@ class Personage
     }
 
     /**
+     * Set chBatonSF
+     *
+     * @param float $chBatonSF
+     *
+     * @return Personage
+     */
+    public function setChBatonSF($chBatonSF)
+    {
+        $this->chBatonSF = $chBatonSF;
+
+        return $this;
+    }
+
+    /**
+     * Get chBatonSF
+     *
+     * @return int
+     */
+    public function getChBatonSF()
+    {
+        return $this->chBatonSF;
+    }
+
+    /**
+     * Set chBatonDT
+     *
+     * @param float $chBatonDT
+     *
+     * @return Personage
+     */
+    public function setChBatonDT($chBatonDT)
+    {
+        $this->chBatonDT = $chBatonDT;
+
+        return $this;
+    }
+
+    /**
+     * Get chBatonDT
+     *
+     * @return int
+     */
+    public function getChBatonDT()
+    {
+        return $this->chBatonDT;
+    }
+
+    /**
      * Set chTorche
      *
-     * @param array $chTorche
+     * @param float $chTorche
      *
      * @return Personage
      */
@@ -1702,7 +2875,7 @@ class Personage
     /**
      * Get chTorche
      *
-     * @return array
+     * @return int
      */
     public function getChTorche()
     {
@@ -1710,81 +2883,225 @@ class Personage
     }
 
     /**
-     * Set chCasque
+     * Set chCasque1
      *
-     * @param array $chCasque
+     * @param float $chCasque1
      *
      * @return Personage
      */
-    public function setChCasque($chCasque)
+    public function setChCasque1($chCasque1)
     {
-        $this->chCasque = $chCasque;
+        $this->chCasque1 = $chCasque1;
 
         return $this;
     }
 
     /**
-     * Get chCasque
+     * Get chCasque1
      *
-     * @return array
+     * @return int
      */
-    public function getChCasque()
+    public function getChCasque1()
     {
-        return $this->chCasque;
+        return $this->chCasque1;
     }
 
     /**
-     * Set chArmure
+     * Set chCasque2
      *
-     * @param array $chArmure
+     * @param float $chCasque2
      *
      * @return Personage
      */
-    public function setChArmure($chArmure)
+    public function setChCasque2($chCasque2)
     {
-        $this->chArmure = $chArmure;
+        $this->chCasque2 = $chCasque2;
 
         return $this;
     }
 
     /**
-     * Get chArmure
+     * Get chCasque2
      *
-     * @return array
+     * @return int
      */
-    public function getChArmure()
+    public function getChCasque2()
     {
-        return $this->chArmure;
+        return $this->chCasque2;
     }
 
     /**
-     * Set chBotte
+     * Set chCasque3
      *
-     * @param array $chBotte
+     * @param float $chCasque3
      *
      * @return Personage
      */
-    public function setChBotte($chBotte)
+    public function setChCasque3($chCasque3)
     {
-        $this->chBotte = $chBotte;
+        $this->chCasque3 = $chCasque3;
 
         return $this;
     }
 
     /**
-     * Get chBotte
+     * Get chCasque3
      *
-     * @return array
+     * @return int
      */
-    public function getChBotte()
+    public function getChCasque3()
     {
-        return $this->chBotte;
+        return $this->chCasque3;
+    }
+
+    /**
+     * Set chArmure1
+     *
+     * @param float $chArmure1
+     *
+     * @return Personage
+     */
+    public function setChArmure1($chArmure1)
+    {
+        $this->chArmure1 = $chArmure1;
+
+        return $this;
+    }
+
+    /**
+     * Get chArmure1
+     *
+     * @return int
+     */
+    public function getChArmure1()
+    {
+        return $this->chArmure1;
+    }
+
+    /**
+     * Set chArmure2
+     *
+     * @param float $chArmure2
+     *
+     * @return Personage
+     */
+    public function setChArmure2($chArmure2)
+    {
+        $this->chArmure2 = $chArmure2;
+
+        return $this;
+    }
+
+    /**
+     * Get chArmure2
+     *
+     * @return int
+     */
+    public function getChArmure2()
+    {
+        return $this->chArmure2;
+    }
+
+    /**
+     * Set chArmure3
+     *
+     * @param int $chArmure3
+     *
+     * @return Personage
+     */
+    public function setChArmure3($chArmure3)
+    {
+        $this->chArmure3 = $chArmure3;
+
+        return $this;
+    }
+
+    /**
+     * Get chArmure3
+     *
+     * @return int
+     */
+    public function getChArmure3()
+    {
+        return $this->chArmure3;
+    }
+
+    /**
+     * Set chBotte1
+     *
+     * @param float $chBotte1
+     *
+     * @return Personage
+     */
+    public function setChBotte1($chBotte1)
+    {
+        $this->chBotte1 = $chBotte1;
+
+        return $this;
+    }
+
+    /**
+     * Get chBotte1
+     *
+     * @return int
+     */
+    public function getChBotte1()
+    {
+        return $this->chBotte1;
+    }
+
+    /**
+     * Set chBotte2
+     *
+     * @param float $chBotte2
+     *
+     * @return Personage
+     */
+    public function setChBotte2($chBotte2)
+    {
+        $this->chBotte2 = $chBotte2;
+
+        return $this;
+    }
+
+    /**
+     * Get chBotte2
+     *
+     * @return int
+     */
+    public function getChBotte2()
+    {
+        return $this->chBotte2;
+    }
+
+    /**
+     * Set chBotte3
+     *
+     * @param float $chBotte3
+     *
+     * @return Personage
+     */
+    public function setChBotte3($chBotte3)
+    {
+        $this->chBotte3 = $chBotte3;
+
+        return $this;
+    }
+
+    /**
+     * Get chBotte3
+     *
+     * @return int
+     */
+    public function getChBotte3()
+    {
+        return $this->chBotte3;
     }
 
     /**
      * Set soEpeeLarge
      *
-     * @param array $soEpeeLarge
+     * @param float $soEpeeLarge
      *
      * @return Personage
      */
@@ -1798,7 +3115,7 @@ class Personage
     /**
      * Get soEpeeLarge
      *
-     * @return array
+     * @return int
      */
     public function getSoEpeeLarge()
     {
@@ -1806,9 +3123,57 @@ class Personage
     }
 
     /**
+     * Set soClaymore
+     *
+     * @param float $soClaymore
+     *
+     * @return Personage
+     */
+    public function setSoClaymore($soClaymore)
+    {
+        $this->soClaymore = $soClaymore;
+
+        return $this;
+    }
+
+    /**
+     * Get soClaymore
+     *
+     * @return int
+     */
+    public function getSoClaymore()
+    {
+        return $this->soClaymore;
+    }
+
+    /**
+     * Set soGlaive
+     *
+     * @param float $soGlaive
+     *
+     * @return Personage
+     */
+    public function setSoGlaive($soGlaive)
+    {
+        $this->soGlaive = $soGlaive;
+
+        return $this;
+    }
+
+    /**
+     * Get soGlaive
+     *
+     * @return int
+     */
+    public function getSoGlaive()
+    {
+        return $this->soGlaive;
+    }
+
+    /**
      * Set soHache
      *
-     * @param array $soHache
+     * @param float $soHache
      *
      * @return Personage
      */
@@ -1822,7 +3187,7 @@ class Personage
     /**
      * Get soHache
      *
-     * @return array
+     * @return int
      */
     public function getSoHache()
     {
@@ -1830,9 +3195,57 @@ class Personage
     }
 
     /**
+     * Set soGrandeHache
+     *
+     * @param float $soGrandeHache
+     *
+     * @return Personage
+     */
+    public function setSoGrandeHache($soGrandeHache)
+    {
+        $this->soGrandeHache = $soGrandeHache;
+
+        return $this;
+    }
+
+    /**
+     * Get soGrandeHache
+     *
+     * @return int
+     */
+    public function getSoGrandeHache()
+    {
+        return $this->soGrandeHache;
+    }
+
+    /**
+     * Set soFaux
+     *
+     * @param float $soFaux
+     *
+     * @return Personage
+     */
+    public function setSoFaux($soFaux)
+    {
+        $this->soFaux = $soFaux;
+
+        return $this;
+    }
+
+    /**
+     * Get soFaux
+     *
+     * @return int
+     */
+    public function getSoFaux()
+    {
+        return $this->soFaux;
+    }
+
+    /**
      * Set soMassue
      *
-     * @param array $soMassue
+     * @param float $soMassue
      *
      * @return Personage
      */
@@ -1846,7 +3259,7 @@ class Personage
     /**
      * Get soMassue
      *
-     * @return array
+     * @return int
      */
     public function getSoMassue()
     {
@@ -1854,9 +3267,57 @@ class Personage
     }
 
     /**
+     * Set soMassueLo
+     *
+     * @param float $soMassueLo
+     *
+     * @return Personage
+     */
+    public function setSoMassueLo($soMassueLo)
+    {
+        $this->soMassueLo = $soMassueLo;
+
+        return $this;
+    }
+
+    /**
+     * Get soMassueLo
+     *
+     * @return int
+     */
+    public function getSoMassueLo()
+    {
+        return $this->soMassueLo;
+    }
+
+    /**
+     * Set soFleau
+     *
+     * @param float $soFleau
+     *
+     * @return Personage
+     */
+    public function setSoFleau($soFleau)
+    {
+        $this->soFleau = $soFleau;
+
+        return $this;
+    }
+
+    /**
+     * Get soFleau
+     *
+     * @return int
+     */
+    public function getSoFleau()
+    {
+        return $this->soFleau;
+    }
+
+    /**
      * Set soMasse
      *
-     * @param array $soMasse
+     * @param float $soMasse
      *
      * @return Personage
      */
@@ -1870,7 +3331,7 @@ class Personage
     /**
      * Get soMasse
      *
-     * @return array
+     * @return int
      */
     public function getSoMasse()
     {
@@ -1878,9 +3339,57 @@ class Personage
     }
 
     /**
+     * Set soBecDeCorbin
+     *
+     * @param float $soBecDeCorbin
+     *
+     * @return Personage
+     */
+    public function setSoBecDeCorbin($soBecDeCorbin)
+    {
+        $this->soBecDeCorbin = $soBecDeCorbin;
+
+        return $this;
+    }
+
+    /**
+     * Get soBecDeCorbin
+     *
+     * @return int
+     */
+    public function getSoBecDeCorbin()
+    {
+        return $this->soBecDeCorbin;
+    }
+
+    /**
+     * Set soGrandeMasse
+     *
+     * @param float $soGrandeMasse
+     *
+     * @return Personage
+     */
+    public function setSoGrandeMasse($soGrandeMasse)
+    {
+        $this->soGrandeMasse = $soGrandeMasse;
+
+        return $this;
+    }
+
+    /**
+     * Get soGrandeMasse
+     *
+     * @return int
+     */
+    public function getSoGrandeMasse()
+    {
+        return $this->soGrandeMasse;
+    }
+
+    /**
      * Set soArbalete
      *
-     * @param array $soArbalete
+     * @param float $soArbalete
      *
      * @return Personage
      */
@@ -1894,7 +3403,7 @@ class Personage
     /**
      * Get soArbalete
      *
-     * @return array
+     * @return int
      */
     public function getSoArbalete()
     {
@@ -1902,9 +3411,57 @@ class Personage
     }
 
     /**
+     * Set soArbaleteLo
+     *
+     * @param float $soArbaleteLo
+     *
+     * @return Personage
+     */
+    public function setSoArbaleteLo($soArbaleteLo)
+    {
+        $this->soArbaleteLo = $soArbaleteLo;
+
+        return $this;
+    }
+
+    /**
+     * Get soArbaleteLo
+     *
+     * @return int
+     */
+    public function getSoArbaleteLo()
+    {
+        return $this->soArbaleteLo;
+    }
+
+    /**
+     * Set soArbaleteRep
+     *
+     * @param float $soArbaleteRep
+     *
+     * @return Personage
+     */
+    public function setSoArbaleteRep($soArbaleteRep)
+    {
+        $this->soArbaleteRep = $soArbaleteRep;
+
+        return $this;
+    }
+
+    /**
+     * Get soArbaleteRep
+     *
+     * @return int
+     */
+    public function getSoArbaleteRep()
+    {
+        return $this->soArbaleteRep;
+    }
+
+    /**
      * Set soBouclier
      *
-     * @param array $soBouclier
+     * @param float $soBouclier
      *
      * @return Personage
      */
@@ -1918,7 +3475,7 @@ class Personage
     /**
      * Get soBouclier
      *
-     * @return array
+     * @return int
      */
     public function getSoBouclier()
     {
@@ -1926,75 +3483,219 @@ class Personage
     }
 
     /**
-     * Set soCasque
+     * Set soCasque1
      *
-     * @param array $soCasque
+     * @param float $soCasque1
      *
      * @return Personage
      */
-    public function setSoCasque($soCasque)
+    public function setSoCasque1($soCasque1)
     {
-        $this->soCasque = $soCasque;
+        $this->soCasque1 = $soCasque1;
 
         return $this;
     }
 
     /**
-     * Get soCasque
+     * Get soCasque1
      *
-     * @return array
+     * @return int
      */
-    public function getSoCasque()
+    public function getSoCasque1()
     {
-        return $this->soCasque;
+        return $this->soCasque1;
     }
 
     /**
-     * Set soArmure
+     * Set soCasque2
      *
-     * @param array $soArmure
+     * @param float $soCasque2
      *
      * @return Personage
      */
-    public function setSoArmure($soArmure)
+    public function setSoCasque2($soCasque2)
     {
-        $this->soArmure = $soArmure;
+        $this->soCasque2 = $soCasque2;
 
         return $this;
     }
 
     /**
-     * Get soArmure
+     * Get soCasque2
      *
-     * @return array
+     * @return int
      */
-    public function getSoArmure()
+    public function getSoCasque2()
     {
-        return $this->soArmure;
+        return $this->soCasque2;
     }
 
     /**
-     * Set soBotte
+     * Set soCasque3
      *
-     * @param array $soBotte
+     * @param float $soCasque3
      *
      * @return Personage
      */
-    public function setSoBotte($soBotte)
+    public function setSoCasque3($soCasque3)
     {
-        $this->soBotte = $soBotte;
+        $this->soCasque3 = $soCasque3;
 
         return $this;
     }
 
     /**
-     * Get soBotte
+     * Get soCasque3
      *
-     * @return array
+     * @return int
      */
-    public function getSoBotte()
+    public function getSoCasque3()
     {
-        return $this->soBotte;
+        return $this->soCasque3;
+    }
+
+    /**
+     * Set soArmure1
+     *
+     * @param float $soArmure1
+     *
+     * @return Personage
+     */
+    public function setSoArmure1($soArmure1)
+    {
+        $this->soArmure1 = $soArmure1;
+
+        return $this;
+    }
+
+    /**
+     * Get soArmure1
+     *
+     * @return int
+     */
+    public function getSoArmure1()
+    {
+        return $this->soArmure1;
+    }
+
+    /**
+     * Set soArmure2
+     *
+     * @param float $soArmure2
+     *
+     * @return Personage
+     */
+    public function setSoArmure2($soArmure2)
+    {
+        $this->soArmure2 = $soArmure2;
+
+        return $this;
+    }
+
+    /**
+     * Get soArmure2
+     *
+     * @return int
+     */
+    public function getSoArmure2()
+    {
+        return $this->soArmure2;
+    }
+
+    /**
+     * Set soArmure3
+     *
+     * @param float $soArmure3
+     *
+     * @return Personage
+     */
+    public function setSoArmure3($soArmure3)
+    {
+        $this->soArmure3 = $soArmure3;
+
+        return $this;
+    }
+
+    /**
+     * Get soArmure3
+     *
+     * @return int
+     */
+    public function getSoArmure3()
+    {
+        return $this->soArmure3;
+    }
+
+    /**
+     * Set soBotte1
+     *
+     * @param float $soBotte1
+     *
+     * @return Personage
+     */
+    public function setSoBotte1($soBotte1)
+    {
+        $this->soBotte1 = $soBotte1;
+
+        return $this;
+    }
+
+    /**
+     * Get soBotte1
+     *
+     * @return int
+     */
+    public function getSoBotte1()
+    {
+        return $this->soBotte1;
+    }
+
+    /**
+     * Set soBotte2
+     *
+     * @param float $soBotte2
+     *
+     * @return Personage
+     */
+    public function setSoBotte2($soBotte2)
+    {
+        $this->soBotte2 = $soBotte2;
+
+        return $this;
+    }
+
+    /**
+     * Get soBotte2
+     *
+     * @return int
+     */
+    public function getSoBotte2()
+    {
+        return $this->soBotte2;
+    }
+
+    /**
+     * Set soBotte3
+     *
+     * @param float $soBotte3
+     *
+     * @return Personage
+     */
+    public function setSoBotte3($soBotte3)
+    {
+        $this->soBotte3 = $soBotte3;
+
+        return $this;
+    }
+
+    /**
+     * Get soBotte3
+     *
+     * @return int
+     */
+    public function getSoBotte3()
+    {
+        return $this->soBotte3;
     }
 
     /**
@@ -2108,7 +3809,7 @@ class Personage
     }
 
     /**
-     * Get alChil
+     * Get alChill
      *
      * @return int
      */
@@ -2166,7 +3867,7 @@ class Personage
     }
 
     /**
-     * Set alClean
+     * Set alAlcohol
      *
      * @param integer $alAlcohol
      *
@@ -2180,7 +3881,7 @@ class Personage
     }
 
     /**
-     * Get alClean
+     * Get alAlcohol
      *
      * @return int
      */
@@ -2190,7 +3891,7 @@ class Personage
     }
 
     /**
-     * Set alHerbo
+     * Set herbo
      *
      * @param integer $herbo
      *
@@ -2478,129 +4179,369 @@ class Personage
     }
 
     /**
-     * Set cbMaPyro
+     * Set cbMaBatonFeu
      *
-     * @param array $cbMaPyro
+     * @param float $cbMaBatonFeu
      *
      * @return Personage
      */
-    public function setCbMaPyro($cbMaPyro)
+    public function setCbMaBatonFeu($cbMaBatonFeu)
     {
-        $this->cbMaPyro = $cbMaPyro;
+        $this->cbMaBatonFeu = $cbMaBatonFeu;
 
         return $this;
     }
 
     /**
-     * Get cbMaPyro
+     * Get cbMaBatonFeu
      *
-     * @return array
+     * @return int
      */
-    public function getCbMaPyro()
+    public function getCbMaBatonFeu()
     {
-        return $this->cbMaPyro;
+        return $this->cbMaBatonFeu;
     }
 
     /**
-     * Set cbMaPretre
+     * Set cbMaGrandBatonFeu
      *
-     * @param array $cbMaPretre
+     * @param float $cbMaGrandBatonFeu
      *
      * @return Personage
      */
-    public function setCbMaPretre($cbMaPretre)
+    public function setCbMaGrandBatonFeu($cbMaGrandBatonFeu)
     {
-        $this->cbMaPretre = $cbMaPretre;
+        $this->cbMaGrandBatonFeu = $cbMaGrandBatonFeu;
 
         return $this;
     }
 
     /**
-     * Get cbMaPretre
+     * Get cbMaGrandBatonFeu
      *
-     * @return array
+     * @return int
      */
-    public function getCbMaPretre()
+    public function getCbMaGrandBatonFeu()
     {
-        return $this->cbMaPretre;
+        return $this->cbMaGrandBatonFeu;
     }
 
     /**
-     * Set cbMaArca
+     * Set cbMaBatonInfernal
      *
-     * @param array $cbMaArca
+     * @param float $cbMaBatonInfernal
      *
      * @return Personage
      */
-    public function setCbMaArca($cbMaArca)
+    public function setCbMaBatonInfernal($cbMaBatonInfernal)
     {
-        $this->cbMaArca = $cbMaArca;
+        $this->cbMaBatonInfernal = $cbMaBatonInfernal;
 
         return $this;
     }
 
     /**
-     * Get cbMaArca
+     * Get cbMaBatonInfernal
      *
-     * @return array
+     * @return int
      */
-    public function getCbMaArca()
+    public function getCbMaBatonInfernal()
     {
-        return $this->cbMaArca;
+        return $this->cbMaBatonInfernal;
     }
 
     /**
-     * Set cbMaGivre
+     * Set cbMaBatonBeni
      *
-     * @param array $cbMaGivre
+     * @param float $cbMaBatonBeni
      *
      * @return Personage
      */
-    public function setCbMaGivre($cbMaGivre)
+    public function setCbMaBatonBeni($cbMaBatonBeni)
     {
-        $this->cbMaGivre = $cbMaGivre;
+        $this->cbMaBatonBeni = $cbMaBatonBeni;
 
         return $this;
     }
 
     /**
-     * Get cbMaGivre
+     * Get cbMaBatonBeni
      *
-     * @return array
+     * @return int
      */
-    public function getCbMaGivre()
+    public function getCbMaBatonBeni()
     {
-        return $this->cbMaGivre;
+        return $this->cbMaBatonBeni;
     }
 
     /**
-     * Set cbMaSorcier
+     * Set cbMaGrandBatonBeni
      *
-     * @param array $cbMaSorcier
+     * @param float $cbMaGrandBatonBeni
      *
      * @return Personage
      */
-    public function setCbMaSorcier($cbMaSorcier)
+    public function setCbMaGrandBatonBeni($cbMaGrandBatonBeni)
     {
-        $this->cbMaSorcier = $cbMaSorcier;
+        $this->cbMaGrandBatonBeni = $cbMaGrandBatonBeni;
 
         return $this;
     }
 
     /**
-     * Get cbMaSorcier
+     * Get cbMaGrandBatonBeni
      *
-     * @return array
+     * @return int
      */
-    public function getCbMaSorcier()
+    public function getCbMaGrandBatonBeni()
     {
-        return $this->cbMaSorcier;
+        return $this->cbMaGrandBatonBeni;
+    }
+
+    /**
+     * Set cbMaBatonDivin
+     *
+     * @param float $cbMaBatonDivin
+     *
+     * @return Personage
+     */
+    public function setCbMaBatonDivin($cbMaBatonDivin)
+    {
+        $this->cbMaBatonDivin = $cbMaBatonDivin;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBatonDivin
+     *
+     * @return int
+     */
+    public function getCbMaBatonDivin()
+    {
+        return $this->cbMaBatonDivin;
+    }
+
+    /**
+     * Set cbMaBatonEso
+     *
+     * @param float $cbMaBatonEso
+     *
+     * @return Personage
+     */
+    public function setCbMaBatonEso($cbMaBatonEso)
+    {
+        $this->cbMaBatonEso = $cbMaBatonEso;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBatonEso
+     *
+     * @return int
+     */
+    public function getCbMaBatonEso()
+    {
+        return $this->cbMaBatonEso;
+    }
+
+    /**
+     * Set cbMaGrandBatonEso
+     *
+     * @param float $cbMaGrandBatonEso
+     *
+     * @return Personage
+     */
+    public function setCbMaGrandBatonEso($cbMaGrandBatonEso)
+    {
+        $this->cbMaGrandBatonEso = $cbMaGrandBatonEso;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaGrandBatonEso
+     *
+     * @return int
+     */
+    public function getCbMaGrandBatonEso()
+    {
+        return $this->cbMaGrandBatonEso;
+    }
+
+    /**
+     * Set cbMaBatonEni
+     *
+     * @param float $cbMaBatonEni
+     *
+     * @return Personage
+     */
+    public function setCbMaBatonEni($cbMaBatonEni)
+    {
+        $this->cbMaBatonEni = $cbMaBatonEni;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBatonEni
+     *
+     * @return int
+     */
+    public function getCbMaBatonEni()
+    {
+        return $this->cbMaBatonEni;
+    }
+
+    /**
+     * Set cbMaBatonGi
+     *
+     * @param float $cbMaBatonGi
+     *
+     * @return Personage
+     */
+    public function setCbMaBatonGi($cbMaBatonGi)
+    {
+        $this->cbMaBatonGi = $cbMaBatonGi;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBatonGi
+     *
+     * @return int
+     */
+    public function getCbMaBatonGi()
+    {
+        return $this->cbMaBatonGi;
+    }
+
+    /**
+     * Set cbMaGrandBatonGi
+     *
+     * @param float $cbMaGrandBatonGi
+     *
+     * @return Personage
+     */
+    public function setCbMaGrandBatonGi($cbMaGrandBatonGi)
+    {
+        $this->cbMaGrandBatonGi = $cbMaGrandBatonGi;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaGrandBatonGi
+     *
+     * @return int
+     */
+    public function getCbMaGrandBatonGi()
+    {
+        return $this->cbMaGrandBatonGi;
+    }
+
+    /**
+     * Set cbMaBatonGla
+     *
+     * @param float $cbMaBatonGla
+     *
+     * @return Personage
+     */
+    public function setCbMaBatonGla($cbMaBatonGla)
+    {
+        $this->cbMaBatonGla = $cbMaBatonGla;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBatonGla
+     *
+     * @return int
+     */
+    public function getCbMaBatonGla()
+    {
+        return $this->cbMaBatonGla;
+    }
+
+    /**
+     * Set cbMaBatonDamn
+     *
+     * @param float $cbMaBatonDamn
+     *
+     * @return Personage
+     */
+    public function setCbMaBatonDamn($cbMaBatonDamn)
+    {
+        $this->cbMaBatonDamn = $cbMaBatonDamn;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBatonDamn
+     *
+     * @return int
+     */
+    public function getCbMaBatonDamn()
+    {
+        return $this->cbMaBatonDamn;
+    }
+
+    /**
+     * Set cbMaGrandBatonDamn
+     *
+     * @param float $cbMaGrandBatonDamn
+     *
+     * @return Personage
+     */
+    public function setCbMaGrandBatonDamn($cbMaGrandBatonDamn)
+    {
+        $this->cbMaGrandBatonDamn = $cbMaGrandBatonDamn;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaGrandBatonDamn
+     *
+     * @return int
+     */
+    public function getCbMaGrandBatonDamn()
+    {
+        return $this->cbMaGrandBatonDamn;
+    }
+
+    /**
+     * Set cbMaBatonDemo
+     *
+     * @param float $cbMaBatonDemo
+     *
+     * @return Personage
+     */
+    public function setCbMaBatonDemo($cbMaBatonDemo)
+    {
+        $this->cbMaBatonDemo = $cbMaBatonDemo;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBatonDemo
+     *
+     * @return int
+     */
+    public function getCbMaBatonDemo()
+    {
+        return $this->cbMaBatonDemo;
     }
 
     /**
      * Set cbMaTome
      *
-     * @param array $cbMaTome
+     * @param float $cbMaTome
      *
      * @return Personage
      */
@@ -2614,7 +4555,7 @@ class Personage
     /**
      * Get cbMaTome
      *
-     * @return array
+     * @return int
      */
     public function getCbMaTome()
     {
@@ -2622,81 +4563,225 @@ class Personage
     }
 
     /**
-     * Set cbMaCasque
+     * Set cbMaCasque1
      *
-     * @param array $cbMaCasque
+     * @param float $cbMaCasque1
      *
      * @return Personage
      */
-    public function setCbMaCasque($cbMaCasque)
+    public function setCbMaCasque1($cbMaCasque1)
     {
-        $this->cbMaCasque = $cbMaCasque;
+        $this->cbMaCasque1 = $cbMaCasque1;
 
         return $this;
     }
 
     /**
-     * Get cbMaCasque
+     * Get cbMaCasque1
      *
-     * @return array
+     * @return int
      */
-    public function getCbMaCasque()
+    public function getCbMaCasque1()
     {
-        return $this->cbMaCasque;
+        return $this->cbMaCasque1;
     }
 
     /**
-     * Set cbMaArmure
+     * Set cbMaCasque2
      *
-     * @param array $cbMaArmure
+     * @param float $cbMaCasque2
      *
      * @return Personage
      */
-    public function setCbMaArmure($cbMaArmure)
+    public function setCbMaCasque2($cbMaCasque2)
     {
-        $this->cbMaArmure = $cbMaArmure;
+        $this->cbMaCasque2 = $cbMaCasque2;
 
         return $this;
     }
 
     /**
-     * Get cbMaArmure
+     * Get cbMaCasque2
      *
-     * @return array
+     * @return int
      */
-    public function getCbMaArmure()
+    public function getCbMaCasque2()
     {
-        return $this->cbMaArmure;
+        return $this->cbMaCasque2;
     }
 
     /**
-     * Set cbMaBotte
+     * Set cbMaCasque3
      *
-     * @param array $cbMaBotte
+     * @param float $cbMaCasque3
      *
      * @return Personage
      */
-    public function setCbMaBotte($cbMaBotte)
+    public function setCbMaCasque3($cbMaCasque3)
     {
-        $this->cbMaBotte = $cbMaBotte;
+        $this->cbMaCasque3 = $cbMaCasque3;
 
         return $this;
     }
 
     /**
-     * Get cbMaBotte
+     * Get cbMaCasque3
      *
-     * @return array
+     * @return int
      */
-    public function getCbMaBotte()
+    public function getCbMaCasque3()
     {
-        return $this->cbMaBotte;
+        return $this->cbMaCasque3;
+    }
+
+    /**
+     * Set cbMaArmure1
+     *
+     * @param float $cbMaArmure1
+     *
+     * @return Personage
+     */
+    public function setCbMaArmure1($cbMaArmure1)
+    {
+        $this->cbMaArmure1 = $cbMaArmure1;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaArmure1
+     *
+     * @return int
+     */
+    public function getCbMaArmure1()
+    {
+        return $this->cbMaArmure1;
+    }
+
+    /**
+     * Set cbMaArmure2
+     *
+     * @param float $cbMaArmure2
+     *
+     * @return Personage
+     */
+    public function setCbMaArmure2($cbMaArmure2)
+    {
+        $this->cbMaArmure2 = $cbMaArmure2;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaArmure2
+     *
+     * @return int
+     */
+    public function getCbMaArmure2()
+    {
+        return $this->cbMaArmure2;
+    }
+
+    /**
+     * Set cbMaArmure3
+     *
+     * @param float $cbMaArmure3
+     *
+     * @return Personage
+     */
+    public function setCbMaArmure3($cbMaArmure3)
+    {
+        $this->cbMaArmure3 = $cbMaArmure3;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaArmure3
+     *
+     * @return int
+     */
+    public function getCbMaArmure3()
+    {
+        return $this->cbMaArmure3;
+    }
+
+    /**
+     * Set cbMaBotte1
+     *
+     * @param float $cbMaBotte1
+     *
+     * @return Personage
+     */
+    public function setCbMaBotte1($cbMaBotte1)
+    {
+        $this->cbMaBotte1 = $cbMaBotte1;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBotte1
+     *
+     * @return int
+     */
+    public function getCbMaBotte1()
+    {
+        return $this->cbMaBotte1;
+    }
+
+    /**
+     * Set cbMaBotte2
+     *
+     * @param float $cbMaBotte2
+     *
+     * @return Personage
+     */
+    public function setCbMaBotte2($cbMaBotte2)
+    {
+        $this->cbMaBotte2 = $cbMaBotte2;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBotte2
+     *
+     * @return int
+     */
+    public function getCbMaBotte2()
+    {
+        return $this->cbMaBotte2;
+    }
+
+    /**
+     * Set cbMaBotte3
+     *
+     * @param float $cbMaBotte3
+     *
+     * @return Personage
+     */
+    public function setCbMaBotte3($cbMaBotte3)
+    {
+        $this->cbMaBotte3 = $cbMaBotte3;
+
+        return $this;
+    }
+
+    /**
+     * Get cbMaBotte3
+     *
+     * @return int
+     */
+    public function getCbMaBotte3()
+    {
+        return $this->cbMaBotte3;
     }
 
     /**
      * Set cbChArc
      *
-     * @param array $cbChArc
+     * @param float $cbChArc
      *
      * @return Personage
      */
@@ -2710,7 +4795,7 @@ class Personage
     /**
      * Get cbChArc
      *
-     * @return array
+     * @return int
      */
     public function getCbChArc()
     {
@@ -2718,9 +4803,57 @@ class Personage
     }
 
     /**
+     * Set cbChArcGu
+     *
+     * @param float $cbChArcGu
+     *
+     * @return Personage
+     */
+    public function setCbChArcGu($cbChArcGu)
+    {
+        $this->cbChArcGu = $cbChArcGu;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChArcGu
+     *
+     * @return int
+     */
+    public function getCbChArcGu()
+    {
+        return $this->cbChArcGu;
+    }
+
+    /**
+     * Set cbChArcLo
+     *
+     * @param float $cbChArcLo
+     *
+     * @return Personage
+     */
+    public function setCbChArcLo($cbChArcLo)
+    {
+        $this->cbChArcLo = $cbChArcLo;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChArcLo
+     *
+     * @return int
+     */
+    public function getCbChArcLo()
+    {
+        return $this->cbChArcLo;
+    }
+
+    /**
      * Set cbChLance
      *
-     * @param array $cbChLance
+     * @param float $cbChLance
      *
      * @return Personage
      */
@@ -2734,7 +4867,7 @@ class Personage
     /**
      * Get cbChLance
      *
-     * @return array
+     * @return int
      */
     public function getCbChLance()
     {
@@ -2742,9 +4875,57 @@ class Personage
     }
 
     /**
+     * Set cbChPique
+     *
+     * @param float $cbChPique
+     *
+     * @return Personage
+     */
+    public function setCbChPique($cbChPique)
+    {
+        $this->cbChPique = $cbChPique;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChPique
+     *
+     * @return int
+     */
+    public function getCbChPique()
+    {
+        return $this->cbChPique;
+    }
+
+    /**
+     * Set cbChHallebarde
+     *
+     * @param float $cbChHallebarde
+     *
+     * @return Personage
+     */
+    public function setCbChHallebarde($cbChHallebarde)
+    {
+        $this->cbChHallebarde = $cbChHallebarde;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChHallebarde
+     *
+     * @return int
+     */
+    public function getCbChHallebarde()
+    {
+        return $this->cbChHallebarde;
+    }
+
+    /**
      * Set cbChBatonNat
      *
-     * @param array $cbChBatonNat
+     * @param float $cbChBatonNat
      *
      * @return Personage
      */
@@ -2758,7 +4939,7 @@ class Personage
     /**
      * Get cbChBatonNat
      *
-     * @return array
+     * @return int
      */
     public function getCbChBatonNat()
     {
@@ -2766,9 +4947,57 @@ class Personage
     }
 
     /**
+     * Set cbChGrandBatonNat
+     *
+     * @param int $cbChGrandBatonNat
+     *
+     * @return Personage
+     */
+    public function setCbChGrandBatonNat($cbChGrandBatonNat)
+    {
+        $this->cbChGrandBatonNat = $cbChGrandBatonNat;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChGrandBatonNat
+     *
+     * @return int
+     */
+    public function getCbChGrandBatonNat()
+    {
+        return $this->cbChGrandBatonNat;
+    }
+
+    /**
+     * Set cbChBatonSau
+     *
+     * @param float $cbChBatonSau
+     *
+     * @return Personage
+     */
+    public function setCbChBatonSau($cbChBatonSau)
+    {
+        $this->cbChBatonSau = $cbChBatonSau;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChBatonSau
+     *
+     * @return int
+     */
+    public function getCbChBatonSau()
+    {
+        return $this->cbChBatonSau;
+    }
+
+    /**
      * Set cbChDague
      *
-     * @param array $cbChDague
+     * @param float $cbChDague
      *
      * @return Personage
      */
@@ -2782,7 +5011,7 @@ class Personage
     /**
      * Get cbChDague
      *
-     * @return array
+     * @return int
      */
     public function getCbChDague()
     {
@@ -2790,9 +5019,57 @@ class Personage
     }
 
     /**
+     * Set cbChDagueDouble
+     *
+     * @param float $cbChDagueDouble
+     *
+     * @return Personage
+     */
+    public function setCbChDagueDouble($cbChDagueDouble)
+    {
+        $this->cbChDagueDouble = $cbChDagueDouble;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChDagueDouble
+     *
+     * @return int
+     */
+    public function getCbChDagueDouble()
+    {
+        return $this->cbChDagueDouble;
+    }
+
+    /**
+     * Set cbChGriffe
+     *
+     * @param float $cbChGriffe
+     *
+     * @return Personage
+     */
+    public function setCbChGriffe($cbChGriffe)
+    {
+        $this->cbChGriffe = $cbChGriffe;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChGriffe
+     *
+     * @return int
+     */
+    public function getCbChGriffe()
+    {
+        return $this->cbChGriffe;
+    }
+
+    /**
      * Set cbChBatonLong
      *
-     * @param array $cbChBatonLong
+     * @param float $cbChBatonLong
      *
      * @return Personage
      */
@@ -2806,7 +5083,7 @@ class Personage
     /**
      * Get cbChBatonLong
      *
-     * @return array
+     * @return int
      */
     public function getCbChBatonLong()
     {
@@ -2814,9 +5091,57 @@ class Personage
     }
 
     /**
+     * Set cbChBatonSF
+     *
+     * @param float $cbChBatonSF
+     *
+     * @return Personage
+     */
+    public function setCbChBatonSF($cbChBatonSF)
+    {
+        $this->cbChBatonSF = $cbChBatonSF;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChBatonSF
+     *
+     * @return int
+     */
+    public function getCbChBatonSF()
+    {
+        return $this->cbChBatonSF;
+    }
+
+    /**
+     * Set cbChBatonDT
+     *
+     * @param float $cbChBatonDT
+     *
+     * @return Personage
+     */
+    public function setCbChBatonDT($cbChBatonDT)
+    {
+        $this->cbChBatonDT = $cbChBatonDT;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChBatonDT
+     *
+     * @return int
+     */
+    public function getCbChBatonDT()
+    {
+        return $this->cbChBatonDT;
+    }
+
+    /**
      * Set cbChTorche
      *
-     * @param array $cbChTorche
+     * @param float $cbChTorche
      *
      * @return Personage
      */
@@ -2830,7 +5155,7 @@ class Personage
     /**
      * Get cbChTorche
      *
-     * @return array
+     * @return int
      */
     public function getCbChTorche()
     {
@@ -2838,81 +5163,225 @@ class Personage
     }
 
     /**
-     * Set cbChCasque
+     * Set cbChCasque1
      *
-     * @param array $cbChCasque
+     * @param float $cbChCasque1
      *
      * @return Personage
      */
-    public function setCbChCasque($cbChCasque)
+    public function setCbChCasque1($cbChCasque1)
     {
-        $this->cbChCasque = $cbChCasque;
+        $this->cbChCasque1 = $cbChCasque1;
 
         return $this;
     }
 
     /**
-     * Get cbChCasque
+     * Get cbChCasque1
      *
-     * @return array
+     * @return int
      */
-    public function getCbChCasque()
+    public function getCbChCasque1()
     {
-        return $this->cbChCasque;
+        return $this->cbChCasque1;
     }
 
     /**
-     * Set cbChArmure
+     * Set cbChCasque2
      *
-     * @param array $cbChArmure
+     * @param float $cbChCasque2
      *
      * @return Personage
      */
-    public function setCbChArmure($cbChArmure)
+    public function setCbChCasque2($cbChCasque2)
     {
-        $this->cbChArmure = $cbChArmure;
+        $this->cbChCasque2 = $cbChCasque2;
 
         return $this;
     }
 
     /**
-     * Get cbChArmure
+     * Get cbChCasque2
      *
-     * @return array
+     * @return int
      */
-    public function getCbChArmure()
+    public function getCbChCasque2()
     {
-        return $this->cbChArmure;
+        return $this->cbChCasque2;
     }
 
     /**
-     * Set cbChBotte
+     * Set cbChCasque3
      *
-     * @param array $cbChBotte
+     * @param float $cbChCasque3
      *
      * @return Personage
      */
-    public function setCbChBotte($cbChBotte)
+    public function setCbChCasque3($cbChCasque3)
     {
-        $this->cbChBotte = $cbChBotte;
+        $this->cbChCasque3 = $cbChCasque3;
 
         return $this;
     }
 
     /**
-     * Get cbChBotte
+     * Get cbChCasque3
      *
-     * @return array
+     * @return int
      */
-    public function getCbChBotte()
+    public function getCbChCasque3()
     {
-        return $this->cbChBotte;
+        return $this->cbChCasque3;
+    }
+
+    /**
+     * Set cbChArmure1
+     *
+     * @param float $cbChArmure1
+     *
+     * @return Personage
+     */
+    public function setCbChArmure1($cbChArmure1)
+    {
+        $this->cbChArmure1 = $cbChArmure1;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChArmure1
+     *
+     * @return int
+     */
+    public function getCbChArmure1()
+    {
+        return $this->cbChArmure1;
+    }
+
+    /**
+     * Set cbChArmure2
+     *
+     * @param float $cbChArmure2
+     *
+     * @return Personage
+     */
+    public function setCbChArmure2($cbChArmure2)
+    {
+        $this->cbChArmure2 = $cbChArmure2;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChArmure2
+     *
+     * @return int
+     */
+    public function getCbChArmure2()
+    {
+        return $this->cbChArmure2;
+    }
+
+    /**
+     * Set cbChArmure3
+     *
+     * @param float $cbChArmure3
+     *
+     * @return Personage
+     */
+    public function setCbChArmure3($cbChArmure3)
+    {
+        $this->cbChArmure3 = $cbChArmure3;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChArmure3
+     *
+     * @return int
+     */
+    public function getCbChArmure3()
+    {
+        return $this->cbChArmure3;
+    }
+
+    /**
+     * Set cbChBotte1
+     *
+     * @param float $cbChBotte1
+     *
+     * @return Personage
+     */
+    public function setCbChBotte1($cbChBotte1)
+    {
+        $this->cbChBotte1 = $cbChBotte1;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChBotte1
+     *
+     * @return int
+     */
+    public function getCbChBotte1()
+    {
+        return $this->cbChBotte1;
+    }
+
+    /**
+     * Set cbChBotte2
+     *
+     * @param float $cbChBotte2
+     *
+     * @return Personage
+     */
+    public function setCbChBotte2($cbChBotte2)
+    {
+        $this->cbChBotte2 = $cbChBotte2;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChBotte2
+     *
+     * @return int
+     */
+    public function getCbChBotte2()
+    {
+        return $this->cbChBotte2;
+    }
+
+    /**
+     * Set cbChBotte3
+     *
+     * @param float $cbChBotte3
+     *
+     * @return Personage
+     */
+    public function setCbChBotte3($cbChBotte3)
+    {
+        $this->cbChBotte3 = $cbChBotte3;
+
+        return $this;
+    }
+
+    /**
+     * Get cbChBotte3
+     *
+     * @return int
+     */
+    public function getCbChBotte3()
+    {
+        return $this->cbChBotte3;
     }
 
     /**
      * Set cbSoEpeeLarge
      *
-     * @param array $cbSoEpeeLarge
+     * @param float $cbSoEpeeLarge
      *
      * @return Personage
      */
@@ -2926,7 +5395,7 @@ class Personage
     /**
      * Get cbSoEpeeLarge
      *
-     * @return array
+     * @return int
      */
     public function getCbSoEpeeLarge()
     {
@@ -2934,9 +5403,57 @@ class Personage
     }
 
     /**
+     * Set cbSoClaymore
+     *
+     * @param float $cbSoClaymore
+     *
+     * @return Personage
+     */
+    public function setCbSoClaymore($cbSoClaymore)
+    {
+        $this->cbSoClaymore = $cbSoClaymore;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoClaymore
+     *
+     * @return int
+     */
+    public function getCbSoClaymore()
+    {
+        return $this->cbSoClaymore;
+    }
+
+    /**
+     * Set cbSoGlaive
+     *
+     * @param float $cbSoGlaive
+     *
+     * @return Personage
+     */
+    public function setCbSoGlaive($cbSoGlaive)
+    {
+        $this->cbSoGlaive = $cbSoGlaive;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoGlaive
+     *
+     * @return int
+     */
+    public function getCbSoGlaive()
+    {
+        return $this->cbSoGlaive;
+    }
+
+    /**
      * Set cbSoHache
      *
-     * @param array $cbSoHache
+     * @param float $cbSoHache
      *
      * @return Personage
      */
@@ -2950,7 +5467,7 @@ class Personage
     /**
      * Get cbSoHache
      *
-     * @return array
+     * @return int
      */
     public function getCbSoHache()
     {
@@ -2958,9 +5475,57 @@ class Personage
     }
 
     /**
+     * Set cbSoGrandeHache
+     *
+     * @param float $cbSoGrandeHache
+     *
+     * @return Personage
+     */
+    public function setCbSoGrandeHache($cbSoGrandeHache)
+    {
+        $this->cbSoGrandeHache = $cbSoGrandeHache;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoGrandeHache
+     *
+     * @return int
+     */
+    public function getCbSoGrandeHache()
+    {
+        return $this->cbSoGrandeHache;
+    }
+
+    /**
+     * Set cbSoFaux
+     *
+     * @param float $cbSoFaux
+     *
+     * @return Personage
+     */
+    public function setCbSoFaux($cbSoFaux)
+    {
+        $this->cbSoFaux = $cbSoFaux;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoFaux
+     *
+     * @return int
+     */
+    public function getCbSoFaux()
+    {
+        return $this->cbSoFaux;
+    }
+
+    /**
      * Set cbSoMassue
      *
-     * @param array $cbSoMassue
+     * @param float $cbSoMassue
      *
      * @return Personage
      */
@@ -2974,7 +5539,7 @@ class Personage
     /**
      * Get cbSoMassue
      *
-     * @return array
+     * @return int
      */
     public function getCbSoMassue()
     {
@@ -2982,9 +5547,57 @@ class Personage
     }
 
     /**
+     * Set cbSoMassueLo
+     *
+     * @param float $cbSoMassueLo
+     *
+     * @return Personage
+     */
+    public function setCbSoMassueLo($cbSoMassueLo)
+    {
+        $this->cbSoMassueLo = $cbSoMassueLo;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoMassueLo
+     *
+     * @return int
+     */
+    public function getCbSoMassueLo()
+    {
+        return $this->cbSoMassueLo;
+    }
+
+    /**
+     * Set cbSoFleau
+     *
+     * @param float $cbSoFleau
+     *
+     * @return Personage
+     */
+    public function setCbSoFleau($cbSoFleau)
+    {
+        $this->cbSoFleau = $cbSoFleau;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoFleau
+     *
+     * @return int
+     */
+    public function getCbSoFleau()
+    {
+        return $this->cbSoFleau;
+    }
+
+    /**
      * Set cbSoMasse
      *
-     * @param array $cbSoMasse
+     * @param float $cbSoMasse
      *
      * @return Personage
      */
@@ -2998,7 +5611,7 @@ class Personage
     /**
      * Get cbSoMasse
      *
-     * @return array
+     * @return int
      */
     public function getCbSoMasse()
     {
@@ -3006,9 +5619,57 @@ class Personage
     }
 
     /**
+     * Set cbSoBecDeCorbin
+     *
+     * @param float $cbSoBecDeCorbin
+     *
+     * @return Personage
+     */
+    public function setCbSoBecDeCorbin($cbSoBecDeCorbin)
+    {
+        $this->cbSoBecDeCorbin = $cbSoBecDeCorbin;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoBecDeCorbin
+     *
+     * @return int
+     */
+    public function getCbSoBecDeCorbin()
+    {
+        return $this->cbSoBecDeCorbin;
+    }
+
+    /**
+     * Set cbSoGrandeMasse
+     *
+     * @param float $cbSoGrandeMasse
+     *
+     * @return Personage
+     */
+    public function setCbSoGrandeMasse($cbSoGrandeMasse)
+    {
+        $this->cbSoGrandeMasse = $cbSoGrandeMasse;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoGrandeMasse
+     *
+     * @return int
+     */
+    public function getCbSoGrandeMasse()
+    {
+        return $this->cbSoGrandeMasse;
+    }
+
+    /**
      * Set cbSoArbalete
      *
-     * @param array $cbSoArbalete
+     * @param float $cbSoArbalete
      *
      * @return Personage
      */
@@ -3022,7 +5683,7 @@ class Personage
     /**
      * Get cbSoArbalete
      *
-     * @return array
+     * @return int
      */
     public function getCbSoArbalete()
     {
@@ -3030,9 +5691,57 @@ class Personage
     }
 
     /**
+     * Set cbSoArbaleteLo
+     *
+     * @param float $cbSoArbaleteLo
+     *
+     * @return Personage
+     */
+    public function setCbSoArbaleteLo($cbSoArbaleteLo)
+    {
+        $this->cbSoArbaleteLo = $cbSoArbaleteLo;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoArbaleteLo
+     *
+     * @return int
+     */
+    public function getCbSoArbaleteLo()
+    {
+        return $this->cbSoArbaleteLo;
+    }
+
+    /**
+     * Set cbSoArbaleteRep
+     *
+     * @param float $cbSoArbaleteRep
+     *
+     * @return Personage
+     */
+    public function setCbSoArbaleteRep($cbSoArbaleteRep)
+    {
+        $this->cbSoArbaleteRep = $cbSoArbaleteRep;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoArbaleteRep
+     *
+     * @return int
+     */
+    public function getCbSoArbaleteRep()
+    {
+        return $this->cbSoArbaleteRep;
+    }
+
+    /**
      * Set cbSoBouclier
      *
-     * @param array $cbSoBouclier
+     * @param float $cbSoBouclier
      *
      * @return Personage
      */
@@ -3046,7 +5755,7 @@ class Personage
     /**
      * Get cbSoBouclier
      *
-     * @return array
+     * @return int
      */
     public function getCbSoBouclier()
     {
@@ -3054,75 +5763,219 @@ class Personage
     }
 
     /**
-     * Set cbSoCasque
+     * Set cbSoCasque1
      *
-     * @param array $cbSoCasque
+     * @param float $cbSoCasque1
      *
      * @return Personage
      */
-    public function setCbSoCasque($cbSoCasque)
+    public function setCbSoCasque1($cbSoCasque1)
     {
-        $this->cbSoCasque = $cbSoCasque;
+        $this->cbSoCasque1 = $cbSoCasque1;
 
         return $this;
     }
 
     /**
-     * Get cbSoCasque
+     * Get cbSoCasque1
      *
-     * @return array
+     * @return int
      */
-    public function getCbSoCasque()
+    public function getCbSoCasque1()
     {
-        return $this->cbSoCasque;
+        return $this->cbSoCasque1;
     }
 
     /**
-     * Set cbSoArmure
+     * Set cbSoCasque2
      *
-     * @param array $cbSoArmure
+     * @param float $cbSoCasque2
      *
      * @return Personage
      */
-    public function setCbSoArmure($cbSoArmure)
+    public function setCbSoCasque2($cbSoCasque2)
     {
-        $this->cbSoArmure = $cbSoArmure;
+        $this->cbSoCasque2 = $cbSoCasque2;
 
         return $this;
     }
 
     /**
-     * Get cbSoArmure
+     * Get cbSoCasque2
      *
-     * @return array
+     * @return int
      */
-    public function getCbSoArmure()
+    public function getCbSoCasque2()
     {
-        return $this->cbSoArmure;
+        return $this->cbSoCasque2;
     }
 
     /**
-     * Set cbSoBotte
+     * Set cbSoCasque3
      *
-     * @param array $cbSoBotte
+     * @param float $cbSoCasque3
      *
      * @return Personage
      */
-    public function setCbSoBotte($cbSoBotte)
+    public function setCbSoCasque3($cbSoCasque3)
     {
-        $this->cbSoBotte = $cbSoBotte;
+        $this->cbSoCasque3 = $cbSoCasque3;
 
         return $this;
     }
 
     /**
-     * Get cbSoBotte
+     * Get cbSoCasque3
      *
-     * @return array
+     * @return int
      */
-    public function getCbSoBotte()
+    public function getCbSoCasque3()
     {
-        return $this->cbSoBotte;
+        return $this->cbSoCasque3;
+    }
+
+    /**
+     * Set cbSoArmure1
+     *
+     * @param float $cbSoArmure1
+     *
+     * @return Personage
+     */
+    public function setCbSoArmure1($cbSoArmure1)
+    {
+        $this->cbSoArmure1 = $cbSoArmure1;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoArmure1
+     *
+     * @return int
+     */
+    public function getCbSoArmure1()
+    {
+        return $this->cbSoArmure1;
+    }
+
+    /**
+     * Set cbSoArmure2
+     *
+     * @param float $cbSoArmure2
+     *
+     * @return Personage
+     */
+    public function setCbSoArmure2($cbSoArmure2)
+    {
+        $this->cbSoArmure2 = $cbSoArmure2;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoArmure2
+     *
+     * @return int
+     */
+    public function getCbSoArmure2()
+    {
+        return $this->cbSoArmure2;
+    }
+
+    /**
+     * Set cbSoArmure3
+     *
+     * @param float $cbSoArmure3
+     *
+     * @return Personage
+     */
+    public function setCbSoArmure3($cbSoArmure3)
+    {
+        $this->cbSoArmure3 = $cbSoArmure3;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoArmure3
+     *
+     * @return int
+     */
+    public function getCbSoArmure3()
+    {
+        return $this->cbSoArmure3;
+    }
+
+    /**
+     * Set cbSoBotte1
+     *
+     * @param float $cbSoBotte1
+     *
+     * @return Personage
+     */
+    public function setCbSoBotte1($cbSoBotte1)
+    {
+        $this->cbSoBotte1 = $cbSoBotte1;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoBotte1
+     *
+     * @return int
+     */
+    public function getCbSoBotte1()
+    {
+        return $this->cbSoBotte1;
+    }
+
+    /**
+     * Set cbSoBotte2
+     *
+     * @param float $cbSoBotte2
+     *
+     * @return Personage
+     */
+    public function setCbSoBotte2($cbSoBotte2)
+    {
+        $this->cbSoBotte2 = $cbSoBotte2;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoBotte2
+     *
+     * @return int
+     */
+    public function getCbSoBotte2()
+    {
+        return $this->cbSoBotte2;
+    }
+
+    /**
+     * Set cbSoBotte3
+     *
+     * @param float $cbSoBotte3
+     *
+     * @return Personage
+     */
+    public function setCbSoBotte3($cbSoBotte3)
+    {
+        $this->cbSoBotte3 = $cbSoBotte3;
+
+        return $this;
+    }
+
+    /**
+     * Get cbSoBotte3
+     *
+     * @return int
+     */
+    public function getCbSoBotte3()
+    {
+        return $this->cbSoBotte3;
     }
 }
 

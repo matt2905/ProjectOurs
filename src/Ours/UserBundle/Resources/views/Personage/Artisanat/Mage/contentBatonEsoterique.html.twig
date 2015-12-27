@@ -1,0 +1,47 @@
+<table id="maBatonEso" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="eso">BATON ESOTERIQUE</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.maBatonEso %}
+            <tr>
+                <td class="eso">{{ personage.name }}</td>
+                {% if personage.maBatonEso == 3 %}
+                    <td class="trois tier">{{ personage.maBatonEso }}</td>
+                {% elseif personage.maBatonEso == 4 %}
+                    <td class="quatre tier">{{ personage.maBatonEso }}</td>
+                {% elseif personage.maBatonEso == 5 %}
+                    <td class="cinq tier">{{ personage.maBatonEso }}</td>
+                {% elseif personage.maBatonEso == 6 %}
+                    <td class="six tier">{{ personage.maBatonEso }}</td>
+                {% elseif personage.maBatonEso == 7 %}
+                    <td class="sept tier">{{ personage.maBatonEso }}</td>
+                {% elseif personage.maBatonEso == 8 %}
+                    <td class="huit tier">{{ personage.maBatonEso }}</td>
+                {% elseif personage.maBatonEso == 5.4 %}
+                    <td class="cinqPquatre tier">{{ personage.maBatonEso }}</td>
+                {% elseif personage.maBatonEso == 6.4 %}
+                    <td class="sixPquatre tier">{{ personage.maBatonEso }}</td>
+                {% elseif personage.maBatonEso == 7.4 %}
+                    <td class="septPquatre tier">{{ personage.maBatonEso }}</td>
+                {% elseif personage.maBatonEso == 8.4 %}
+                    <td class="huitPquatre tier">{{ personage.maBatonEso }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.maBatonEso }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

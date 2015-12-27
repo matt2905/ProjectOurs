@@ -1,0 +1,43 @@
+<table id="maBatonDemo" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="damn">BATON DEMONISTE</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.maBatonDemo %}
+            <tr>
+                <td class="damn">{{ personage.name }}</td>
+                {% if personage.maBatonDemo == 4.3 %}
+                    <td class="quatrePtrois tier">{{ personage.maBatonDemo }}</td>
+                {% elseif personage.maBatonDemo == 5.3 %}
+                    <td class="cinqPtrois tier">{{ personage.maBatonDemo }}</td>
+                {% elseif personage.maBatonDemo == 6.3 %}
+                    <td class="sixPtrois tier">{{ personage.maBatonDemo }}</td>
+                {% elseif personage.maBatonDemo == 7.3 %}
+                    <td class="septPtrois tier">{{ personage.maBatonDemo }}</td>
+                {% elseif personage.maBatonDemo == 8.3 %}
+                    <td class="huitPtrois tier">{{ personage.maBatonDemo }}</td>
+                {% elseif personage.maBatonDemo == 6.6 %}
+                    <td class="sixPsix tier">{{ personage.maBatonDemo }}</td>
+                {% elseif personage.maBatonDemo == 7.6 %}
+                    <td class="septPsix tier">{{ personage.maBatonDemo }}</td>
+                {% elseif personage.maBatonDemo == 8.6 %}
+                    <td class="huitPsix tier">{{ personage.maBatonDemo }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.maBatonDemo }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

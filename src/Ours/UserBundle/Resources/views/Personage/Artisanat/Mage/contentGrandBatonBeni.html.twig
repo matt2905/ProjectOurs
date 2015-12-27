@@ -1,0 +1,45 @@
+<table id="maGrandBatonBeni" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="beni">GRAND BATON BENI</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.maGrandBatonBeni %}
+            <tr>
+                <td class="beni">{{ personage.name }}</td>
+                {% if personage.maGrandBatonBeni == 4.2 %}
+                    <td class="quatrePdeux tier">{{ personage.maGrandBatonBeni }}</td>
+                {% elseif personage.maGrandBatonBeni == 5.2 %}
+                    <td class="cinqPdeux tier">{{ personage.maGrandBatonBeni }}</td>
+                {% elseif personage.maGrandBatonBeni == 6.2 %}
+                    <td class="sixPdeux tier">{{ personage.maGrandBatonBeni }}</td>
+                {% elseif personage.maGrandBatonBeni == 7.2 %}
+                    <td class="septPdeux tier">{{ personage.maGrandBatonBeni }}</td>
+                {% elseif personage.maGrandBatonBeni == 8.2 %}
+                    <td class="huitPdeux tier">{{ personage.maGrandBatonBeni }}</td>
+                {% elseif personage.maGrandBatonBeni == 5.5 %}
+                    <td class="cinqPcinq tier">{{ personage.maGrandBatonBeni }}</td>
+                {% elseif personage.maGrandBatonBeni == 6.5 %}
+                    <td class="sixPcinq tier">{{ personage.maGrandBatonBeni }}</td>
+                {% elseif personage.maGrandBatonBeni == 7.5 %}
+                    <td class="septPcinq tier">{{ personage.maGrandBatonBeni }}</td>
+                {% elseif personage.maGrandBatonBeni == 8.5 %}
+                    <td class="huitPcinq tier">{{ personage.maGrandBatonBeni }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.maGrandBatonBeni }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

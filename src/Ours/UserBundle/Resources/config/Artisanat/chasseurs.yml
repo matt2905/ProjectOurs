@@ -1,0 +1,3 @@
+content_mages_fire_personage:
+    path:     /BatonFeu
+    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batonfeu }

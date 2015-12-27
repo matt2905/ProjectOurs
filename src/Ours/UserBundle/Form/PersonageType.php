@@ -133,102 +133,102 @@ class PersonageType extends AbstractType
             //      Armes Mage
 
             ->add('BatonFeu', 'number', array(
-                'property_path' => 'maBatonFeu[0]',
+                'property_path' => 'maBatonFeu',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('GrandBatonFeu', 'number', array(
-                'property_path' => 'maBatonFeu[1]',
+                'property_path' => 'maGrandBatonFeu',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BatonInfernal', 'number', array(
-                'property_path' => 'maBatonFeu[2]',
+                'property_path' => 'maBatonInfernal',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('BatonBeni', 'number', array(
-                'property_path' => 'maBatonBeni[0]',
+                'property_path' => 'maBatonBeni',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('GrandBatonBeni', 'number', array(
-                'property_path' => 'maBatonBeni[1]',
+                'property_path' => 'maGrandBatonBeni',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BatonDivin', 'number', array(
-                'property_path' => 'maBatonBeni[2]',
+                'property_path' => 'maBatonDivin',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('BatonEsoterique', 'number', array(
-                'property_path' => 'maBatonEso[0]',
+                'property_path' => 'maBatonEso',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('GrandBatonEsoterique', 'number', array(
-                'property_path' => 'maBatonEso[1]',
+                'property_path' => 'maGrandBatonEso',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BatonEnigmatique', 'number', array(
-                'property_path' => 'maBatonEso[2]',
+                'property_path' => 'maBatonEni',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('BatonGivre', 'number', array(
-                'property_path' => 'maBatonGi[0]',
+                'property_path' => 'maBatonGi',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('GrandBatonGivre', 'number', array(
-                'property_path' => 'maBatonGi[1]',
+                'property_path' => 'maGrandBatonGi',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BatonGlacial', 'number', array(
-                'property_path' => 'maBatonGi[2]',
+                'property_path' => 'maBatonGla',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('BatonDamne', 'number', array(
-                'property_path' => 'maBatonDamn[0]',
+                'property_path' => 'maBatonDamn',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('GrandBatonDamne', 'number', array(
-                'property_path' => 'maBatonDamn[1]',
+                'property_path' => 'maGrandBatonDamn',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BatonDemoniaque', 'number', array(
-                'property_path' => 'maBatonDamn[2]',
+                'property_path' => 'maBatonDemo',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('Tome', 'number', array(
-                'property_path' => 'maTome[0]',
+                'property_path' => 'maTome',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -237,57 +237,57 @@ class PersonageType extends AbstractType
             //      Armure Mage
 
             ->add('CasqueLegerEnTissu', 'number', array(
-                'property_path' => 'maCasque[0]',
+                'property_path' => 'maCasque1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('CasqueMoyenEnTissu', 'number', array(
-                'property_path' => 'maCasque[1]',
+                'property_path' => 'maCasque2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('CasqueLourdEnTissu', 'number', array(
-                'property_path' => 'maCasque[2]',
+                'property_path' => 'maCasque3',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('TorseLegerEnTissu', 'number', array(
-                'property_path' => 'maArmure[0]',
+                'property_path' => 'maArmure1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('TorseMoyenEnTissu', 'number', array(
-                'property_path' => 'maArmure[1]',
+                'property_path' => 'maArmure2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('TorseLourdEnTissu', 'number', array(
-                'property_path' => 'maArmure[2]',
+                'property_path' => 'maArmure3',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('BotteLegerEnTissu', 'number', array(
-                'property_path' => 'maBotte[0]',
+                'property_path' => 'maBotte1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BotteMoyenEnTissu', 'number', array(
-                'property_path' => 'maBotte[1]',
+                'property_path' => 'maBotte2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BotteLourdEnTissu', 'number', array(
-                'property_path' => 'maBotte[2]',
+                'property_path' => 'maBotte3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -296,102 +296,102 @@ class PersonageType extends AbstractType
             //      Arme Chasseur
 
             ->add('Arc', 'number', array(
-                'property_path' => 'chArc[0]',
+                'property_path' => 'chArc',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('ArcDeGeurre', 'number', array(
-                'property_path' => 'chArc[1]',
+                'property_path' => 'chArcGu',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('ArcLong', 'number', array(
-                'property_path' => 'chArc[2]',
+                'property_path' => 'chArcLo',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('Lance', 'number', array(
-                'property_path' => 'chLance[0]',
+                'property_path' => 'chLance',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('Pique', 'number', array(
-                'property_path' => 'chLance[1]',
+                'property_path' => 'chPique',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('Hallebarde', 'number', array(
-                'property_path' => 'chLance[2]',
+                'property_path' => 'chHallebarde',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('BatonNaturel', 'number', array(
-                'property_path' => 'chBatonNat[0]',
+                'property_path' => 'chBatonNat',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('GrandBatonNaturel', 'number', array(
-                'property_path' => 'chBatonNat[1]',
+                'property_path' => 'chGrandBatonNat',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BatonSauvage', 'number', array(
-                'property_path' => 'chBatonNat[2]',
+                'property_path' => 'chBatonSau',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('Dague', 'number', array(
-                'property_path' => 'chDague[0]',
+                'property_path' => 'chDague',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('PaireDeDagues', 'number', array(
-                'property_path' => 'chDague[1]',
+                'property_path' => 'chDagueDouble',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('Griffes', 'number', array(
-                'property_path' => 'chDague[2]',
+                'property_path' => 'chGriffe',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('LongBaton', 'number', array(
-                'property_path' => 'chBatonLong[0]',
+                'property_path' => 'chBatonLong',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BatonSansFaille', 'number', array(
-                'property_path' => 'chBatonLong[1]',
+                'property_path' => 'chBatonSF',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BatonADoubleTranchant', 'number', array(
-                'property_path' => 'chBatonLong[2]',
+                'property_path' => 'chBatonDT',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('Torche', 'number', array(
-                'property_path' => 'chTorche[0]',
+                'property_path' => 'chTorche',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -400,57 +400,57 @@ class PersonageType extends AbstractType
             //      Armure chasseur
 
             ->add('CasqueMoyenEnCuir', 'number', array(
-                'property_path' => 'chCasque[0]',
+                'property_path' => 'chCasque1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('CasqueLourdEnCuir', 'number', array(
-                'property_path' => 'chCasque[1]',
+                'property_path' => 'chCasque2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('CasqueLegerEnCuir', 'number', array(
-                'property_path' => 'chCasque[2]',
+                'property_path' => 'chCasque3',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('TorseMoyenEnCuir', 'number', array(
-                'property_path' => 'chArmure[0]',
+                'property_path' => 'chArmure1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('TorseLourdEnCuir', 'number', array(
-                'property_path' => 'chArmure[1]',
+                'property_path' => 'chArmure2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('TorseLegerEnCuir', 'number', array(
-                'property_path' => 'chArmure[2]',
+                'property_path' => 'chArmure3',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('BotteMoyenEnCuir', 'number', array(
-                'property_path' => 'chBotte[0]',
+                'property_path' => 'chBotte1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BotteLourdEnCuir', 'number', array(
-                'property_path' => 'chBotte[1]',
+                'property_path' => 'chBotte2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BotteLegerEnCuir', 'number', array(
-                'property_path' => 'chBotte[2]',
+                'property_path' => 'chBotte3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -459,102 +459,102 @@ class PersonageType extends AbstractType
             //      Arme Soldat
 
             ->add('EpeeLarge', 'number', array(
-                'property_path' => 'soEpeeLarge[0]',
+                'property_path' => 'soEpeeLarge',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('Claymore', 'number', array(
-                'property_path' => 'soEpeeLarge[1]',
+                'property_path' => 'soClaymore',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('Glaive', 'number', array(
-                'property_path' => 'soEpeeLarge[2]',
+                'property_path' => 'soGlaive',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('HacheDeGuerre', 'number', array(
-                'property_path' => 'soHache[0]',
+                'property_path' => 'soHache',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('GrandeHche', 'number', array(
-                'property_path' => 'soHache[1]',
+                'property_path' => 'soGrandeHache',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('Faux', 'number', array(
-                'property_path' => 'soHache[2]',
+                'property_path' => 'soFaux',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('Massue', 'number', array(
-                'property_path' => 'soMassue[0]',
+                'property_path' => 'soMassue',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('MassueLourde', 'number', array(
-                'property_path' => 'soMassue[1]',
+                'property_path' => 'soMassueLo',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('Fleau', 'number', array(
-                'property_path' => 'soMassue[2]',
+                'property_path' => 'soFleau',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('Masse', 'number', array(
-                'property_path' => 'soMasse[0]',
+                'property_path' => 'soMasse',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BecDeCorbin', 'number', array(
-                'property_path' => 'soMasse[1]',
+                'property_path' => 'soBecDeCorbin',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('GrandeMasse', 'number', array(
-                'property_path' => 'soMasse[2]',
+                'property_path' => 'soGrandeMasse',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('Arbalete', 'number', array(
-                'property_path' => 'soArbalete[0]',
+                'property_path' => 'soArbalete',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('ArbaleteLourde', 'number', array(
-                'property_path' => 'soArbalete[1]',
+                'property_path' => 'soArbaleteLo',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('AbarleteARepetition', 'number', array(
-                'property_path' => 'soArbalete[2]',
+                'property_path' => 'soArbaleteRep',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('Bouclier', 'number', array(
-                'property_path' => 'soBouclier[0]',
+                'property_path' => 'soBouclier',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -563,57 +563,57 @@ class PersonageType extends AbstractType
             //      Armure Soldat
 
             ->add('CasqueDePlaqueLourd', 'number', array(
-                'property_path' => 'soCasque[0]',
+                'property_path' => 'soCasque1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('CasqueDePlaqueLeger', 'number', array(
-                'property_path' => 'soCasque[1]',
+                'property_path' => 'soCasque2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('CasqueDePlaqueMoyen', 'number', array(
-                'property_path' => 'soCasque[2]',
+                'property_path' => 'soCasque3',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('TorseDePlaqueLourd', 'number', array(
-                'property_path' => 'soArmure[0]',
+                'property_path' => 'soArmure1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('TorseDePlaqueLeger', 'number', array(
-                'property_path' => 'soArmure[1]',
+                'property_path' => 'soArmure2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('TorseDePlaqueMoyen', 'number', array(
-                'property_path' => 'soArmure[2]',
+                'property_path' => 'soArmure3',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
 
             ->add('BotteDePlaqueLourd', 'number', array(
-                'property_path' => 'soBotte[0]',
+                'property_path' => 'soBotte1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BotteDePlaqueLeger', 'number', array(
-                'property_path' => 'soBotte[1]',
+                'property_path' => 'soBotte2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('BotteDePlaqueMoyen', 'number', array(
-                'property_path' => 'soBotte[2]',
+                'property_path' => 'soBotte3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -624,21 +624,21 @@ class PersonageType extends AbstractType
 
             ->add('cbBatonFeu', 'number', array(
                 'label' => 'Bâton de feu',
-                'property_path' => 'cbMaPyro[0]',
+                'property_path' => 'cbMaBatonFeu',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGrandBatonFeu', 'number', array(
                 'label' => 'Grand bâton de feu',
-                'property_path' => 'cbMaPyro[1]',
+                'property_path' => 'cbMaGrandBatonFeu',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbBatonInfernal', 'number', array(
                 'label' => 'Bâton infernal',
-                'property_path' => 'cbMaPyro[2]',
+                'property_path' => 'cbMaBatonInfernal',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -646,21 +646,21 @@ class PersonageType extends AbstractType
 
             ->add('cbBatonBeni', 'number', array(
                 'label' => 'Bâton béni',
-                'property_path' => 'cbMaPretre[0]',
+                'property_path' => 'cbMaBatonBeni',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGrandBatonBeni', 'number', array(
                 'label' => 'Grand bâton béni',
-                'property_path' => 'cbMaPretre[1]',
+                'property_path' => 'cbMaGrandBatonBeni',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbBatonDivin', 'number', array(
                 'label' => 'Bâton divin',
-                'property_path' => 'cbMaPretre[2]',
+                'property_path' => 'cbMaBatonDivin',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -668,21 +668,21 @@ class PersonageType extends AbstractType
 
             ->add('cbBatonEsoterique', 'number', array(
                 'label' => 'Bâton ésotérique',
-                'property_path' => 'cbMaArca[0]',
+                'property_path' => 'cbMaBatonEso',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGrandBatonEsoterique', 'number', array(
                 'label' => 'Grand bâton ésotérique',
-                'property_path' => 'cbMaArca[1]',
+                'property_path' => 'cbMaGrandBatonEso',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbBatonEnigmatique', 'number', array(
                 'label' => 'Bâton énigmatique',
-                'property_path' => 'cbMaArca[2]',
+                'property_path' => 'cbMaBatonEni',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -690,21 +690,21 @@ class PersonageType extends AbstractType
 
             ->add('cbBatonGivre', 'number', array(
                 'label' => 'Bâton de givre',
-                'property_path' => 'cbMaGivre[0]',
+                'property_path' => 'cbMaBatonGi',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGrandBatonGivre', 'number', array(
                 'label' => 'Grand bâton de givre',
-                'property_path' => 'cbMaGivre[1]',
+                'property_path' => 'cbMaGrandBatonGi',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbBatonGlacial', 'number', array(
                 'label' => 'Bâton glacial',
-                'property_path' => 'cbMaGivre[2]',
+                'property_path' => 'cbMaBatonGla',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -712,21 +712,21 @@ class PersonageType extends AbstractType
 
             ->add('cbBatonDamne', 'number', array(
                 'label' => 'Bâton damnée',
-                'property_path' => 'cbMaSorcier[0]',
+                'property_path' => 'cbMaBatonDamn',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGrandBatonDamne', 'number', array(
                 'label' => 'Grand bâton damnée',
-                'property_path' => 'cbMaSorcier[1]',
+                'property_path' => 'cbMaGrandBatonDamn',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbBatonDemoniaque', 'number', array(
                 'label' => 'Bâton démoniaque',
-                'property_path' => 'cbMaSorcier[2]',
+                'property_path' => 'cbMaBatonDemo',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -734,7 +734,7 @@ class PersonageType extends AbstractType
 
             ->add('cbTome', 'number', array(
                 'label' => 'Tome',
-                'property_path' => 'cbMaTome[0]',
+                'property_path' => 'cbMaTome',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -744,21 +744,21 @@ class PersonageType extends AbstractType
 
             ->add('cbMaCasqueLegerEnTissu', 'number', array(
                 'label' => 'Capuche légère en tissu',
-                'property_path' => 'cbMaCasque[0]',
+                'property_path' => 'cbMaCasque1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbMaCasqueDePlaqueLeger', 'number', array(
                 'label' => 'Casque de plaque leger',
-                'property_path' => 'cbMaCasque[1]',
+                'property_path' => 'cbMaCasque2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbMaCasqueMoyenEnCuir', 'number', array(
                 'label' => 'Capuche moyenne en cuir',
-                'property_path' => 'cbMaCasque[2]',
+                'property_path' => 'cbMaCasque3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -766,21 +766,21 @@ class PersonageType extends AbstractType
 
             ->add('cbMaTorseLegerEnTissu', 'number', array(
                 'label' => 'Torse légère en tissu',
-                'property_path' => 'cbMaArmure[0]',
+                'property_path' => 'cbMaArmure1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbMaTorseDePlaqueLeger', 'number', array(
                 'label' => 'Torse de plaque leger',
-                'property_path' => 'cbMaArmure[1]',
+                'property_path' => 'cbMaArmure2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbMaTorseMoyenEnCuir', 'number', array(
                 'label' => 'Torse moyenne en cuir',
-                'property_path' => 'cbMaArmure[2]',
+                'property_path' => 'cbMaArmure3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -788,21 +788,21 @@ class PersonageType extends AbstractType
 
             ->add('cbMaBotteLegerEnTissu', 'number', array(
                 'label' => 'Chaussures légères en tissu',
-                'property_path' => 'cbMaBotte[0]',
+                'property_path' => 'cbMaBotte1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbMaBotteDePlaqueLeger', 'number', array(
                 'label' => 'Bottes de plaques leger',
-                'property_path' => 'cbMaBotte[1]',
+                'property_path' => 'cbMaBotte2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbMaBotteMoyenEnCuir', 'number', array(
                 'label' => 'Chaussure légères en cuir',
-                'property_path' => 'cbMaBotte[2]',
+                'property_path' => 'cbMaBotte3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -812,21 +812,21 @@ class PersonageType extends AbstractType
 
             ->add('cbArc', 'number', array(
                 'label' => 'Arc',
-                'property_path' => 'cbChArc[0]',
+                'property_path' => 'cbChArc',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbArcDeGeurre', 'number', array(
                 'label' => 'Arc de guerre',
-                'property_path' => 'cbChArc[1]',
+                'property_path' => 'cbChArcGu',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbArcLong', 'number', array(
                 'label' => 'Arc long',
-                'property_path' => 'cbChArc[2]',
+                'property_path' => 'cbChArcLo',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -834,21 +834,21 @@ class PersonageType extends AbstractType
 
             ->add('cbLance', 'number', array(
                 'label' => 'Lance',
-                'property_path' => 'cbChBatonLong[0]',
+                'property_path' => 'cbChLance',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbPique', 'number', array(
                 'label' => 'Pique',
-                'property_path' => 'cbChBatonLong[1]',
+                'property_path' => 'cbChPique',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbHallebarde', 'number', array(
                 'label' => 'Hallebarde',
-                'property_path' => 'cbChBatonLong[2]',
+                'property_path' => 'cbChHallebarde',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -856,21 +856,21 @@ class PersonageType extends AbstractType
 
             ->add('cbBatonNaturel', 'number', array(
                 'label' => 'Bâton naturel',
-                'property_path' => 'cbChBatonNat[0]',
+                'property_path' => 'cbChBatonNat',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGrandBatonNaturel', 'number', array(
                 'label' => 'Grand bâton naturel',
-                'property_path' => 'cbChBatonNat[1]',
+                'property_path' => 'cbChGrandBatonNat',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbBatonSauvage', 'number', array(
                 'label' => 'Bâton sauvage',
-                'property_path' => 'cbChBatonNat[2]',
+                'property_path' => 'cbChBatonSau',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -878,21 +878,21 @@ class PersonageType extends AbstractType
 
             ->add('cbDague', 'number', array(
                 'label' => 'Dague',
-                'property_path' => 'cbChDague[0]',
+                'property_path' => 'cbChDague',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbPaireDeDagues', 'number', array(
                 'label' => 'Paire de dagues',
-                'property_path' => 'cbChDague[1]',
+                'property_path' => 'cbChDagueDouble',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGriffes', 'number', array(
                 'label' => 'Griffes',
-                'property_path' => 'cbChDague[2]',
+                'property_path' => 'cbChGriffe',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -900,21 +900,21 @@ class PersonageType extends AbstractType
 
             ->add('cbLongBaton', 'number', array(
                 'label' => 'Long bâton',
-                'property_path' => 'cbChLance[0]',
+                'property_path' => 'cbChBatonLong',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbBatonSansFaille', 'number', array(
                 'label' => 'Bâton sans faille',
-                'property_path' => 'cbChLance[1]',
+                'property_path' => 'cbChBatonSF',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbBatonADoubleTranchant', 'number', array(
                 'label' => 'Bâton à double tranchant',
-                'property_path' => 'cbChLance[2]',
+                'property_path' => 'cbChBatonDT',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -922,7 +922,7 @@ class PersonageType extends AbstractType
 
             ->add('cbTorche', 'number', array(
                 'label' => 'Torche',
-                'property_path' => 'cbChTorche[0]',
+                'property_path' => 'cbChTorche',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -932,21 +932,21 @@ class PersonageType extends AbstractType
 
             ->add('cbChCasqueMoyenEnCuir', 'number', array(
                 'label' => 'Capuche moyenne en cuir',
-                'property_path' => 'cbChCasque[0]',
+                'property_path' => 'cbChCasque1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbChCasqueMoyenEnTissu', 'number', array(
                 'label' => 'Capuche moyenne en tissu',
-                'property_path' => 'cbChCasque[1]',
+                'property_path' => 'cbChCasque2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbChCasqueDePlaqueMoyen', 'number', array(
                 'label' => 'Casque de plaque moyen',
-                'property_path' => 'cbChCasque[2]',
+                'property_path' => 'cbChCasque3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -954,21 +954,21 @@ class PersonageType extends AbstractType
 
             ->add('cbChTorseMoyenEnCuir', 'number', array(
                 'label' => 'Armure moyenne en cuir',
-                'property_path' => 'cbChArmure[0]',
+                'property_path' => 'cbChArmure1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbChTorseMoyenEnTissu', 'number', array(
                 'label' => 'Armure moyenne en tissu',
-                'property_path' => 'cbChArmure[1]',
+                'property_path' => 'cbChArmure2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbChTorseDePlaqueMoyen', 'number', array(
                 'label' => 'Armure de plaque moyenne',
-                'property_path' => 'cbChArmure[2]',
+                'property_path' => 'cbChArmure3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -976,21 +976,21 @@ class PersonageType extends AbstractType
 
             ->add('cbChBotteMoyenEnCuir', 'number', array(
                 'label' => 'Chaussures moyennes en cuir',
-                'property_path' => 'cbChBotte[0]',
+                'property_path' => 'cbChBotte1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbChBotteMoyenEnTissu', 'number', array(
                 'label' => 'Chaussures moyennes en tissu',
-                'property_path' => 'cbChBotte[1]',
+                'property_path' => 'cbChBotte2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbChBotteDePlaqueMoyen', 'number', array(
                 'label' => 'Bottes de plaques moyenne',
-                'property_path' => 'cbChBotte[2]',
+                'property_path' => 'cbChBotte3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -1000,21 +1000,21 @@ class PersonageType extends AbstractType
 
             ->add('cbEpeeLarge', 'number', array(
                 'label' => 'Epee large',
-                'property_path' => 'cbSoEpeeLarge[0]',
+                'property_path' => 'cbSoEpeeLarge',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbClaymore', 'number', array(
                 'label' => 'Claymore',
-                'property_path' => 'cbSoEpeeLarge[1]',
+                'property_path' => 'cbSoClaymore',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGlaive', 'number', array(
                 'label' => 'Glaive',
-                'property_path' => 'cbSoEpeeLarge[2]',
+                'property_path' => 'cbSoGlaive',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -1022,21 +1022,21 @@ class PersonageType extends AbstractType
 
             ->add('cbHacheDeGuerre', 'number', array(
                 'label' => 'Hache de guerre',
-                'property_path' => 'cbSoHache[0]',
+                'property_path' => 'cbSoHache',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGrandeHche', 'number', array(
                 'label' => 'Grande hache',
-                'property_path' => 'cbSoHache[1]',
+                'property_path' => 'cbSoGrandeHache',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbFaux', 'number', array(
                 'label' => 'Faux',
-                'property_path' => 'cbSoHache[2]',
+                'property_path' => 'cbSoFaux',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -1044,21 +1044,21 @@ class PersonageType extends AbstractType
 
             ->add('cbMassue', 'number', array(
                 'label' => 'Massue',
-                'property_path' => 'cbSoMassue[0]',
+                'property_path' => 'cbSoMassue',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbMassueLourde', 'number', array(
                 'label' => 'Massue lourde',
-                'property_path' => 'cbSoMassue[1]',
+                'property_path' => 'cbSoMassueLo',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbFleau', 'number', array(
                 'label' => 'Fléau',
-                'property_path' => 'cbSoMassue[2]',
+                'property_path' => 'cbSoFleau',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -1066,21 +1066,21 @@ class PersonageType extends AbstractType
 
             ->add('cbMasse', 'number', array(
                 'label' => 'Masse',
-                'property_path' => 'cbSoMasse[0]',
+                'property_path' => 'cbSoMasse',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbBecDeCorbin', 'number', array(
                 'label' => 'Bec de corbin',
-                'property_path' => 'cbSoMasse[1]',
+                'property_path' => 'cbSoBecDeCorbin',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbGrandeMasse', 'number', array(
                 'label' => 'Grande masse',
-                'property_path' => 'cbSoMasse[2]',
+                'property_path' => 'cbSoGrandeMasse',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -1088,21 +1088,21 @@ class PersonageType extends AbstractType
 
             ->add('cbArbalete', 'number', array(
                 'label' => 'Arbalète',
-                'property_path' => 'cbSoArbalete[0]',
+                'property_path' => 'cbSoArbalete',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbArbaleteLourde', 'number', array(
                 'label' => 'Arbalète lourde',
-                'property_path' => 'cbSoArbalete[1]',
+                'property_path' => 'cbSoArbaleteLo',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbAbarleteARepetition', 'number', array(
                 'label' => 'Arbalète à répétition',
-                'property_path' => 'cbSoArbalete[2]',
+                'property_path' => 'cbSoArbaleteRep',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -1110,7 +1110,7 @@ class PersonageType extends AbstractType
 
             ->add('cbBouclier', 'number', array(
                 'label' => 'Bouclier',
-                'property_path' => 'cbSoBouclier[0]',
+                'property_path' => 'cbSoBouclier',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -1120,21 +1120,21 @@ class PersonageType extends AbstractType
 
             ->add('cbSoCasqueDePlaqueLourd', 'number', array(
                 'label' => 'Casque de plaque lourd',
-                'property_path' => 'cbSoCasque[0]',
+                'property_path' => 'cbSoCasque1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbSoCasqueLourdEnCuir', 'number', array(
                 'label' => 'Capuche lourde en cuir',
-                'property_path' => 'cbSoCasque[1]',
+                'property_path' => 'cbSoCasque2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbSoCasqueLourdEnTissu', 'number', array(
                 'label' => 'Capuche lourde en tissu',
-                'property_path' => 'cbSoCasque[2]',
+                'property_path' => 'cbSoCasque3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -1142,21 +1142,21 @@ class PersonageType extends AbstractType
 
             ->add('cbSoTorseDePlaqueLourd', 'number', array(
                 'label' => 'Armure de plaque lourde',
-                'property_path' => 'cbSoArmure[0]',
+                'property_path' => 'cbSoArmure1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbSoTorseLourdEnCuir', 'number', array(
                 'label' => 'Armure lourde en cuir',
-                'property_path' => 'cbSoArmure[1]',
+                'property_path' => 'cbSoArmure2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbSoTorseLourdEnTissu', 'number', array(
                 'label' => 'Armure lourde en tissu',
-                'property_path' => 'cbSoArmure[2]',
+                'property_path' => 'cbSoArmure3',
                 'attr' => array(
                     'min' => 0,
                 )
@@ -1164,21 +1164,21 @@ class PersonageType extends AbstractType
 
             ->add('cbSoBotteDePlaqueLourd', 'number', array(
                 'label' => 'Bottes de plaques lourde',
-                'property_path' => 'cbSoBotte[0]',
+                'property_path' => 'cbSoBotte1',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbSoBotteLourdEnCuir', 'number', array(
                 'label' => 'Chassures lourdes en cuir',
-                'property_path' => 'cbSoBotte[1]',
+                'property_path' => 'cbSoBotte2',
                 'attr' => array(
                     'min' => 0,
                 )
             ))
             ->add('cbSobotteLourdEnTissu', 'number', array(
                 'label' => 'Chassures lourdes en tissu',
-                'property_path' => 'cbSoBotte[2]',
+                'property_path' => 'cbSoBotte3',
                 'attr' => array(
                     'min' => 0,
                 )

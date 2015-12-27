@@ -1,0 +1,39 @@
+<table id="ouCouteau" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="givre">COUTEAUX</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.ouCouteau %}
+            <tr>
+                <td class="givre tier">{{ personage.name }}</td>
+                {% if personage.ouCouteau == 3 %}
+                    <td class="trois tier">{{ personage.ouCouteau }}</td>
+                {% elseif personage.ouCouteau == 4 %}
+                    <td class="quatre tier">{{ personage.ouCouteau }}</td>
+                {% elseif personage.ouCouteau == 5 %}
+                    <td class="cinq tier">{{ personage.ouCouteau }}</td>
+                {% elseif personage.ouCouteau == 6 %}
+                    <td class="six tier">{{ personage.ouCouteau }}</td>
+                {% elseif personage.ouCouteau == 7 %}
+                    <td class="sept tier">{{ personage.ouCouteau }}</td>
+                {% elseif personage.ouCouteau == 8 %}
+                    <td class="huit tier">{{ personage.ouCouteau }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.ouCouteau }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

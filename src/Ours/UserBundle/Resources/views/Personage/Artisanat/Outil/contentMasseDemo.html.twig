@@ -1,0 +1,39 @@
+<table id="ouMasseDemo" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="tome">MASSES DEMO</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="4" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.ouMasseDemo %}
+            <tr>
+                <td class="tome">{{ personage.name }}</td>
+                {% if personage.ouMasseDemo == 3 %}
+                    <td class="trois tier">{{ personage.ouMasseDemo }}</td>
+                {% elseif personage.ouMasseDemo == 4 %}
+                    <td class="quatre tier">{{ personage.ouMasseDemo }}</td>
+                {% elseif personage.ouMasseDemo == 5 %}
+                    <td class="cinq tier">{{ personage.ouMasseDemo }}</td>
+                {% elseif personage.ouMasseDemo == 6 %}
+                    <td class="six tier">{{ personage.ouMasseDemo }}</td>
+                {% elseif personage.ouMasseDemo == 7 %}
+                    <td class="sept tier">{{ personage.ouMasseDemo }}</td>
+                {% elseif personage.ouMasseDemo == 8 %}
+                    <td class="huit tier">{{ personage.ouMasseDemo }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.ouMasseDemo }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

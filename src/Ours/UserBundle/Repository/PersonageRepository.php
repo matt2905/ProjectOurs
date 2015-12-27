@@ -10,4 +10,24 @@ namespace Ours\UserBundle\Repository;
  */
 class PersonageRepository extends \Doctrine\ORM\EntityRepository
 {
+    /**
+     * @param $criteria
+     * @param $start
+     * @param $limit
+     * @return array
+     */
+    public function findCriteriaSorted($criteria, $start, $limit)
+    {
+        $qb = $this->_em->createQueryBuilder()
+            ->select('p')
+            ->from($this->_entityName, 'p')
+            ->where('p.'.$criteria.' != 0')
+            ->orderBy('p.'.$criteria, 'DESC')
+            ->setMaxResults($limit)
+            ->setFirstResult($start)
+        ;
+
+        return $qb->getQuery()
+            ->getResult();
+    }
 }

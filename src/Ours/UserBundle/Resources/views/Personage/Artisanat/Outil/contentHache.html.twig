@@ -1,0 +1,39 @@
+<table id="ouHache" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="fire">HACHES</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.ouHache %}
+            <tr>
+                <td class="fire">{{ personage.name }}</td>
+                {% if personage.ouHache == 3 %}
+                    <td class="trois tier">{{ personage.ouHache }}</td>
+                {% elseif personage.ouHache == 4 %}
+                    <td class="quatre tier">{{ personage.ouHache }}</td>
+                {% elseif personage.ouHache == 5 %}
+                    <td class="cinq tier">{{ personage.ouHache }}</td>
+                {% elseif personage.ouHache == 6 %}
+                    <td class="six tier">{{ personage.ouHache }}</td>
+                {% elseif personage.ouHache == 7 %}
+                    <td class="sept tier">{{ personage.ouHache }}</td>
+                {% elseif personage.ouHache == 8 %}
+                    <td class="huit tier">{{ personage.ouHache }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.ouHache }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

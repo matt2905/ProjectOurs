@@ -1,0 +1,23 @@
+content_outils_hache_personage:
+    path:     /Hache
+    defaults: { _controller: OursUserBundle:Artisanat\Outils:Hache }
+
+content_outils_massepi_personage:
+    path:     /MassePierre
+    defaults: { _controller: OursUserBundle:Artisanat\Outils:Massepi }
+
+content_outils_pioche_personage:
+    path:     /Pioche
+    defaults: { _controller: OursUserBundle:Artisanat\Outils:Pioche }
+
+content_outils_couteau_personage:
+    path:     /Couteau
+    defaults: { _controller: OursUserBundle:Artisanat\Outils:Couteau }
+
+content_outils_faucille_personage:
+    path:     /Faucille
+    defaults: { _controller: OursUserBundle:Artisanat\Outils:Faucille }
+
+content_outils_massede_personage:
+    path:     /MasseDemolition
+    defaults: { _controller: OursUserBundle:Artisanat\Outils:Massede }

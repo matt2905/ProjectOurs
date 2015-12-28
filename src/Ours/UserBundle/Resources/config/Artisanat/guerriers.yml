@@ -1,0 +1,99 @@
+content_guerriers_epee_large_personage:
+    path:     /EpeeLarge
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:EpeeLarge }
+
+content_guerriers_claymore_personage:
+    path:     /Claymore
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Claymore }
+
+content_guerriers_glaive_personage:
+    path:     /Glaive
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Glaive }
+
+content_guerriers_hache_personage:
+    path:     /HacheGuerre
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Hache }
+
+content_guerriers_gr_hache_personage:
+    path:     /GrandeHache
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:GrandeHache }
+
+content_guerriers_faux_personage:
+    path:     /Faux
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Faux }
+
+content_guerriers_massue_personage:
+    path:     /Massue
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Massue }
+
+content_guerriers_massue_lo_personage:
+    path:     /MassueLourde
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:MassueLourde }
+
+content_guerriers_fleau_personage:
+    path:     /Fleau
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Fleau }
+
+content_guerriers_masse_personage:
+    path:     /Masse
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Masse }
+
+content_guerriers_bec_corbin_personage:
+    path:     /BecDeCorbin
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:BecDeCorbin }
+
+content_guerriers_gr_masse_personage:
+    path:     /GrandeMasse
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:GrandeMasse }
+
+content_guerriers_arbalete_personage:
+    path:     /Arbalete
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Arbalete }
+
+content_guerriers_arbalete_lo_personage:
+    path:     /ArbaleteLourde
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:ArbaleteLourde }
+
+content_guerriers_arbalete_rep_personage:
+    path:     /ArbaleteRepetition
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:ArbaleteRepetition }
+
+content_guerriers_bouclier_personage:
+    path:     /Bouclier
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Bouclier }
+
+content_guerriers_casque1_personage:
+    path:     /Casque1
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Casque1 }
+
+content_guerriers_casque2_personage:
+    path:     /Casque2
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Casque2 }
+
+content_guerriers_casque3_personage:
+    path:     /Casque3
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Casque3 }
+
+content_guerriers_armure1_personage:
+    path:     /Armure1
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Armure1 }
+
+content_guerriers_armure2_personage:
+    path:     /Armure2
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Armure2 }
+
+content_guerriers_armure3_personage:
+    path:     /Armure3
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Armure3 }
+
+content_guerriers_botte1_personage:
+    path:     /Botte1
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Botte1 }
+
+content_guerriers_botte2_personage:
+    path:     /Botte2
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Botte2 }
+
+content_guerriers_botte3_personage:
+    path:     /Botte3
+    defaults: { _controller: OursUserBundle:Artisanat\Guerrier:Botte3 }

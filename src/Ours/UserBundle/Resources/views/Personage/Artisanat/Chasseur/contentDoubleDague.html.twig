@@ -1,0 +1,45 @@
+<table id="chDagueDouble" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="givre">PAIRES DE DAGUES</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.chDagueDouble %}
+            <tr>
+                <td class="givre">{{ personage.name }}</td>
+                {% if personage.chDagueDouble == 4.2 %}
+                    <td class="quatrePdeux tier">{{ personage.chDagueDouble }}</td>
+                {% elseif personage.chDagueDouble == 5.2 %}
+                    <td class="cinqPdeux tier">{{ personage.chDagueDouble }}</td>
+                {% elseif personage.chDagueDouble == 6.2 %}
+                    <td class="sixPdeux tier">{{ personage.chDagueDouble }}</td>
+                {% elseif personage.chDagueDouble == 7.2 %}
+                    <td class="septPdeux tier">{{ personage.chDagueDouble }}</td>
+                {% elseif personage.chDagueDouble == 8.2 %}
+                    <td class="huitPdeux tier">{{ personage.chDagueDouble }}</td>
+                {% elseif personage.chDagueDouble == 5.5 %}
+                    <td class="cinqPcinq tier">{{ personage.chDagueDouble }}</td>
+                {% elseif personage.chDagueDouble == 6.5 %}
+                    <td class="sixPcinq tier">{{ personage.chDagueDouble }}</td>
+                {% elseif personage.chDagueDouble == 7.5 %}
+                    <td class="septPcinq tier">{{ personage.chDagueDouble }}</td>
+                {% elseif personage.chDagueDouble == 8.5 %}
+                    <td class="huitPcinq tier">{{ personage.chDagueDouble }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.chDagueDouble }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

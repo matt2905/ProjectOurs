@@ -1,0 +1,47 @@
+<table id="chBatonNat" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="eso">BATON NATUREL</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.chBatonNat %}
+            <tr>
+                <td class="eso">{{ personage.name }}</td>
+                {% if personage.chBatonNat == 3 %}
+                    <td class="trois tier">{{ personage.chBatonNat }}</td>
+                {% elseif personage.chBatonNat == 4 %}
+                    <td class="quatre tier">{{ personage.chBatonNat }}</td>
+                {% elseif personage.chBatonNat == 5 %}
+                    <td class="cinq tier">{{ personage.chBatonNat }}</td>
+                {% elseif personage.chBatonNat == 6 %}
+                    <td class="six tier">{{ personage.chBatonNat }}</td>
+                {% elseif personage.chBatonNat == 7 %}
+                    <td class="sept tier">{{ personage.chBatonNat }}</td>
+                {% elseif personage.chBatonNat == 8 %}
+                    <td class="huit tier">{{ personage.chBatonNat }}</td>
+                {% elseif personage.chBatonNat == 5.4 %}
+                    <td class="cinqPquatre tier">{{ personage.chBatonNat }}</td>
+                {% elseif personage.chBatonNat == 6.4 %}
+                    <td class="sixPquatre tier">{{ personage.chBatonNat }}</td>
+                {% elseif personage.chBatonNat == 7.4 %}
+                    <td class="septPquatre tier">{{ personage.chBatonNat }}</td>
+                {% elseif personage.chBatonNat == 8.4 %}
+                    <td class="huitPquatre tier">{{ personage.chBatonNat }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.chBatonNat }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

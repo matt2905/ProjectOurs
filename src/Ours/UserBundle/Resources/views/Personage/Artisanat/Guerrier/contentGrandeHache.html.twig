@@ -1,0 +1,45 @@
+<table id="soGrandeHache" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="beni">GRANDE HACHE</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.soGrandeHache %}
+            <tr>
+                <td class="beni">{{ personage.name }}</td>
+                {% if personage.soGrandeHache == 4.2 %}
+                    <td class="quatrePdeux tier">{{ personage.soGrandeHache }}</td>
+                {% elseif personage.soGrandeHache == 5.2 %}
+                    <td class="cinqPdeux tier">{{ personage.soGrandeHache }}</td>
+                {% elseif personage.soGrandeHache == 6.2 %}
+                    <td class="sixPdeux tier">{{ personage.soGrandeHache }}</td>
+                {% elseif personage.soGrandeHache == 7.2 %}
+                    <td class="septPdeux tier">{{ personage.soGrandeHache }}</td>
+                {% elseif personage.soGrandeHache == 8.2 %}
+                    <td class="huitPdeux tier">{{ personage.soGrandeHache }}</td>
+                {% elseif personage.soGrandeHache == 5.5 %}
+                    <td class="cinqPcinq tier">{{ personage.soGrandeHache }}</td>
+                {% elseif personage.soGrandeHache == 6.5 %}
+                    <td class="sixPcinq tier">{{ personage.soGrandeHache }}</td>
+                {% elseif personage.soGrandeHache == 7.5 %}
+                    <td class="septPcinq tier">{{ personage.soGrandeHache }}</td>
+                {% elseif personage.soGrandeHache == 8.5 %}
+                    <td class="huitPcinq tier">{{ personage.soGrandeHache }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.soGrandeHache }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

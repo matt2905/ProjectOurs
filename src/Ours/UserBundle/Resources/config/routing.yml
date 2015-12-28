@@ -41,3 +41,7 @@ content_artisanat_mages:
 content_artisanat_chasseurs:
     resource: "@OursUserBundle/Resources/config/Artisanat/chasseurs.yml"
     prefix:     /contentArtisanat/Chasseurs
+
+content_artisanat_chasseurs:
+    resource: "@OursUserBundle/Resources/config/Artisanat/guerriers.yml"
+    prefix:     /contentArtisanat/Guerriers

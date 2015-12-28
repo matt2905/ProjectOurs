@@ -1,3 +1,99 @@
-content_mages_fire_personage:
-    path:     /BatonFeu
-    defaults: { _controller: OursUserBundle:Artisanat\Mage:Batonfeu }
+content_chasseurs_arc_personage:
+    path:     /Arc
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Arc }
+
+content_chasseurs_arc_gu_personage:
+    path:     /ArcGuerre
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:ArcGuerre }
+
+content_chasseurs_arc_lo_personage:
+    path:     /ArcLong
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:ArcLong }
+
+content_chasseurs_lance_personage:
+    path:     /Lance
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Lance }
+
+content_chasseurs_pique_personage:
+    path:     /Pique
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Pique }
+
+content_chasseurs_hallebarde_personage:
+    path:     /Hallebarde
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Hallebarde }
+
+content_chasseurs_naturel_personage:
+    path:     /BatonNaturel
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:BatonNaturel }
+
+content_chasseurs_gr_naturel_personage:
+    path:     /GrandBatonNaturel
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:GrandBatonNaturel }
+
+content_chasseurs_sauvage_personage:
+    path:     /BatonSauvage
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:BatonSauvage }
+
+content_chasseurs_dague_personage:
+    path:     /Dague
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Dague }
+
+content_chasseurs_dague_double_personage:
+    path:     /PaireDagues
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:DoubleDague }
+
+content_chasseurs_griffe_personage:
+    path:     /Griffe
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Griffe }
+
+content_chasseurs_baton_long_personage:
+    path:     /BatonLong
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:BatonLong }
+
+content_chasseurs_baton_sf_personage:
+    path:     /BatonSansFaille
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:BatonSansFaille }
+
+content_chasseurs_baton_dt_personage:
+    path:     /BatonDoubleTranchant
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:BatonDoubleTranchant }
+
+content_chasseurs_torche_personage:
+    path:     /Torche
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Torche }
+
+content_chasseurs_casque1_personage:
+    path:     /Casque1
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Casque1 }
+
+content_chasseurs_casque2_personage:
+    path:     /Casque2
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Casque2 }
+
+content_chasseurs_casque3_personage:
+    path:     /Casque3
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Casque3 }
+
+content_chasseurs_armure1_personage:
+    path:     /Armure1
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Armure1 }
+
+content_chasseurs_armure2_personage:
+    path:     /Armure2
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Armure2 }
+
+content_chasseurs_armure3_personage:
+    path:     /Armure3
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Armure3 }
+
+content_chasseurs_botte1_personage:
+    path:     /Botte1
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Botte1 }
+
+content_chasseurs_botte2_personage:
+    path:     /Botte2
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Botte2 }
+
+content_chasseurs_botte3_personage:
+    path:     /Botte3
+    defaults: { _controller: OursUserBundle:Artisanat\Chasseur:Botte3 }

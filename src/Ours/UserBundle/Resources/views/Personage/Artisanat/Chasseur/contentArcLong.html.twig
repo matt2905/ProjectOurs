@@ -1,0 +1,43 @@
+<table id="chArcLo" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="fire">ARCS LONG</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.chArcLo %}
+            <tr>
+                <td class="fire">{{ personage.name }}</td>
+                {% if personage.chArcLo == 4.3 %}
+                    <td class="quatrePtrois tier">{{ personage.chArcLo }}</td>
+                {% elseif personage.chArcLo == 5.3 %}
+                    <td class="cinqPtrois tier">{{ personage.chArcLo }}</td>
+                {% elseif personage.chArcLo == 6.3 %}
+                    <td class="sixPtrois tier">{{ personage.chArcLo }}</td>
+                {% elseif personage.chArcLo == 7.3 %}
+                    <td class="septPtrois tier">{{ personage.chArcLo }}</td>
+                {% elseif personage.chArcLo == 8.3 %}
+                    <td class="huitPtrois tier">{{ personage.chArcLo }}</td>
+                {% elseif personage.chArcLo == 6.6 %}
+                    <td class="sixPsix tier">{{ personage.chArcLo }}</td>
+                {% elseif personage.chArcLo == 7.6 %}
+                    <td class="septPsix tier">{{ personage.chArcLo }}</td>
+                {% elseif personage.chArcLo == 8.6 %}
+                    <td class="huitPsix tier">{{ personage.chArcLo }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.chArcLo }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

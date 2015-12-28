@@ -1,0 +1,43 @@
+<table id="chGriffe" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="givre">GRIFFES</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.chGriffe %}
+            <tr>
+                <td class="givre">{{ personage.name }}</td>
+                {% if personage.chGriffe == 4.3 %}
+                    <td class="quatrePtrois tier">{{ personage.chGriffe }}</td>
+                {% elseif personage.chGriffe == 5.3 %}
+                    <td class="cinqPtrois tier">{{ personage.chGriffe }}</td>
+                {% elseif personage.chGriffe == 6.3 %}
+                    <td class="sixPtrois tier">{{ personage.chGriffe }}</td>
+                {% elseif personage.chGriffe == 7.3 %}
+                    <td class="septPtrois tier">{{ personage.chGriffe }}</td>
+                {% elseif personage.chGriffe == 8.3 %}
+                    <td class="huitPtrois tier">{{ personage.chGriffe }}</td>
+                {% elseif personage.chGriffe == 6.6 %}
+                    <td class="sixPsix tier">{{ personage.chGriffe }}</td>
+                {% elseif personage.chGriffe == 7.6 %}
+                    <td class="septPsix tier">{{ personage.chGriffe }}</td>
+                {% elseif personage.chGriffe == 8.6 %}
+                    <td class="huitPsix tier">{{ personage.chGriffe }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.chGriffe }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

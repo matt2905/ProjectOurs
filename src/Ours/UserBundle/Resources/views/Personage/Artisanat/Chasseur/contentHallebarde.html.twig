@@ -1,0 +1,43 @@
+<table id="chHallebarde" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="beni">HALLEBARDE</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.chHallebarde %}
+            <tr>
+                <td class="beni">{{ personage.name }}</td>
+                {% if personage.chHallebarde == 4.3 %}
+                    <td class="quatrePtrois tier">{{ personage.chHallebarde }}</td>
+                {% elseif personage.chHallebarde == 5.3 %}
+                    <td class="cinqPtrois tier">{{ personage.chHallebarde }}</td>
+                {% elseif personage.chHallebarde == 6.3 %}
+                    <td class="sixPtrois tier">{{ personage.chHallebarde }}</td>
+                {% elseif personage.chHallebarde == 7.3 %}
+                    <td class="septPtrois tier">{{ personage.chHallebarde }}</td>
+                {% elseif personage.chHallebarde == 8.3 %}
+                    <td class="huitPtrois tier">{{ personage.chHallebarde }}</td>
+                {% elseif personage.chHallebarde == 6.6 %}
+                    <td class="sixPsix tier">{{ personage.chHallebarde }}</td>
+                {% elseif personage.chHallebarde == 7.6 %}
+                    <td class="septPsix tier">{{ personage.chHallebarde }}</td>
+                {% elseif personage.chHallebarde == 8.6 %}
+                    <td class="huitPsix tier">{{ personage.chHallebarde }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.chHallebarde }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

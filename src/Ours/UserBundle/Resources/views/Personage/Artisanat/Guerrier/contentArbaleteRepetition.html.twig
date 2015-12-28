@@ -1,0 +1,43 @@
+<table id="soArbaleteRep" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="damn">ARBALETES A REPETITION</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.soArbaleteRep %}
+            <tr>
+                <td class="damn">{{ personage.name }}</td>
+                {% if personage.soArbaleteRep == 4.3 %}
+                    <td class="quatrePtrois tier">{{ personage.soArbaleteRep }}</td>
+                {% elseif personage.soArbaleteRep == 5.3 %}
+                    <td class="cinqPtrois tier">{{ personage.soArbaleteRep }}</td>
+                {% elseif personage.soArbaleteRep == 6.3 %}
+                    <td class="sixPtrois tier">{{ personage.soArbaleteRep }}</td>
+                {% elseif personage.soArbaleteRep == 7.3 %}
+                    <td class="septPtrois tier">{{ personage.soArbaleteRep }}</td>
+                {% elseif personage.soArbaleteRep == 8.3 %}
+                    <td class="huitPtrois tier">{{ personage.soArbaleteRep }}</td>
+                {% elseif personage.soArbaleteRep == 6.6 %}
+                    <td class="sixPsix tier">{{ personage.soArbaleteRep }}</td>
+                {% elseif personage.soArbaleteRep == 7.6 %}
+                    <td class="septPsix tier">{{ personage.soArbaleteRep }}</td>
+                {% elseif personage.soArbaleteRep == 8.6 %}
+                    <td class="huitPsix tier">{{ personage.soArbaleteRep }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.soArbaleteRep }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

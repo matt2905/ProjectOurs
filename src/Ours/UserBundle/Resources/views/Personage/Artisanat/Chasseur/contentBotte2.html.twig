@@ -1,0 +1,59 @@
+<table id="chBotte2" class="table table-bordered armor">
+    <thead>
+    <tr>
+        <th colspan="5" class="armor2">LOURDES EN CUIR</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+        <th class="null tier"></th>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="5" class="null"></td>
+    </tr>
+    {% set count = 0 %}
+    {% for personage in personages %}
+        {% if personage.chBotte2 %}
+            {% set count = count + 1 %}
+            {% if count % 2 %}
+                <tr>
+            {% else %}
+                <td class="null"></td>
+            {% endif %}
+            <td class="armor2">{{ personage.name }}</td>
+            {% if personage.chBotte2 == 4.2 %}
+                <td class="quatrePdeux tier">{{ personage.chBotte2 }}</td>
+            {% elseif personage.chBotte2 == 5.2 %}
+                <td class="cinqPdeux tier">{{ personage.chBotte2 }}</td>
+            {% elseif personage.chBotte2 == 6.2 %}
+                <td class="sixPdeux tier">{{ personage.chBotte2 }}</td>
+            {% elseif personage.chBotte2 == 7.2 %}
+                <td class="septPdeux tier">{{ personage.chBotte2 }}</td>
+            {% elseif personage.chBotte2 == 8.2 %}
+                <td class="huitPdeux tier">{{ personage.chBotte2 }}</td>
+            {% elseif personage.chBotte2 == 5.5 %}
+                <td class="cinqPcinq tier">{{ personage.chBotte2 }}</td>
+            {% elseif personage.chBotte2 == 6.5 %}
+                <td class="sixPcinq tier">{{ personage.chBotte2 }}</td>
+            {% elseif personage.chBotte2 == 7.5 %}
+                <td class="septPcinq tier">{{ personage.chBotte2 }}</td>
+            {% elseif personage.chBotte2 == 8.5 %}
+                <td class="huitPcinq tier">{{ personage.chBotte2 }}</td>
+            {% else %}
+                <td class="deux tier">{{ personage.chBotte2 }}</td>
+            {% endif %}
+            {% if count % 2 == 0 %}
+                </tr>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% if count % 2 %}
+        </tr>
+    {% endif %}
+    </tbody>
+</table>

@@ -483,7 +483,7 @@ class PersonageType extends AbstractType
                     'min' => 0,
                 )
             ))
-            ->add('GrandeHche', 'number', array(
+            ->add('GrandeHache', 'number', array(
                 'property_path' => 'soGrandeHache',
                 'attr' => array(
                     'min' => 0,
@@ -1027,7 +1027,7 @@ class PersonageType extends AbstractType
                     'min' => 0,
                 )
             ))
-            ->add('cbGrandeHche', 'number', array(
+            ->add('cbGrandeHache', 'number', array(
                 'label' => 'Grande hache',
                 'property_path' => 'cbSoGrandeHache',
                 'attr' => array(

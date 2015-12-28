@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: matth
- * Date: 27/12/2015
- * Time: 20:34
+ * Date: 28/12/2015
+ * Time: 12:01
  */
 
 namespace Ours\UserBundle\Controller\Artisanat;
@@ -11,28 +11,28 @@ namespace Ours\UserBundle\Controller\Artisanat;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
-class ChasseurController extends Controller
+class GuerrierController extends Controller
 {
     /**
      * @param int $pages
      * @param bool $json
      * @return Response
      */
-    public function arcAction($pages = 0, $json = true)
+    public function epeeLargeAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chArc', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soEpeeLarge', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentArc.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentEpeeLarge.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentArc.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentEpeeLarge.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -43,21 +43,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function arcGuerreAction($pages = 0, $json = true)
+    public function claymoreAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chArcGu', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soClaymore', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentArcGuerre.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentClaymore.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentArcGuerre.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentClaymore.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -68,21 +68,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function arcLongAction($pages = 0, $json = true)
+    public function glaiveAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chArcLo', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soGlaive', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentArcLong.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentGlaive.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentArcLong.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentGlaive.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -93,21 +93,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function lanceAction($pages = 0, $json = true)
+    public function hacheAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chLance', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soHache', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentLance.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentHache.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentLance.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentHache.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -118,21 +118,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function piqueAction($pages = 0, $json = true)
+    public function grandeHacheAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chPique', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soGrandeHache', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentPique.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentGrandeHache.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentPique.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentGrandeHache.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -143,21 +143,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function hallebardeAction($pages = 0, $json = true)
+    public function fauxAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chHallebarde', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soFaux', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentHallebarde.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentFaux.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentHallebarde.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentFaux.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -168,21 +168,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function batonNaturelAction($pages = 0, $json = true)
+    public function massueAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chBatonNat', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soMassue', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonNaturel.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentMassue.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonNaturel.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentMassue.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -193,21 +193,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function grandBatonNaturelAction($pages = 0, $json = true)
+    public function massueLourdeAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chGrandBatonNat', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soMassueLo', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentGrandBatonNaturel.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentMassueLourde.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentGrandBatonNaturel.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentMassueLourde.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -218,21 +218,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function batonSauvageAction($pages = 0, $json = true)
+    public function fleauAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chBatonSau', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soFleau', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonSauvage.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentFleau.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonSauvage.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentFleau.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -243,21 +243,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function dagueAction($pages = 0, $json = true)
+    public function masseAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chDague', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soMasse', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentDague.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentMasse.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentDague.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentMasse.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -268,21 +268,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function doubleDagueAction($pages = 0, $json = true)
+    public function becDeCorbinAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chDagueDouble', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soBecDeCorbin', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentDoubleDague.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentBecDeCorbin.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentDoubleDague.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentBecDeCorbin.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -293,21 +293,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function griffeAction($pages = 0, $json = true)
+    public function grandeMasseAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chGriffe', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soGrandeMasse', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentGriffe.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentGrandeMasse.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentGriffe.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentGrandeMasse.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -318,21 +318,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function batonLongAction($pages = 0, $json = true)
+    public function arbaleteAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chBatonLong', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soArbalete', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonLong.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentArbalete.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonLong.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentArbalete.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -343,21 +343,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function batonSansFailleAction($pages = 0, $json = true)
+    public function arbaleteLourdeAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chBatonSF', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soArbaleteLo', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonSansFaille.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentArbaleteLourde.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonSansFaille.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentArbaleteLourde.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -368,21 +368,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function batonDoubleTranchantAction($pages = 0, $json = true)
+    public function arbaleteRepetitionAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chBatonDT', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soArbaleteRep', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonDoubleTranchant.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentArbaleteReptition.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentBatonDoubleTranchant.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentArbaleteRepetition.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -393,21 +393,21 @@ class ChasseurController extends Controller
      * @param bool $json
      * @return Response
      */
-    public function torcheAction($pages = 0, $json = true)
+    public function bouclierAction($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chTorche', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soBouclier', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentTorche.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentBouclier.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentTorche.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentBouclier.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -421,18 +421,18 @@ class ChasseurController extends Controller
     public function casque1Action($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chCasque1', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soCasque1', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentCasque1.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentCasque1.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentCasque1.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentCasque1.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -446,18 +446,18 @@ class ChasseurController extends Controller
     public function casque2Action($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chCasque2', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soCasque2', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentCasque2.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentCasque2.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentCasque2.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentCasque2.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -471,18 +471,18 @@ class ChasseurController extends Controller
     public function casque3Action($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chCasque3', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soCasque3', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentCasque3.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentCasque3.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentCasque3.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentCasque3.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -496,18 +496,18 @@ class ChasseurController extends Controller
     public function armure1Action($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chArmure1', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soArmure1', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentArmure1.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentArmure1.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentArmure1.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentArmure1.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -521,18 +521,18 @@ class ChasseurController extends Controller
     public function armure2Action($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chArmure2', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soArmure2', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentArmure2.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentArmure2.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentArmure2.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentArmure2.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -546,18 +546,18 @@ class ChasseurController extends Controller
     public function armure3Action($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chArmure3', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soArmure3', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentArmure3.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentArmure3.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentArmure3.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentArmure3.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -571,18 +571,18 @@ class ChasseurController extends Controller
     public function botte1Action($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chBotte1', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soBotte1', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentBotte1.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentBotte1.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentBotte1.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentBotte1.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -596,18 +596,18 @@ class ChasseurController extends Controller
     public function botte2Action($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chBotte2', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soBotte2', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentBotte2.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentBotte2.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentBotte2.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentBotte2.html.twig', array(
                 'personages' => $personages
             ));
         }
@@ -621,18 +621,18 @@ class ChasseurController extends Controller
     public function botte3Action($pages = 0, $json = true)
     {
         $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('chBotte3', $pages * 10, 10);
+        $personages = $em->getRepository('OursUserBundle:Personage')->findCriteriaSorted('soBotte3', $pages * 10, 10);
 
         if ($json) {
             $lReturn = array();
             //use renderview instead of render, because renderview returns the rendered template
-            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Chasseur\contentBotte3.html.twig', array(
+            $lReturn['html'] = $this->renderView('OursUserBundle:Personage:Artisanat\Guerrier\contentBotte3.html.twig', array(
                 'personages' => $personages
             ));
 
             return new Response(json_encode($lReturn), 200, array('Content-Type' => 'application/json'));
         } else {
-            return $this->render('OursUserBundle:Personage:Artisanat\Chasseur\contentBotte3.html.twig', array(
+            return $this->render('OursUserBundle:Personage:Artisanat\Guerrier\contentBotte3.html.twig', array(
                 'personages' => $personages
             ));
         }

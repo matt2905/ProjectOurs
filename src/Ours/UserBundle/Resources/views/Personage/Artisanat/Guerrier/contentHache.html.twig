@@ -1,0 +1,47 @@
+<table id="soHache" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="beni">HACHE DE GUERRE</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.soHache %}
+            <tr>
+                <td class="beni">{{ personage.name }}</td>
+                {% if personage.soHache == 3 %}
+                    <td class="trois tier">{{ personage.soHache }}</td>
+                {% elseif personage.soHache == 4 %}
+                    <td class="quatre tier">{{ personage.soHache }}</td>
+                {% elseif personage.soHache == 5 %}
+                    <td class="cinq tier">{{ personage.soHache }}</td>
+                {% elseif personage.soHache == 6 %}
+                    <td class="six tier">{{ personage.soHache }}</td>
+                {% elseif personage.soHache == 7 %}
+                    <td class="sept tier">{{ personage.soHache }}</td>
+                {% elseif personage.soHache == 8 %}
+                    <td class="huit tier">{{ personage.soHache }}</td>
+                {% elseif personage.soHache == 5.4 %}
+                    <td class="cinqPquatre tier">{{ personage.soHache }}</td>
+                {% elseif personage.soHache == 6.4 %}
+                    <td class="sixPquatre tier">{{ personage.soHache }}</td>
+                {% elseif personage.soHache == 7.4 %}
+                    <td class="septPquatre tier">{{ personage.soHache }}</td>
+                {% elseif personage.soHache == 8.4 %}
+                    <td class="huitPquatre tier">{{ personage.soHache }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.soHache }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

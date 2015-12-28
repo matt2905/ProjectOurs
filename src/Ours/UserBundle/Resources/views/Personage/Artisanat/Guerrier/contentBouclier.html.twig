@@ -1,0 +1,47 @@
+<table id="soBouclier" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="tome">BOUCLIERS</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.soBouclier %}
+            <tr>
+                <td class="tome">{{ personage.name }}</td>
+                {% if personage.soBouclier == 3 %}
+                    <td class="trois tier">{{ personage.soBouclier }}</td>
+                {% elseif personage.soBouclier == 4 %}
+                    <td class="quatre tier">{{ personage.soBouclier }}</td>
+                {% elseif personage.soBouclier == 5 %}
+                    <td class="cinq tier">{{ personage.soBouclier }}</td>
+                {% elseif personage.soBouclier == 6 %}
+                    <td class="six tier">{{ personage.soBouclier }}</td>
+                {% elseif personage.soBouclier == 7 %}
+                    <td class="sept tier">{{ personage.soBouclier }}</td>
+                {% elseif personage.soBouclier == 8 %}
+                    <td class="huit tier">{{ personage.soBouclier }}</td>
+                {% elseif personage.soBouclier == 5.4 %}
+                    <td class="cinqPquatre tier">{{ personage.soBouclier }}</td>
+                {% elseif personage.soBouclier == 6.4 %}
+                    <td class="sixPquatre tier">{{ personage.soBouclier }}</td>
+                {% elseif personage.soBouclier == 7.4 %}
+                    <td class="septPquatre tier">{{ personage.soBouclier }}</td>
+                {% elseif personage.soBouclier == 8.4 %}
+                    <td class="huitPquatre tier">{{ personage.soBouclier }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.soBouclier }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,47 @@
+<table id="chBatonLong" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="damn">LONGS BATONS</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.chBatonLong %}
+            <tr>
+                <td class="damn">{{ personage.name }}</td>
+                {% if personage.chBatonLong == 3 %}
+                    <td class="trois tier">{{ personage.chBatonLong }}</td>
+                {% elseif personage.chBatonLong == 4 %}
+                    <td class="quatre tier">{{ personage.chBatonLong }}</td>
+                {% elseif personage.chBatonLong == 5 %}
+                    <td class="cinq tier">{{ personage.chBatonLong }}</td>
+                {% elseif personage.chBatonLong == 6 %}
+                    <td class="six tier">{{ personage.chBatonLong }}</td>
+                {% elseif personage.chBatonLong == 7 %}
+                    <td class="sept tier">{{ personage.chBatonLong }}</td>
+                {% elseif personage.chBatonLong == 8 %}
+                    <td class="huit tier">{{ personage.chBatonLong }}</td>
+                {% elseif personage.chBatonLong == 5.4 %}
+                    <td class="cinqPquatre tier">{{ personage.chBatonLong }}</td>
+                {% elseif personage.chBatonLong == 6.4 %}
+                    <td class="sixPquatre tier">{{ personage.chBatonLong }}</td>
+                {% elseif personage.chBatonLong == 7.4 %}
+                    <td class="septPquatre tier">{{ personage.chBatonLong }}</td>
+                {% elseif personage.chBatonLong == 8.4 %}
+                    <td class="huitPquatre tier">{{ personage.chBatonLong }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.chBatonLong }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,43 @@
+<table id="soFaux" class="table table-bordered artisanat">
+    <thead>
+    <tr>
+        <th colspan="2" class="beni">FAUX</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tiers</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.soFaux %}
+            <tr>
+                <td class="beni">{{ personage.name }}</td>
+                {% if personage.soFaux == 4.3 %}
+                    <td class="quatrePtrois tier">{{ personage.soFaux }}</td>
+                {% elseif personage.soFaux == 5.3 %}
+                    <td class="cinqPtrois tier">{{ personage.soFaux }}</td>
+                {% elseif personage.soFaux == 6.3 %}
+                    <td class="sixPtrois tier">{{ personage.soFaux }}</td>
+                {% elseif personage.soFaux == 7.3 %}
+                    <td class="septPtrois tier">{{ personage.soFaux }}</td>
+                {% elseif personage.soFaux == 8.3 %}
+                    <td class="huitPtrois tier">{{ personage.soFaux }}</td>
+                {% elseif personage.soFaux == 6.6 %}
+                    <td class="sixPsix tier">{{ personage.soFaux }}</td>
+                {% elseif personage.soFaux == 7.6 %}
+                    <td class="septPsix tier">{{ personage.soFaux }}</td>
+                {% elseif personage.soFaux == 8.6 %}
+                    <td class="huitPsix tier">{{ personage.soFaux }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.soFaux }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

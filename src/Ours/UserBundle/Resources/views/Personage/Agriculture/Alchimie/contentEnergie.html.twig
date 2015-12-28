@@ -1,0 +1,39 @@
+<table id="alEnergy" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="energy">ENERGIE</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.alEnergy %}
+            <tr>
+                <td class="energy">{{ personage.name }}</td>
+                {% if personage.alEnergy == 3 %}
+                    <td class="trois tier">{{ personage.alEnergy }}</td>
+                {% elseif personage.alEnergy == 4 %}
+                    <td class="quatre tier">{{ personage.alEnergy }}</td>
+                {% elseif personage.alEnergy == 5 %}
+                    <td class="cinq tier">{{ personage.alEnergy }}</td>
+                {% elseif personage.alEnergy == 6 %}
+                    <td class="six tier">{{ personage.alEnergy }}</td>
+                {% elseif personage.alEnergy == 7 %}
+                    <td class="sept tier">{{ personage.alEnergy }}</td>
+                {% elseif personage.alEnergy == 8 %}
+                    <td class="huit tier">{{ personage.alEnergy }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.alEnergy }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

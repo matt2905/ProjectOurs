@@ -1,0 +1,39 @@
+<table id="alRevive" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="revive">REANIMATION</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.alRevive %}
+            <tr>
+                <td class="revive">{{ personage.name }}</td>
+                {% if personage.alRevive == 3 %}
+                    <td class="trois tier">{{ personage.alRevive }}</td>
+                {% elseif personage.alRevive == 4 %}
+                    <td class="quatre tier">{{ personage.alRevive }}</td>
+                {% elseif personage.alRevive == 5 %}
+                    <td class="cinq tier">{{ personage.alRevive }}</td>
+                {% elseif personage.alRevive == 6 %}
+                    <td class="six tier">{{ personage.alRevive }}</td>
+                {% elseif personage.alRevive == 7 %}
+                    <td class="sept tier">{{ personage.alRevive }}</td>
+                {% elseif personage.alRevive == 8 %}
+                    <td class="huit tier">{{ personage.alRevive }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.alRevive }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

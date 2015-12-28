@@ -99,12 +99,7 @@ class PersonageController extends Controller
      */
     public function showAgricultureAction()
     {
-        $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findAll();
-
-        return $this->render('OursUserBundle:Personage:showAgriculture.html.twig', array(
-            'personages' => $personages
-        ));
+        return $this->render('OursUserBundle:Personage:showAgriculture.html.twig');
     }
 
     /**
@@ -112,11 +107,6 @@ class PersonageController extends Controller
      */
     public function showArtisanatAction()
     {
-        $em = $this->getDoctrine()->getManager();
-        $personages = $em->getRepository('OursUserBundle:Personage')->findAll();
-
-        return $this->render('OursUserBundle:Personage:showArtisanat.html.twig', array(
-            'personages' => $personages
-        ));
+        return $this->render('OursUserBundle:Personage:showArtisanat.html.twig');
     }
 }

@@ -1,0 +1,39 @@
+<table id="cuSalad" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="salad">Salade</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.cuSalad %}
+            <tr>
+                <td class="salad">{{ personage.name }}</td>
+                {% if personage.cuSalad == 3 %}
+                    <td class="trois tier">{{ personage.cuSalad }}</td>
+                {% elseif personage.cuSalad == 4 %}
+                    <td class="quatre tier">{{ personage.cuSalad }}</td>
+                {% elseif personage.cuSalad == 5 %}
+                    <td class="cinq tier">{{ personage.cuSalad }}</td>
+                {% elseif personage.cuSalad == 6 %}
+                    <td class="six tier">{{ personage.cuSalad }}</td>
+                {% elseif personage.cuSalad == 7 %}
+                    <td class="sept tier">{{ personage.cuSalad }}</td>
+                {% elseif personage.cuSalad == 8 %}
+                    <td class="huit tier">{{ personage.cuSalad }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.cuSalad }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

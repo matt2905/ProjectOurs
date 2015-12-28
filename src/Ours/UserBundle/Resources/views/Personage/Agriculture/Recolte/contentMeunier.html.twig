@@ -1,0 +1,39 @@
+<table id="cuProduct" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="miller">MEUNIER</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.cuProduct %}
+            <tr>
+                <td class="miller">{{ personage.name }}</td>
+                {% if personage.cuProduct == 3 %}
+                    <td class="trois tier">{{ personage.cuProduct }}</td>
+                {% elseif personage.cuProduct == 4 %}
+                    <td class="quatre tier">{{ personage.cuProduct }}</td>
+                {% elseif personage.cuProduct == 5 %}
+                    <td class="cinq tier">{{ personage.cuProduct }}</td>
+                {% elseif personage.cuProduct == 6 %}
+                    <td class="six tier">{{ personage.cuProduct }}</td>
+                {% elseif personage.cuProduct == 7 %}
+                    <td class="sept tier">{{ personage.cuProduct }}</td>
+                {% elseif personage.cuProduct == 8 %}
+                    <td class="huit tier">{{ personage.cuProduct }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.cuProduct }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

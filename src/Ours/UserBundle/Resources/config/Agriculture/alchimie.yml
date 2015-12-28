@@ -1,0 +1,27 @@
+content_alchimie_heal_personage:
+    path:     /Soin
+    defaults: { _controller: OursUserBundle:Agriculture\Alchimie:Soin }
+
+content_alchimie_energy_personage:
+    path:     /Energie
+    defaults: { _controller: OursUserBundle:Agriculture\Alchimie:Energie }
+
+content_alchimie_revive_personage:
+    path:     /Reanimation
+    defaults: { _controller: OursUserBundle:Agriculture\Alchimie:Reanimation }
+
+content_alchimie_stone_personage:
+    path:     /PeauPierre
+    defaults: { _controller: OursUserBundle:Agriculture\Alchimie:PeauPierre }
+
+content_alchimie_chill_personage:
+    path:     /Frigorifique
+    defaults: { _controller: OursUserBundle:Agriculture\Alchimie:Frigorifique }
+
+content_alchimie_restore_personage:
+    path:     /Recuperation
+    defaults: { _controller: OursUserBundle:Agriculture\Alchimie:Recuperation }
+
+content_alchimie_clean_personage:
+    path:     /Purification
+    defaults: { _controller: OursUserBundle:Agriculture\Alchimie:Purification }

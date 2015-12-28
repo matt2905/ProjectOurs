@@ -26,6 +26,18 @@ show_artisanat_personage:
     path:     /showArtisanat
     defaults: { _controller: OursUserBundle:Personage:ShowArtisanat }
 
+content_agriculture_cuisine:
+    resource: "@OursUserBundle/Resources/config/Agriculture/cuisine.yml"
+    prefix:     /contentAgriculture/Cuisine
+
+content_agriculture_cuisine:
+    resource: "@OursUserBundle/Resources/config/Agriculture/alchimie.yml"
+    prefix:     /contentAgriculture/Alchimie
+
+content_agriculture_cuisine:
+    resource: "@OursUserBundle/Resources/config/Agriculture/recolte.yml"
+    prefix:     /contentAgriculture/Récolte
+
 content_artisanat_outils:
     resource: "@OursUserBundle/Resources/config/Artisanat/accessoires.yml"
     prefix:     /contentArtisanat/Outils

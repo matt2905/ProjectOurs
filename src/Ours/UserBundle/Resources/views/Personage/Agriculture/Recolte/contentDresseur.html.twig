@@ -1,0 +1,39 @@
+<table id="anMonture" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="taming">DRESSEURS</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.anMonture %}
+            <tr>
+                <td class="taming">{{ personage.name }}</td>
+                {% if personage.anMonture == 3 %}
+                    <td class="trois tier">{{ personage.anMonture }}</td>
+                {% elseif personage.anMonture == 4 %}
+                    <td class="quatre tier">{{ personage.anMonture }}</td>
+                {% elseif personage.anMonture == 5 %}
+                    <td class="cinq tier">{{ personage.anMonture }}</td>
+                {% elseif personage.anMonture == 6 %}
+                    <td class="six tier">{{ personage.anMonture }}</td>
+                {% elseif personage.anMonture == 7 %}
+                    <td class="sept tier">{{ personage.anMonture }}</td>
+                {% elseif personage.anMonture == 8 %}
+                    <td class="huit tier">{{ personage.anMonture }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.anMonture }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

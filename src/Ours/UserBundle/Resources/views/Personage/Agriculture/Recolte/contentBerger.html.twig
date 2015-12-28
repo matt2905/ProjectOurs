@@ -1,0 +1,39 @@
+<table id="anFerme" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="berger">BERGERS</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.anFerme %}
+            <tr>
+                <td class="berger">{{ personage.name }}</td>
+                {% if personage.anFerme == 3 %}
+                    <td class="trois tier">{{ personage.anFerme }}</td>
+                {% elseif personage.anFerme == 4 %}
+                    <td class="quatre tier">{{ personage.anFerme }}</td>
+                {% elseif personage.anFerme == 5 %}
+                    <td class="cinq tier">{{ personage.anFerme }}</td>
+                {% elseif personage.anFerme == 6 %}
+                    <td class="six tier">{{ personage.anFerme }}</td>
+                {% elseif personage.anFerme == 7 %}
+                    <td class="sept tier">{{ personage.anFerme }}</td>
+                {% elseif personage.anFerme == 8 %}
+                    <td class="huit tier">{{ personage.anFerme }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.anFerme }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

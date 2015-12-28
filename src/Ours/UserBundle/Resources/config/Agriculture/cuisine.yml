@@ -1,0 +1,23 @@
+content_cuisine_soup_personage:
+    path:     /Soupe
+    defaults: { _controller: OursUserBundle:Agriculture\Cuisine:Soupe }
+
+content_cuisine_salad_personage:
+    path:     /Salade
+    defaults: { _controller: OursUserBundle:Agriculture\Cuisine:Salade }
+
+content_cuisine_omelette_personage:
+    path:     /Omelette
+    defaults: { _controller: OursUserBundle:Agriculture\Cuisine:Omelette }
+
+content_cuisine_pie_personage:
+    path:     /Tourte
+    defaults: { _controller: OursUserBundle:Agriculture\Cuisine:Tourte }
+
+content_cuisine_stew_personage:
+    path:     /Ragout
+    defaults: { _controller: OursUserBundle:Agriculture\Cuisine:Ragout }
+
+content_cuisine_sandwich_personage:
+    path:     /Sandwich
+    defaults: { _controller: OursUserBundle:Agriculture\Cuisine:Sandwich }

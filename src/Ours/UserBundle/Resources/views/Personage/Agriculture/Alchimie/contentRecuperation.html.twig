@@ -1,0 +1,39 @@
+<table id="alRecovery" class="table table-bordered agriculture">
+    <thead>
+    <tr>
+        <th colspan="2" class="recovery">RECUPERATION</th>
+    </tr>
+    <tr>
+        <th>Pseudo</th>
+        <th class="tier">Tier</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td colspan="2" class="null"></td>
+    </tr>
+    {% for personage in personages %}
+        {% if personage.alRecovery %}
+            <tr>
+                <td class="recovery">{{ personage.name }}</td>
+                {% if personage.alRecovery == 3 %}
+                    <td class="trois tier">{{ personage.alRecovery }}</td>
+                {% elseif personage.alRecovery == 4 %}
+                    <td class="quatre tier">{{ personage.alRecovery }}</td>
+                {% elseif personage.alRecovery == 5 %}
+                    <td class="cinq tier">{{ personage.alRecovery }}</td>
+                {% elseif personage.alRecovery == 6 %}
+                    <td class="six tier">{{ personage.alRecovery }}</td>
+                {% elseif personage.alRecovery == 7 %}
+                    <td class="sept tier">{{ personage.alRecovery }}</td>
+                {% elseif personage.alRecovery == 8 %}
+                    <td class="huit tier">{{ personage.alRecovery }}</td>
+                {% else %}
+                    <td class="deux tier">{{ personage.alRecovery }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

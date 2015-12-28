@@ -1,0 +1,27 @@
+content_recolte_dresseur_personage:
+    path:     /Dresseur
+    defaults: { _controller: OursUserBundle:Agriculture\Recolte:Dresseur }
+
+content_recolte_berger_personage:
+    path:     /Berger
+    defaults: { _controller: OursUserBundle:Agriculture\Recolte:Berger }
+
+content_recolte_herboriste_personage:
+    path:     /Herboriste
+    defaults: { _controller: OursUserBundle:Agriculture\Recolte:Herboriste }
+
+content_recolte_legume_personage:
+    path:     /Legume
+    defaults: { _controller: OursUserBundle:Agriculture\Recolte:Legume }
+
+content_recolte_caviste_personage:
+    path:     /Caviste
+    defaults: { _controller: OursUserBundle:Agriculture\Recolte:Caviste }
+
+content_recolte_meunier_personage:
+    path:     /Meunier
+    defaults: { _controller: OursUserBundle:Agriculture\Recolte:Meunier }
+
+content_recolte_boucher_personage:
+    path:     /Boucher
+    defaults: { _controller: OursUserBundle:Agriculture\Recolte:Boucher }
